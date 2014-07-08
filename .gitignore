@@ -1,0 +1,6 @@
+*.pyc
+/lingProjectEnv
+.project
+.pydevproject
+.settings/
+/nbproject/private/
