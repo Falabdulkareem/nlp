@@ -3,9 +3,9 @@
     <type>org.netbeans.modules.python.project</type>
     <configuration>
         <data xmlns="http://nbpython.dev.java.net/ns/php-project/1">
-            <name>UMBC</name>
+            <name>nlp-for-ds</name>
             <sources>
-                <root id="src.dir"/>
+                <root id="nlp-for-ds.dir"/>
             </sources>
             <tests/>
         </data>

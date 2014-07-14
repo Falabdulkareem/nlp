@@ -1,0 +1,9 @@
+*.pyc
+/lingProjectEnv
+<<<<<<< HEAD
+/nbproject/private/
+=======
+.project
+.pydevproject
+.settings/
+>>>>>>> d2e3bc50d5be89c5ed5d5370acc2e1a7d32dd4c4
