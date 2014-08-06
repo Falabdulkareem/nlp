@@ -35,16 +35,16 @@ def index():
     return
 """
 #   @get("/tryqustion") # or @route('/login')
-@bottle.route("/")
+@bottle.route("/request")
 def tryquestion():
  return '''
-    <form action="/" method="post">
+    <form action="/request" method="post">
         Enter you NLQ: <input name="query" type="text" size="65" />
         <input value="Search" type="submit" />
      </form>
     '''
 #@post('/tryqustion') # or @route('/login', method='POST')
-@bottle.route("/", method="POST")
+@bottle.route("/request", method="POST")
 def answerq():
     q = request.forms.get('query')
     
