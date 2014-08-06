@@ -14,7 +14,7 @@ import quepy
 from SPARQLWrapper import SPARQLWrapper, JSON
 from umbc2 import sss
 #from NLTK import ie_preprocess
-#import string
+import string
 
 bottle.debug(True)
 
