@@ -13,7 +13,6 @@ import nltk
 import quepy
 from SPARQLWrapper import SPARQLWrapper, JSON
 from umbc2 import sss
-from Nurse import nursedomain
 from NLTK import ie_preprocess
 import string
 
