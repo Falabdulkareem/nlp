@@ -136,7 +136,7 @@ def answerq():
         
     # Create a list with negative words
     NegativeWords = ["not", "haven't", "havent", "hasn't", "hasnt", "didn't", "didnt", "doesn't",\
-    "doesnt", "don't", "dont", "shouldn't", "shouldnt", "couldn't", "couldnt", "can't", "cant", "cannot"]
+    "doesnt", "don't", "dont", "shouldn't", "shouldnt", "couldn't", "couldnt", "can't", "cant", "cannot", "no"]
     
     # Check if the sentence written have any negative words
     FoundNeg = set(NegativeWords).intersection(my_list)
