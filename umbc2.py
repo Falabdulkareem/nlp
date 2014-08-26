@@ -17,8 +17,8 @@ sss_url = "http://swoogle.umbc.edu/SimService/GetSimilarity"
 
 def sss(s1, s2, type='relation', corpus='webbase'):
     try:
-        print s1
-        print s2
+        #print s1
+        #print s2
         response = get(sss_url, params={'operation':'api','phrase1':s1,'phrase2':s2,'type':type,'corpus':corpus})
         return float(response.text.strip())
         print float(response.text.strip())

@@ -1,0 +1,11 @@
+java.lib.path=
+main.file=main.py
+<<<<<<< master
+platform.active=Python_2.7.6
+python.lib.path=
+src.dir=src
+=======
+nlp-for-ds.dir=.
+platform.active=Python_2.7.6
+python.lib.path=
+>>>>>>> heroku/master

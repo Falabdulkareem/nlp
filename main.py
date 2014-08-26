@@ -49,8 +49,11 @@ def answerq():
     q = request.forms.get('query')
     
     Goal1 = "happy nurse"
+    Goal23 = "sad nurse"
     Goal2 = "happy patient"
-    Goal3 = "nurse comfort"
+    Goal24 = "sad patient"
+    Goal3 = "comfortable nurse"
+    Goal25 = "uncomfortable nurse"
     Goal4 = "patient feels cared for"
     Goal5 = "nurse attend to patient"
     Goal6 = "nurse notified"
@@ -72,8 +75,11 @@ def answerq():
     Goal22 = "no nurse disturbance"
     
     res1 = str(sss(q,Goal1))
+    res23 = str(sss(q,Goal23))
     res2 = str(sss(q,Goal2))
+    res24 = str(sss(q,Goal24))
     res3 = str(sss(q,Goal3))
+    res25 = str(sss(q,Goal25))
     res4 = str(sss(q,Goal4))
     res5 = str(sss(q,Goal5))
     res6 = str(sss(q,Goal6))
@@ -100,8 +106,11 @@ def answerq():
     
     yield u"<p>The similarity score between " + q + u"<a> and </a>"u"</p>"
     yield u"<p> " + Goal1 + u"<a> is: "u"</a>" + res1 + u"</p>"
+    yield u"<p> " + Goal23 + u"<a> is: "u"</a>" + res23 + u"</p>"
     yield u"<p> " + Goal2 + u"<a> is: "u"</a>" + res2 + u"</p>"
+    yield u"<p> " + Goal24 + u"<a> is: "u"</a>" + res24 + u"</p>"
     yield u"<p> " + Goal3 + u"<a> is: "u"</a>" + res3 + u"</p>"
+    yield u"<p> " + Goal25 + u"<a> is: "u"</a>" + res25 + u"</p>"
     yield u"<p> " + Goal4 + u"<a> is: "u"</a>" + res4 + u"</p>"
     yield u"<p> " + Goal5 + u"<a> is: "u"</a>" + res5 + u"</p>"
     yield u"<p> " + Goal6 + u"<a> is: "u"</a>" + res6 + u"</p>"
@@ -123,7 +132,7 @@ def answerq():
     yield u"<p> " + Goal22 + u"<a> is: "u"</a>" + res22 + u"</p>"
        
     yield max(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res12, res13, res14,  \
-    res15, res17, res18, res18, res20, res21, res22)
+    res15, res17, res18, res18, res20, res21, res22, res23, res24, res25)
     
     # Get a bag of words without punctuation
     words = [word.strip(string.punctuation) for word in q.split()]
