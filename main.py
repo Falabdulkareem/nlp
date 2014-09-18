@@ -132,7 +132,7 @@ def answerq():
     yield u"<p> " + Goal22 + u"<a> is: "u"</a>" + res22 + u"</p>"
        
     yield max(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res12, res13, res14,  \
-    res15, res17, res18, res18, res20, res21, res22, res23, res24, res25)
+    res15, res17, res18, res19, res20, res21, res22, res23, res24, res25)
     
     # Get a bag of words without punctuation
     words = [word.strip(string.punctuation) for word in q.split()]
