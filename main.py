@@ -19,43 +19,24 @@ from Pattern import test_patterns
 
 bottle.debug(True)
 
-# quepy.set_loglevel("DEBUG")
-"""
 @bottle.route("/")
-def index():
-    yield u"<p>Here is a <a href=\"http://bottlepy.org/\">bottle</a> app under construction. This example converts the question 'What is a blowtorch?' to a SPARQL query using <a href=\"http://quepy.machinalis.com/\">quepy</a>, queries dbpedia and returns the results (the RDF literals retrieved by rdfs:comment).</p>"
-    yield u"Try your own question like this: <a href=\"http://pacific-river-6269.herokuapp.com/question/Who is Arnold Schwarzenegger?\">http://pacific-river-6269.herokuapp.com/question/Who is Arnold Schwarzenegger?</a>"
-    target, query, metadata = dbpedia.get_query("what is a blowtorch?")
-    yield u"<p>" + query + u"</p>"
-    sparql.setQuery(query)
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-
-    for result in results["results"]["bindings"]:
-        yield "<p>" + result["x1"]["value"] + "</p>"
-    return
-"""
-#   @get("/tryqustion") # or @route('/login')
-@bottle.route("/request")
 def tryquestion():
- return '''
-    <form action="/request" method="post">
-        Enter you NLQ: <input name="query" type="text" size="65" />
-        <input value="Search" type="submit" />
-     </form>
-    '''
-#@post('/tryqustion') # or @route('/login', method='POST')
-@bottle.route("/request", method="POST")
+    return template("index")
+    
+@bottle.post("/request")
 def answerq():
-    q = request.forms.get('query')
+    q = request.forms.get('input')
     
     Preference = test_patterns(q,
-                    [ r'is (.*) to .*',
+                    [ r'(.*) if .*', 
+                      r'is (.*) to .*',
+                      r'is of (.*) that',
+                      r'is (.*) that .*',
                       r'is of (.*)',
                       r'is (.*)',      
                     ])
     
-    yield u"<p>The preference in this sentence is: " + Preference + "</p>" 
+    #yield u"<p>The preference in this sentence is: " + Preference + "</p>" 
     
     Goal1 = "happy nurse"
     Goal23 = "sad nurse"
@@ -109,10 +90,32 @@ def answerq():
     res21 = str(sss(q,Goal21))
     res22 = str(sss(q,Goal22))
     
+    GoalsSimilarity = [Goal1 + " is: " + res1, 
+        Goal23 + " is: " + res23, 
+        Goal2 +  " is: " + res2,
+        Goal24 + " is: " + res24,
+        Goal3 +  " is: " + res3,
+        Goal25 + " is: " + res25,
+        Goal4 +  " is: " + res4,
+        Goal5 +  " is: " + res5,
+        Goal6 +  " is: " + res6,
+        Goal7 +  " is: " + res7,
+        Goal8 +  " is: " + res8,
+        Goal9 +  " is: " + res9,
+        Goal10 + " is: " + res10,
+        Goal12 + " is: " + res12,
+        Goal13 + " is: " + res13,
+        Goal14 + " is: " + res14,
+        Goal15 + " is: " + res15,
+        Goal17 + " is: " + res17,
+        Goal18 + " is: " + res18,
+        Goal19 + " is: " + res19,
+        Goal20 + " is: " + res20,
+        Goal21 + " is: " + res21,
+        Goal22 + " is: " + res22,
+    ]
     
-    #for x in range(0,1):
-    #expression = sss(q,Goal1)
-    
+    """
     yield u"<p>The similarity score between " + q + u"<a> and </a>"u"</p>"
     yield u"<p> " + Goal1 + u"<a> is: "u"</a>" + res1 + u"</p>"
     yield u"<p> " + Goal23 + u"<a> is: "u"</a>" + res23 + u"</p>"
@@ -139,10 +142,11 @@ def answerq():
     yield u"<p> " + Goal20 + u"<a> is: "u"</a>" + res20 + u"</p>"
     yield u"<p> " + Goal21 + u"<a> is: "u"</a>" + res21 + u"</p>"
     yield u"<p> " + Goal22 + u"<a> is: "u"</a>" + res22 + u"</p>"
+       """
        
-    yield "The hgihest score is: " 
-    yield max(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res12, res13, res14,  \
+    MaxScore = max(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res12, res13, res14,  \
     res15, res17, res18, res19, res20, res21, res22 ,res23, res24, res25)
+    #yield "The hgihest score is: " + MaxScore
     
     # Get a bag of words without punctuation
     words = [word.strip(string.punctuation) for word in q.split()]
@@ -163,48 +167,12 @@ def answerq():
     print FoundNeg
     
     if FoundNeg:
-        yield u"<p>The sentence is in Negative form</p>"
-
-    
-    #ie_preprocess(q) # test NLTK
-    
-   # text = nltk.word_tokenize(q)
-   # print nltk.pos_tag(text) 
-    #print expression
-    
-    #yield u"<p>" + str(expression) + u"</p>"
-    
-    """ 
-    print target
-    print query
-    print metadata
-    """    
-
-    """
-    if isinstance(metadata, tuple):
-            query_type = metadata[0]
-            metadata = metadata[1]
+        #yield u"<p>The sentence is in Negative form</p>"
+        NegativeForm = "The sentence is in negative form"
     else:
-            query_type = metadata
-            metadata = None
-    if query is None:
-        yield u"<p>Query not generated :(</p>"
-   
-    yield u"<p>" + query + u"</p>"
+        NegativeForm = "The sentence is in positive form"
     
-    if target.startswith("?"):
-            target = target[1:]
-    if query:
-            sparql.setQuery(query)
-            sparql.setReturnFormat(JSON)
-            results = sparql.query().convert()
+    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, MaxScore=MaxScore, NegativeForm=NegativeForm)
 
-            if not results["results"]["bindings"]:
-                yield u"<p>No answer found :(</p>"
-  
-    for result in results["results"]["bindings"]:
-       yield "<p>" + result["x1"]["value"] + "</p>"
-    return
-    """
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
