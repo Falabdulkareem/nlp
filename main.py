@@ -15,6 +15,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from umbc2 import sss
 #from NLTK import ie_preprocess
 import string
+from Pattern import test_patterns
 
 bottle.debug(True)
 
@@ -47,6 +48,14 @@ def tryquestion():
 @bottle.route("/request", method="POST")
 def answerq():
     q = request.forms.get('query')
+    
+    Preference = test_patterns(q,
+                    [ r'is (.*) to .*',
+                      r'is of (.*)',
+                      r'is (.*)',      
+                    ])
+    
+    yield u"<p>The preference in this sentence is: " + Preference + "</p>" 
     
     Goal1 = "happy nurse"
     Goal23 = "sad nurse"
@@ -131,8 +140,9 @@ def answerq():
     yield u"<p> " + Goal21 + u"<a> is: "u"</a>" + res21 + u"</p>"
     yield u"<p> " + Goal22 + u"<a> is: "u"</a>" + res22 + u"</p>"
        
+    yield "The hgihest score is: " 
     yield max(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res12, res13, res14,  \
-    res15, res17, res18, res19, res20, res21, res22, res23, res24, res25)
+    res15, res17, res18, res19, res20, res21, res22 ,res23, res24, res25)
     
     # Get a bag of words without punctuation
     words = [word.strip(string.punctuation) for word in q.split()]
