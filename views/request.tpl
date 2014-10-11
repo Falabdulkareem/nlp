@@ -20,7 +20,39 @@
   <div class="container">
     <h1>Natural Language Interface for Goals and Preferences</h1>
     <div class="row">
-        <div class="col-md-4">
+       <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Goal</h3>
+                </div>
+                <div class="panel-body">
+                   %if Goal is not None:
+                        {{ Goal }}
+                   %else:
+                        The system was unable to detect the goal 
+                   %end
+                </div>
+            </div> 
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-danger">
+                 <div class="panel-heading">
+                      <h3 class="panel-title">Goal Form</h3>
+                 </div>
+                 <div class="panel-body">
+                    %if GoalForm is not None:
+                      {{ GoalForm }}
+                    %else:
+                      The system was unable to detect the form of the goal 
+                    %end
+                  </div>
+             </div> 
+        </div>
+     </div>
+
+    <div class="row">
+        <div class="col-md-6">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Preference</h3>
@@ -34,8 +66,24 @@
                 </div>
             </div> 
         </div>
-        
-        <div class="col-md-4">
+        <div class="col-md-6">
+              <div class="panel panel-danger">
+                   <div class="panel-heading">
+                        <h3 class="panel-title">Preference Form</h3>
+                   </div>
+                   <div class="panel-body">
+                      %if PrefForm is not None:
+                        {{ PrefForm }}
+                      %else:
+                        The system was unable to detect the form of the preference 
+                      %end
+                    </div>
+               </div> 
+          </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
             <div class="panel panel-primary">
                <div class="panel-heading">
                   <h3 class="panel-title">Highest Score</h3>
@@ -49,22 +97,7 @@
                </div>
              </div> 
         </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-primary">
-                 <div class="panel-heading">
-                      <h3 class="panel-title">Sentence Form</h3>
-                 </div>
-                 <div class="panel-body">
-                    %if NegativeForm is not None:
-                      {{ NegativeForm }}
-                    %else:
-                      The system was unable to detect the form of the sentence 
-                    %end
-                  </div>
-             </div> 
-        </div>
-      </div>
+    </div>
 
         <div class="panel panel-primary">
           <div class="panel-heading">

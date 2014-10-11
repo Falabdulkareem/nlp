@@ -27,16 +27,32 @@ def tryquestion():
 def answerq():
     q = request.forms.get('input')
     
-    Preference = test_patterns(q,
-                    [ r'(.*) if .*', 
-                      r'is (.*) to .*',
-                      r'is of (.*) that',
-                      r'is (.*) that .*',
-                      r'is of (.*)',
-                      r'is (.*)',      
-                    ])
+    Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
+                                            [ r'(.*) if (.*)', 
+                                              r'is of (.*?) to us (.*)',
+                                              r'is of (.*?) to me (.*)',
+                                              r'is of (.*?) for us (.*)',
+                                              r'is of (.*?) for me (.*)',
+                                              r'is of (.*?) to (.*)',
+                                              r'is of (.*) that (.*)',
+                                              r'is (.*?) to me (.*)',
+                                              r'is (.*?) to us (.*)',
+                                              r'is (.*?) to (.*)',
+                                              r'is (.*?) for me (.*)',
+                                              r'is (.*?) for us (.*)',
+                                              r'is (.*?) for (.*)',
+                                              r'is (.*?) that (.*)',
+                                             ])
+                                             
+    if Preference is None:
+        Preference, Goal, GoalForm, PrefForm = test_patterns(q, 2,
+                                            [ r'(.*) is of (.*)',
+                                              r'the importance of (.*) is (.*)', 
+                                              r'(.*) is (.*)',  
+                                             ])
     
-    #yield u"<p>The preference in this sentence is: " + Preference + "</p>" 
+    q = Goal
+    print q
     
     Goal1 = "happy nurse"
     Goal23 = "sad nurse"
@@ -45,7 +61,7 @@ def answerq():
     Goal3 = "comfortable nurse"
     Goal25 = "uncomfortable nurse"
     Goal4 = "patient feels cared for"
-    Goal5 = "nurse attend to patient"
+    #Goal5 = "nurse attend to patient"
     Goal6 = "nurse notified"
     Goal7 = "system notifies the nurse through speakers"
     Goal8 = "system notifies the nurse through earphones"
@@ -71,7 +87,7 @@ def answerq():
     res3 = str(sss(q,Goal3))
     res25 = str(sss(q,Goal25))
     res4 = str(sss(q,Goal4))
-    res5 = str(sss(q,Goal5))
+    #res5 = str(sss(q,Goal5))
     res6 = str(sss(q,Goal6))
     res7 = str(sss(q,Goal7))
     res8 = str(sss(q,Goal8))
@@ -97,7 +113,7 @@ def answerq():
         Goal3 +  " is: " + res3,
         Goal25 + " is: " + res25,
         Goal4 +  " is: " + res4,
-        Goal5 +  " is: " + res5,
+        #Goal5 +  " is: " + res5,
         Goal6 +  " is: " + res6,
         Goal7 +  " is: " + res7,
         Goal8 +  " is: " + res8,
@@ -144,10 +160,11 @@ def answerq():
     yield u"<p> " + Goal22 + u"<a> is: "u"</a>" + res22 + u"</p>"
        """
        
-    MaxScore = max(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res12, res13, res14,  \
+    MaxScore = max(res1, res2, res3, res4, res6, res7, res8, res9, res10, res12, res13, res14,  \
     res15, res17, res18, res19, res20, res21, res22 ,res23, res24, res25)
     #yield "The hgihest score is: " + MaxScore
     
+    """
     # Get a bag of words without punctuation
     words = [word.strip(string.punctuation) for word in q.split()]
     print words
@@ -171,8 +188,11 @@ def answerq():
         NegativeForm = "The sentence is in negative form"
     else:
         NegativeForm = "The sentence is in positive form"
+    """
+    #GoalForm = None
+    #PrefForm = None
     
-    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, MaxScore=MaxScore, NegativeForm=NegativeForm)
+    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MaxScore=MaxScore, GoalForm=GoalForm, PrefForm=PrefForm)
 
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
