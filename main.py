@@ -27,6 +27,7 @@ def tryquestion():
 def answerq():
     q = request.forms.get('input')
     
+    # Add its, it's
     Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
                                             [ r'(.*) if (.*)', 
                                               r'is of (.*?) to us (.*)',
@@ -51,9 +52,12 @@ def answerq():
                                               r'(.*) is (.*)',  
                                              ])
     
-    q = Goal
-    print q
-    
+    if Goal is not None:
+        q = Goal
+        print q
+    else:
+        Goal = q
+         
     Goal1 = "happy nurse"
     Goal23 = "sad nurse"
     Goal2 = "happy patient"
@@ -164,33 +168,30 @@ def answerq():
     res15, res17, res18, res19, res20, res21, res22 ,res23, res24, res25)
     #yield "The hgihest score is: " + MaxScore
     
-    """
-    # Get a bag of words without punctuation
-    words = [word.strip(string.punctuation) for word in q.split()]
-    print words
+    if GoalForm is None:
+        # Get a bag of words without punctuation
+        words = [word.strip(string.punctuation) for word in q.split()]
+        print words
+
+        # Create a list and add the words to the list
+        my_list = [] 
+        for current_word in words:
+            my_list.append(current_word.lower())
+
+        # Create a list with negative words
+        NegativeWords = ["not", "haven't", "havent", "hasn't", "hasnt", "didn't", "didnt", "doesn't",\
+        "doesnt", "don't", "dont", "shouldn't", "shouldnt", "couldn't", "couldnt", "can't", "cant", "cannot", \
+        "no" , "nobody"]
+
+        # Check if the sentence written have any negative words
+        FoundNeg = set(NegativeWords).intersection(my_list)
+        print FoundNeg
+
+        if FoundNeg:
+            GoalForm = "The sentence is in negative form"
+        else:
+            GoalForm = "The sentence is in positive form"
     
-    # Create a list and add the words to the list
-    my_list = [] 
-    for current_word in words:
-        my_list.append(current_word.lower())
-        
-    # Create a list with negative words
-    NegativeWords = ["not", "haven't", "havent", "hasn't", "hasnt", "didn't", "didnt", "doesn't",\
-    "doesnt", "don't", "dont", "shouldn't", "shouldnt", "couldn't", "couldnt", "can't", "cant", "cannot", \
-    "no" , "nobody"]
-    
-    # Check if the sentence written have any negative words
-    FoundNeg = set(NegativeWords).intersection(my_list)
-    print FoundNeg
-    
-    if FoundNeg:
-        #yield u"<p>The sentence is in Negative form</p>"
-        NegativeForm = "The sentence is in negative form"
-    else:
-        NegativeForm = "The sentence is in positive form"
-    """
-    #GoalForm = None
-    #PrefForm = None
     
     return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MaxScore=MaxScore, GoalForm=GoalForm, PrefForm=PrefForm)
 

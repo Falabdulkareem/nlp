@@ -75,7 +75,7 @@
                       %if PrefForm is not None:
                         {{ PrefForm }}
                       %else:
-                        The system was unable to detect the form of the preference 
+                        No preferences specified in the entered query
                       %end
                     </div>
                </div> 
