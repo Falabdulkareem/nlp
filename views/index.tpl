@@ -51,6 +51,7 @@
                                 <li>Measure the semantic similarity between the query entered and the set of goals</li>
                                 <li>Identify the highest matching goal</li>
                                 <li>Detect if the query entered was in negative form</li>
+                                <li>Detect if the preference entered was in negative form</li>
                            </ul>
                         </div>
                     </div>

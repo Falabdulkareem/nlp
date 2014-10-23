@@ -65,14 +65,14 @@ def test_patterns(text, Pref_loc, patterns=[]):
                 print Goal_FoundNeg
 
                 if Pref_FoundNeg:
-                    PrefForm = "The preference is in negative form"
+                    PrefForm = "Negative"
                 else:
-                    PrefForm = "The preference is in positive form"
+                    PrefForm = "Positive"
         
                 if Goal_FoundNeg:
-                    GoalForm = "The goal is in negative form"
+                    GoalForm = "Negative"
                 else:
-                    GoalForm = "The goal is in positive form"
+                    GoalForm = "Positive"
                     
                 print PrefForm
                 print GoalForm

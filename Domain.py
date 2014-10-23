@@ -100,7 +100,7 @@ def ChooseDomain(q, d):
         Goal5 = "books available"
         Goal6 = "books ordered"
         Goal7 = "contact supplier"
-        Goal8 = "suplloer provides price"
+        Goal8 = "supplier provides price"
         Goal9 = "place order to supplier"
         Goal10 = "books acquired"
         Goal11 = "supplier ships books"

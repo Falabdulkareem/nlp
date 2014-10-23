@@ -86,9 +86,9 @@ def answerq():
         print FoundNeg
 
         if FoundNeg:
-            GoalForm = "The sentence is in negative form"
+            GoalForm = "Negative"
         else:
-            GoalForm = "The sentence is in positive form"
+            GoalForm = "Positive"
     
     
     return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MaxScore=MaxScore, GoalForm=GoalForm, PrefForm=PrefForm)
