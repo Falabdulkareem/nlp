@@ -55,28 +55,55 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>              
+                         
+      <div class="jumbotron"> 
+        <div class="row">    
+            <div class="col-md-10">
+                <form role="form" action="/request" method="POST">
+                    
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Choose Domain:</label>
+                       
+                              <div class="col-lg-3 text-primary" "radio">
+                                <label>
+                                  <input name="optionsRadios" id="NurseRadios" value="1" checked="" type="radio">
+                                  Nurse domain 
+                                </label>
+                              </div>
+                             
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="optionsRadios" id="BookRadios" value="2" type="radio">
+                                   Book order domain
+                                  </label>
+                                </div>
+                            
+                     </div>
+                   
+                    <br></br>
+                                    
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label for="input">Enter you natural language query:</label>
+                            <input type="text" class="form-control" id="input" name="input" placeholder="Enter a question">
+                        </div>
 
-              
-    <div class="jumbotron">
-        	<div class="row">
-        		<div class="col-md-6">
-        			<form role="form" action="/request" method="POST">
-        				<div class="form-group">
-        					<label for="input">Enter you natural language query:</label>
-        					<input type="text" class="form-control" id="input" name="input" placeholder="Enter a question">
-        				</div>
-        				<button type="submit" class="btn btn-primary">Get answer</button>
-        			</form>
-        		</div>
-        	</div>
-    </div>
-    	<div class="row">
-    		<div class="col-md-6">
-    			
-    		</div>
-    	</div>
-    </div>
+                        <button type="submit" class="btn btn-primary">Get answer</button>
+                    </div>
+                  
+                  </form>
+                </div>
+            </div>
+        </div>
+   
+
+                     
+          
+
+          
+     
+    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
