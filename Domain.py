@@ -133,7 +133,7 @@ def ChooseDomain(q, d):
         Goal38 = "supplier provides price before provide qoute"
         Goal39 = "establish transaction security"
         Goal40 = "payment traceability"
-        Goal41 = "avoid electronic fraud"
+        Goal41 = "no electronic fraud"
         Goal42 = "use robust legal documentation"
         Goal43 = "charge credit card before deliver to courier"
         Goal44 = "deliver to courier after get credit card authorization"
