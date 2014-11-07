@@ -93,7 +93,7 @@ def ChooseDomain(q, d):
         return GoalsSimilarity, MaxScore
     
     else:
-        Goal1 = "qoute given"
+        Goal1 = "qoute given -- Test Herokue push"
         Goal2 = "customer requests quote"
         Goal3 = "provide quote"
         Goal4 = "customer places order"
