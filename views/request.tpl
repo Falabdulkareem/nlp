@@ -86,11 +86,11 @@
         <div class="col-md-12">
             <div class="panel panel-primary">
                <div class="panel-heading">
-                  <h3 class="panel-title">Highest Score</h3>
+                  <h3 class="panel-title">Most Similar Goal</h3>
                </div>
                <div class="panel-body">
-                    %if MaxScore is not None:
-                      {{ MaxScore }}
+                    %if MatchingGoal is not None:
+                      {{ MatchingGoal }}
                     %else:
                       No high score 
                     %end

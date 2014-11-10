@@ -2,17 +2,17 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-import sys
-import time
-import random
-import datetime 
+#import sys
+#import time
+#import random
+#import datetime 
 import bottle
 from bottle import route, run, template, request
 import os
-import nltk
-import quepy
-from SPARQLWrapper import SPARQLWrapper, JSON
-from umbc2 import sss
+#import nltk
+#import quepy
+#from SPARQLWrapper import SPARQLWrapper, JSON
+#from umbc2 import sss
 import string
 from Pattern import test_patterns
 from Domain import ChooseDomain
@@ -64,7 +64,7 @@ def answerq():
     
     DomainType = request.forms.get('optionsRadios')
     print DomainType
-    GoalsSimilarity, MaxScore = ChooseDomain(q, DomainType)
+    GoalsSimilarity, MatchingGoal = ChooseDomain(q, DomainType)
     
     if GoalForm is None:
         # Get a bag of words without punctuation
@@ -91,7 +91,7 @@ def answerq():
             GoalForm = "Positive"
     
     
-    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MaxScore=MaxScore, GoalForm=GoalForm, PrefForm=PrefForm)
+    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, GoalForm=GoalForm, PrefForm=PrefForm)
 
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
