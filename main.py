@@ -27,24 +27,23 @@ def tryquestion():
 def answerq():
     q = request.forms.get('input')
     
-    # Add its, it's
     Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
                                             [ r'(.*) if (.*)', 
-                                              r'is of (.*?) to us (.*)',
-                                              r'is of (.*?) to me (.*)',
-                                              r'is of (.*?) for us (.*)',
-                                              r'is of (.*?) for me (.*)',
-                                              r'is of (.*?) to (.*)',
+                                              r'is of (.*) to us (.*)',
+                                              r'is of (.*) to me (.*)',
+                                              r'is of (.*) for us (.*)',
+                                              r'is of (.*) for me (.*)',
+                                              r'is of (.*) to (.*)',
                                               r'is of (.*) that (.*)',
-                                              r'is (.*?) to me (.*)',
-                                              r'is (.*?) to us (.*)',
-                                              r'is (.*?) to (.*)',
-                                              r'is (.*?) for me (.*)',
-                                              r'is (.*?) for us (.*)',
-                                              r'is (.*?) for (.*)',
-                                              r'is (.*?) that (.*)',
-                                              r'I am (.*?) in (.*)',
-                                              r'I am (.*?) to (.*)',
+                                              r'is (.*) to me (.*)',
+                                              r'is (.*) to us (.*)',
+                                              r'is (.*) to (.*)',
+                                              r'is (.*) for me (.*)',
+                                              r'is (.*) for us (.*)',
+                                              r'is (.*) for (.*)',
+                                              r'is (.*) that (.*)',
+                                              r'I am (.*) in (.*)',
+                                              r'I am (.*) to (.*)',
                                              ])
                                              
     if Preference is None:
