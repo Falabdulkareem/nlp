@@ -46,8 +46,12 @@ def answerq():
                                               'is (.*) for us (.*)',
                                               'is (.*?) for (.*)',
                                               'is (.*?) that (.*)',
+                                              '(.*?) in (.*)',
                                               'I am (.*?) in (.*)',
                                               'I am (.*?) to (.*)',
+                                              '(.*?) to (.*)',
+                                              '(.*?) about (.*)',
+                                              '(.*?) on (.*)',
                                              ])
                                              
     if Preference is None:
