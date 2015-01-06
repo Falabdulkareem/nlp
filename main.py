@@ -27,51 +27,65 @@ def tryquestion():
 def answerq():
     q = request.forms.get('input')
     
-    # Add its, it's
-    Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
-                                            [ '(.*) if (.*)', 
-                                              'is (.*?) keeping (.*)',  
-                                              'is (.*?) letting (.*)',  
-                                              'is (.*?) having (.*)',  
-                                              'is of (.*) to us (.*)',
-                                              'is of (.*) to me (.*)',
-                                              'is of (.*) for us (.*)',
-                                              'is of (.*) for me (.*)',
-                                              'is of (.*?) to (.*)',
-                                              'is of (.*?) that (.*)',
-                                              'is (.*) to me (.*)',
-                                              'is (.*) to us (.*)',
-                                              'is (.*?) to (.*)',
-                                              'is (.*) for me (.*)',
-                                              'is (.*) for us (.*)',
-                                              'is (.*?) for (.*)',
-                                              'is (.*?) that (.*)',
-                                              '(.*?) in (.*)',
-                                              'I am (.*?) in (.*)',
-                                              'I am (.*?) to (.*)',
-                                              '(.*?) to (.*)',
-                                              '(.*?) about (.*)',
-                                              '(.*?) on (.*)',
-                                             ])
-                                             
-    if Preference is None:
-        Preference, Goal, GoalForm, PrefForm = test_patterns(q, 2,
-                                            [ '(.*) is of (.*)',
-                                              'the importance of (.*) is (.*)', 
-                                              '(.*) is (.*)',  
-                                             ])
+    ContainsRegex = request.forms.get('RegexRadios')
+    print "regex is " + ContainsRegex
     
-    # if there is a separate goal and preference, send only the goal to the semantic similarity function
-    # if there was no prefernce specified, send all the sentence to the semantic similarity
-    if Goal is not None:
-        q = Goal
-        print q
-    else:
+    if ContainsRegex == '1':
+        # Add its, it's
+        Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
+                                                [ '(.*) if (.*)', 
+                                                  'is (.*?) keeping (.*)',  
+                                                  'is (.*?) letting (.*)',  
+                                                  'is (.*?) having (.*)',  
+                                                  'is of (.*) to us (.*)',
+                                                  'is of (.*) to me (.*)',
+                                                  'is of (.*) for us (.*)',
+                                                  'is of (.*) for me (.*)',
+                                                  'is of (.*?) to (.*)',
+                                                  'is of (.*?) that (.*)',
+                                                  'is (.*) to me (.*)',
+                                                  'is (.*) to us (.*)',
+                                                  'is (.*?) to (.*)',
+                                                  'is (.*) for me (.*)',
+                                                  'is (.*) for us (.*)',
+                                                  'is (.*?) for (.*)',
+                                                  'is (.*?) that (.*)',
+                                                  '(.*?) in (.*)',
+                                                  'I am (.*?) in (.*)',
+                                                  'I am (.*?) to (.*)',
+                                                  '(.*?) to (.*)',
+                                                  '(.*?) about (.*)',
+                                                  '(.*?) on (.*)',
+                                                 ])
+
+        if Preference is None:
+            Preference, Goal, GoalForm, PrefForm = test_patterns(q, 2,
+                                                [ '(.*) is of (.*)',
+                                                  'the importance of (.*) is (.*)', 
+                                                  '(.*) is (.*)',  
+                                                 ])
+    
+        # if there is a separate goal and preference, send only the goal to the semantic similarity function
+        # if there was no prefernce specified, send all the sentence to the semantic similarity
+        if Goal is not None:
+            q = Goal
+            print q
+        else:
+            Goal = q
+        
+    elif ContainsRegex == '2':
         Goal = q
+        GoalForm = None
+        Preference = "No preference option was chosen" 
+        PrefForm = "No preference option was chosen"
+        
     
     DomainType = request.forms.get('optionsRadios')
+    ContainsRegex = request.forms.get('RegexRadios')
     print DomainType
-    GoalsSimilarity, MatchingGoal = ChooseDomain(q, DomainType)
+    print "regex is " + ContainsRegex
+    
+    GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal = ChooseDomain(q, DomainType)
     
     if GoalForm is None:
         # Get a bag of words without punctuation
@@ -98,7 +112,7 @@ def answerq():
             GoalForm = "Positive"
     
     
-    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, GoalForm=GoalForm, PrefForm=PrefForm)
+    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, ThirdMatchingGoal= ThirdMatchingGoal, GoalForm=GoalForm, PrefForm=PrefForm)
 
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

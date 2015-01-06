@@ -90,7 +90,11 @@
                </div>
                <div class="panel-body">
                     %if MatchingGoal is not None:
-                      {{ MatchingGoal }}
+                      1- {{MatchingGoal}} 
+                      <br>
+                      2- {{SecondMatchingGoal}} 
+                      <br>
+                      3- {{ThirdMatchingGoal}}
                     %else:
                       No high score 
                     %end

@@ -60,30 +60,66 @@
                          
       <div class="jumbotron"> 
         <div class="row">    
-            <div class="col-md-10">
-                <form role="form" action="/request" method="POST">
-                    
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Choose Domain:</label>
-                       
-                              <div class="col-lg-3 text-primary" "radio">
-                                <label>
-                                  <input name="optionsRadios" id="NurseRadios" value="1" checked="" type="radio">
-                                  Nurse domain 
-                                </label>
-                              </div>
-                             
-                                <div class="col-lg-3 text-primary" "radio">
+            <form role="form" action="/request" method="POST">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Choose Domain:</label>
+
+                                <div class="col-lg-2 text-primary" "radio">
                                   <label>
-                                    <input name="optionsRadios" id="BookRadios" value="2" type="radio">
-                                   Book order domain
+                                    <input name="optionsRadios" id="NurseRadios" value="1" checked="" type="radio">
+                                    Nurse  
                                   </label>
                                 </div>
-                            
-                     </div>
-                   
-                    <br></br>
-                                    
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="optionsRadios" id="CarRadios" value="2" type="radio">
+                                    Manufacturer 
+                                  </label>
+                                </div>
+
+                                <div class="col-lg-2 text-primary" "radio">
+                                  <label>
+                                    <input name="optionsRadios" id="SchedulerRadios" value="3" type="radio">
+                                    Scheduler 
+                                  </label>
+                                </div>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="optionsRadios" id="TransRadios" value="4" type="radio">
+                                    Transportation
+                                  </label>
+                                </div>
+                        </div>
+                   </div>
+            
+                    <br><br><br>
+
+                    <div class ="col-md-10">
+                        <div class="form-group">
+                            <label class="col-lg-5 control-label">The sentence contains Preference:</label>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="RegexRadios" id="Yes" value="1" checked="" type="radio">
+                                    Yes  
+                                  </label>
+                                </div>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="RegexRadios" id="No" value="2" type="radio">
+                                    No 
+                                  </label>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+
+                    
                     <div class="col-md-8">
                         <div class="form-group">
                             <label for="input">Enter you natural language query:</label>
@@ -93,10 +129,10 @@
                         <button type="submit" class="btn btn-primary">Get answer</button>
                     </div>
                   
-                  </form>
-                </div>
-            </div>
+            </form>
+                
         </div>
+    </div>
    
 
                      
