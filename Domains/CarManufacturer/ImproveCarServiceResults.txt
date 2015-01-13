@@ -1,0 +1,262 @@
+1- The highest matching goals for: make car service better
+
+Improve car service: 0.8155702
+Improve car quality: 0.5820329
+Increase profit per vehicle: 0.4687088
+Improve economies of production: 0.42198443
+Lower production costs: 0.3278773
+
+2- The highest matching goals for: enhance car service
+
+Improve car service: 0.99723554
+Improve car quality: 0.7330975
+Increase profit per vehicle: 0.49789006
+Improve mileage: 0.46908662
+Improve economies of production: 0.38036987
+
+3- The highest matching goals for: Enhance car service
+
+Improve car service: 0.99723554
+Improve car quality: 0.7330975
+Increase profit per vehicle: 0.49789006
+Improve mileage: 0.46908662
+Improve economies of production: 0.38036987
+
+4- The highest matching goals for: Increase car service
+
+Improve car service: 0.8150456
+Increase profit per vehicle: 0.6887003
+Improve car quality: 0.5481459
+Increase customer loyalty: 0.48533106
+Increase sales price: 0.4158183
+
+5- The highest matching goals for: Enhance car service
+
+Improve car service: 0.99723554
+Improve car quality: 0.7330975
+Increase profit per vehicle: 0.49789006
+Improve mileage: 0.46908662
+Improve economies of production: 0.38036987
+
+6- The highest matching goals for: Improve vehicle service
+
+Improve car service: 1.0
+Improve car quality: 0.75495064
+Increase profit per vehicle: 0.5037459
+Improve mileage: 0.4826395
+Improve economies of production: 0.36980233
+
+7- The highest matching goals for: need faster customer service
+
+Improve car service: 0.40698949
+Increase customer loyalty: 0.40073505
+Expand markets: 0.26195017
+Increase sales price: 0.18233061
+Lower purchase costs: 0.15984291
+
+8- The highest matching goals for: can you enhance the car service?
+
+Improve car service: 0.99723554
+Improve car quality: 0.7330975
+Increase profit per vehicle: 0.49789006
+Improve mileage: 0.46908662
+Improve economies of production: 0.38036987
+
+9- The highest matching goals for: upgrade car maintenance 
+
+Improve car service: 0.44082943
+Improve car quality: 0.43805772
+Increase profit per vehicle: 0.3578114
+Keep labour costs low: 0.2955496
+Improve mileage: 0.15224169
+
+10- The highest matching goals for: Make car service a priority
+
+Improve car service: 0.62746054
+Improve car quality: 0.39392325
+Increase profit per vehicle: 0.32937932
+Increase customer loyalty: 0.15373755
+Gas price rises: 0.122134924
+
+11- The highest matching goals for: Give better car service
+
+Improve car service: 0.7539063
+Improve car quality: 0.52036905
+Improve economies of production: 0.4318098
+Increase profit per vehicle: 0.39631972
+Offer rebates: 0.37821102
+
+12- The highest matching goals for: Car service improvement
+
+Improve car service: 0.9774192
+Improve car quality: 0.7286395
+Increase profit per vehicle: 0.4455191
+Improve mileage: 0.44431618
+Improve economies of production: 0.3562712
+
+13- The highest matching goals for: Car service needs to be improved
+
+Improve car service: 0.8983106
+Improve car quality: 0.6866237
+Increase profit per vehicle: 0.44726002
+Improve mileage: 0.4464905
+Improve economies of production: 0.35514295
+
+14- The highest matching goals for: make car service better
+
+Improve car service: 0.8155702
+Improve car quality: 0.5820329
+Increase profit per vehicle: 0.4687088
+Improve economies of production: 0.42198443
+Lower production costs: 0.3278773
+
+15- The highest matching goals for: why don't you improve car service?
+
+Improve car service: 0.80221695
+Improve car quality: 0.61054754
+Increase profit per vehicle: 0.4030354
+Improve mileage: 0.3935625
+Improve economies of production: 0.3028815
+
+16- The highest matching goals for: increase car service
+
+Improve car service: 0.8150456
+Increase profit per vehicle: 0.69328606
+Improve car quality: 0.5481459
+Increase customer loyalty: 0.48533106
+Increase sales price: 0.4158183
+
+17- The highest matching goals for: Expand car service
+
+Improve car service: 0.76329505
+Improve car quality: 0.49639532
+Expand markets: 0.48985678
+Increase profit per vehicle: 0.46866676
+Increase customer loyalty: 0.2652975
+
+18- The highest matching goals for: Increase the quality of car service
+
+Improve car service: 0.7544653
+Improve car quality: 0.7380775
+Increase profit per vehicle: 0.60995775
+Increase customer loyalty: 0.52762204
+Increase sales price: 0.4885286
+
+19- The highest matching goals for: Servicing cars must be improved
+
+Improve car quality: 0.7217338
+Improve car service: 0.68393564
+Increase profit per vehicle: 0.48761758
+Improve mileage: 0.45848835
+Improve economies of production: 0.36602983
+
+20- The highest matching goals for: enhance car service
+
+Improve car service: 0.99723554
+Improve car quality: 0.7330975
+Increase profit per vehicle: 0.49789006
+Improve mileage: 0.46908662
+Improve economies of production: 0.38036987
+
+21- The highest matching goals for: I need an improved car service
+
+Improve car service: 0.8983106
+Improve car quality: 0.6866237
+Increase profit per vehicle: 0.44726002
+Improve mileage: 0.4464905
+Improve economies of production: 0.35514295
+
+22- The highest matching goals for: promote car service
+
+Improve car service: 0.749336
+Improve car quality: 0.48243624
+Increase profit per vehicle: 0.44947553
+Increase customer loyalty: 0.23979242
+Keep labour costs low: 0.18215872
+
+23- The highest matching goals for: enrich car service
+
+Improve car service: 0.8428106
+Improve car quality: 0.57591087
+Increase profit per vehicle: 0.4404431
+Improve mileage: 0.2760554
+Improve economies of production: 0.22244224
+
+24- The highest matching goals for: Cars that are serviced must be improved
+
+Improve car quality: 0.727018
+Improve car service: 0.69701034
+Increase profit per vehicle: 0.4923064
+Improve mileage: 0.46231475
+Improve economies of production: 0.36995822
+
+25- The highest matching goals for: car service needs to be strengthened 
+
+Improve car service: 0.7291876
+Improve car quality: 0.49565035
+Increase profit per vehicle: 0.3893596
+Improve mileage: 0.22904663
+Reduce operating costs: 0.22637461
+
+26- The highest matching goals for: boost car service
+
+Improve car service: 0.80819374
+Improve car quality: 0.54129404
+Increase profit per vehicle: 0.43385294
+Improve mileage: 0.23545043
+Increase customer loyalty: 0.22273064
+
+27- The highest matching goals for: do not downgrade car service
+
+Improve car service: 0.5755782
+Improve car quality: 0.36205843
+Increase profit per vehicle: 0.32000855
+Increase customer loyalty: 0.15994403
+Keep labour costs low: 0.1452138
+
+28- The highest matching goals for: Improve service for cars
+
+Improve car service: 1.0
+Improve car quality: 0.75495064
+Increase profit per vehicle: 0.5037459
+Improve mileage: 0.4725422
+Improve economies of production: 0.38008368
+
+29- The highest matching goals for: revamp car service to be better
+
+Improve car service: 0.7719658
+Improve car quality: 0.53842854
+Increase profit per vehicle: 0.3832222
+Improve mileage: 0.28231552
+Improve economies of production: 0.22402315
+
+30- The highest matching goals for: high quality car service
+
+Improve car service: 0.70067054
+Improve car quality: 0.691176
+Increase profit per vehicle: 0.44515395
+Increase high margin sales: 0.37411058
+Increase customer loyalty: 0.36281824
+
+31- The highest matching goals for: Improve service for vehicles
+
+Improve car service: 1.0
+Improve car quality: 0.75495064
+Increase profit per vehicle: 0.5037459
+Improve mileage: 0.4826395
+Improve economies of production: 0.36980233
+
+32- The highest matching goals for: please increase car service performance 
+
+Improve car service: 0.69880766
+Increase profit per vehicle: 0.5730925
+Improve car quality: 0.5001379
+Increase customer loyalty: 0.4171842
+Increase return on investment: 0.36499596
+
+The count of the having the right goal the first option: 30
+The count of the having the right goal the second option: 2
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 0

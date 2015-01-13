@@ -1,0 +1,238 @@
+1- The highest matching goals for: reduce gas price
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+2- The highest matching goals for: decrease gas price
+
+Gas price rises: 0.769553
+Us gas price rises: 0.69010735
+Reduce operating costs: 0.68275
+Lower gas price: 0.6777004
+Japanese gas price rises: 0.67335886
+
+3- The highest matching goals for: Decrease the price of gas
+
+Gas price rises: 0.76338834
+Us gas price rises: 0.68471324
+Reduce operating costs: 0.68275
+Lower gas price: 0.6777004
+Japanese gas price rises: 0.6679648
+
+4- The highest matching goals for: Reduce gas cost
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Us gas price rises: 0.65150213
+Reduce raw materials costs: 0.6411797
+
+5- The highest matching goals for: Reduce gas price
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+6- The highest matching goals for: Reduce gas price
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+7- The highest matching goals for: gas price is too high, need to lower it
+
+Gas price rises: 0.6278271
+Us gas price rises: 0.5459936
+Japanese gas price rises: 0.5283808
+Lower gas price: 0.52336305
+Keep labour costs low: 0.51251394
+
+8- The highest matching goals for: cut the price of gas
+
+Gas price rises: 0.72023094
+Lower gas price: 0.6830409
+Us gas price rises: 0.64695054
+Reduce operating costs: 0.63530326
+Japanese gas price rises: 0.63020205
+
+9- The highest matching goals for: reduce the price of gas
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+10- The highest matching goals for: slash gas price
+
+Gas price rises: 0.7024207
+Lower gas price: 0.68379617
+Us gas price rises: 0.6311797
+Japanese gas price rises: 0.61443126
+Reduce operating costs: 0.5118812
+
+11- The highest matching goals for: Get cheaper gas
+
+Gas price rises: 0.36233208
+Lower gas price: 0.35351786
+Us gas price rises: 0.32299066
+Japanese gas price rises: 0.31405187
+Keep labour costs low: 0.12142296
+
+12- The highest matching goals for: Keep gas prices low
+
+Keep labour costs low: 0.7843153
+Gas price rises: 0.7032042
+Us gas price rises: 0.61990875
+Lower gas price: 0.6104288
+Japanese gas price rises: 0.6031603
+
+13- The highest matching goals for: Gas prices should be lowered
+
+Gas price rises: 0.78864473
+Us gas price rises: 0.7068126
+Japanese gas price rises: 0.69006413
+Lower gas price: 0.68109965
+Reduce operating costs: 0.5937914
+
+14- The highest matching goals for: look for alternative energy 
+
+Japanese rates rise: 0.1894932
+Improve car quality: 0.18698396
+Increase return on investment: 0.16281167
+Gas price rises: 0.14935993
+Us gas price rises: 0.13826454
+
+15- The highest matching goals for: lower gas price is needed
+
+Lower gas price: 0.8753287
+Lower purchase costs: 0.7692516
+Lower production costs: 0.6803525
+Lower sales price: 0.67389756
+Gas price rises: 0.60228664
+
+16- The highest matching goals for: cut down the gas price
+
+Gas price rises: 0.72023094
+Lower gas price: 0.6830409
+Us gas price rises: 0.64695054
+Reduce operating costs: 0.63530326
+Japanese gas price rises: 0.63020205
+
+17- The highest matching goals for: Minimize gas price
+
+Gas price rises: 0.692062
+Lower gas price: 0.6734375
+Us gas price rises: 0.62082106
+Japanese gas price rises: 0.6040726
+Reduce operating costs: 0.5325991
+
+18- The highest matching goals for: Gas prices should be reduced
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+19- The highest matching goals for: reduce gas consumption
+
+Gas price rises: 0.46519142
+Reduce raw materials costs: 0.44083473
+Lower gas price: 0.42327666
+Us gas price rises: 0.4158369
+Reduce operating costs: 0.41234207
+
+20- The highest matching goals for: lessen gas price
+
+Gas price rises: 0.7047355
+Lower gas price: 0.6666667
+Us gas price rises: 0.6333921
+Japanese gas price rises: 0.6166436
+Reduce operating costs: 0.6132237
+
+21- The highest matching goals for: pull the gas price down
+
+Gas price rises: 0.70013696
+Lower gas price: 0.6794601
+Us gas price rises: 0.62889594
+Japanese gas price rises: 0.6121475
+Lower purchase costs: 0.479634
+
+22- The highest matching goals for: Price of gas should be lowered
+
+Gas price rises: 0.78864473
+Us gas price rises: 0.7068126
+Japanese gas price rises: 0.69006413
+Lower gas price: 0.68109965
+Reduce operating costs: 0.5937914
+
+23- The highest matching goals for: decrease gas price 
+
+Gas price rises: 0.769553
+Us gas price rises: 0.69010735
+Reduce operating costs: 0.68275
+Lower gas price: 0.6777004
+Japanese gas price rises: 0.67335886
+
+24- The highest matching goals for: decrease the price of gas
+
+Gas price rises: 0.769553
+Us gas price rises: 0.69010735
+Reduce operating costs: 0.68275
+Lower gas price: 0.6777004
+Japanese gas price rises: 0.67335886
+
+25- The highest matching goals for: reduce the gas price
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+26- The highest matching goals for: Price of gas should be reduced
+
+Gas price rises: 0.7246648
+Reduce operating costs: 0.68275
+Lower gas price: 0.68275
+Reduce raw materials costs: 0.6534691
+Us gas price rises: 0.65083015
+
+27- The highest matching goals for: you need to reduce the gas price
+
+Reduce operating costs: 0.65282357
+Gas price rises: 0.63441044
+Reduce raw materials costs: 0.61943907
+Lower gas price: 0.5957246
+Increase sales price: 0.5734953
+
+28- The highest matching goals for: gas price should not be higher
+
+Gas price rises: 0.6030905
+Lower gas price: 0.584466
+Us gas price rises: 0.5318495
+Japanese gas price rises: 0.515101
+Lower purchase costs: 0.42102298
+
+29- The highest matching goals for: Lower the cost of gas
+
+Lower gas price: 1.0
+Lower sales price: 0.7233373
+Lower purchase costs: 0.7220275
+Lower production costs: 0.70012766
+Gas price rises: 0.67354214
+
+The count of the having the right goal the first option: 2
+The count of the having the right goal the second option: 8
+The count of the having the right goal the third option: 9
+The count of the having the right goal the fourth option: 9
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 1

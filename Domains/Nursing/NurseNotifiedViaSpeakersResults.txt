@@ -1,0 +1,222 @@
+1- The highest matching goals for: Nurse was notified through speakers
+
+System notifies the nurse through speakers: 0.88307995
+Nurse notified: 0.8360086
+Nurse talked with patient: 0.65034217
+System notifies the nurse through earphones: 0.59408855
+Nurse talks to the patient at the nurse station: 0.5548271
+
+2- The highest matching goals for: Sound is heard by nurse
+
+Nurse talked with patient: 0.5499023
+Nurse talks to the patient at the nurse station: 0.5300683
+Nurse talks with patient by mobile: 0.4757829
+Nurse responded to the call: 0.4752107
+Nurse walks to the nursing station: 0.45512125
+
+3- The highest matching goals for: Nurse has been notified through speakers
+
+System notifies the nurse through speakers: 0.88307995
+Nurse notified: 0.8360086
+Nurse talked with patient: 0.65034217
+System notifies the nurse through earphones: 0.59408855
+Nurse talks to the patient at the nurse station: 0.5548271
+
+4- The highest matching goals for: Make sure to hear the speakers
+
+System notifies the nurse through speakers: 0.31026965
+Nurse talked with patient: 0.29177842
+Nurse talks with patient by mobile: 0.2050095
+Nurse talks to the patient at the nurse station: 0.18942672
+Nurse responded to the call: 0.13635622
+
+5- The highest matching goals for: System uses speakers to notify nurse
+
+System notifies the nurse through speakers: 0.9547934
+System notifies the nurse through earphones: 0.7313986
+Nurse notified: 0.70160514
+Nurse talked with patient: 0.5364683
+Nurse talks to the patient at the nurse station: 0.45564532
+
+6- The highest matching goals for: nurse is notified through the speakers
+
+System notifies the nurse through speakers: 0.88307995
+Nurse notified: 0.8360086
+Nurse talked with patient: 0.65034217
+System notifies the nurse through earphones: 0.59408855
+Nurse talks to the patient at the nurse station: 0.5548271
+
+7- The highest matching goals for: The nurses are paged through the speakers
+
+Nurse talked with patient: 0.6698365
+System notifies the nurse through speakers: 0.6150202
+Nurse talks to the patient at the nurse station: 0.57113796
+Nurse talks with patient by mobile: 0.5218202
+Nurse attend to patient: 0.48244599
+
+8- The highest matching goals for: Nurse was notified using speakers
+
+System notifies the nurse through speakers: 0.8869835
+Nurse notified: 0.7520065
+System notifies the nurse through earphones: 0.63899
+Nurse talked with patient: 0.5828247
+Nurse talks to the patient at the nurse station: 0.4962536
+
+9- The highest matching goals for: Speakers resonate as notification arrives to system
+
+System notifies the nurse through speakers: 0.68893784
+System notifies the nurse through earphones: 0.46554297
+Nurse notified: 0.37082052
+Nurse turns request off: 0.24247093
+Nurse talked with patient: 0.22151816
+
+10- The highest matching goals for: System spoke with nurse
+
+System notifies the nurse through speakers: 0.8121755
+Nurse talked with patient: 0.720276
+Nurse talks to the patient at the nurse station: 0.6551966
+Nurse talks with patient by mobile: 0.6157618
+System notifies the nurse through earphones: 0.58699757
+
+11- The highest matching goals for: When announcements are on speaker listen to it
+
+System notifies the nurse through speakers: 0.43773696
+Nurse talked with patient: 0.39193884
+Nurse talks with patient by mobile: 0.29028064
+Nurse talks to the patient at the nurse station: 0.27894047
+Nurse attend to patient: 0.23182306
+
+12- The highest matching goals for: System has speakers for notification to nurse
+
+System notifies the nurse through speakers: 1.0
+System notifies the nurse through earphones: 0.7520065
+Nurse notified: 0.7520065
+Nurse talked with patient: 0.57551736
+Nurse turns request off: 0.53300303
+
+13- The highest matching goals for: the nurse is notified via speakers
+
+System notifies the nurse through speakers: 0.88307995
+Nurse notified: 0.8360086
+Nurse talked with patient: 0.65034217
+System notifies the nurse through earphones: 0.59408855
+Nurse talks to the patient at the nurse station: 0.5548271
+
+14- The highest matching goals for: The system utilizes the speakers notify nurses 
+
+System notifies the nurse through speakers: 0.9098885
+Nurse notified: 0.71240985
+System notifies the nurse through earphones: 0.6864937
+Nurse talked with patient: 0.54418945
+Nurse talks to the patient at the nurse station: 0.48731223
+
+15- The highest matching goals for: Speakers are used by the system to notify the nurse
+
+System notifies the nurse through speakers: 0.9547934
+System notifies the nurse through earphones: 0.7313986
+Nurse notified: 0.70806915
+Nurse talked with patient: 0.5373507
+Nurse talks to the patient at the nurse station: 0.48091996
+
+16- The highest matching goals for: Nurse receives auditory confirmation from system
+
+System notifies the nurse through speakers: 0.52499586
+System notifies the nurse through earphones: 0.511706
+Nurse notified: 0.4323332
+Nurse walks to the nursing station: 0.38630626
+Nurse talks to the patient at the nurse station: 0.38311163
+
+17- The highest matching goals for: Notified nurse via speakers
+
+System notifies the nurse through speakers: 0.88307995
+Nurse notified: 0.8360086
+Nurse talked with patient: 0.65034217
+System notifies the nurse through earphones: 0.59408855
+Nurse talks to the patient at the nurse station: 0.5548271
+
+18- The highest matching goals for: System notifies the nurse using speakers
+
+System notifies the nurse through speakers: 0.9547934
+System notifies the nurse through earphones: 0.7313986
+Nurse notified: 0.70160514
+Nurse talked with patient: 0.5364683
+Nurse talks to the patient at the nurse station: 0.45564532
+
+19- The highest matching goals for: Nurses name is a called through the speakers
+
+Nurse talked with patient: 0.6552666
+Nurse responded to the call: 0.61763936
+System notifies the nurse through speakers: 0.5903679
+Nurse talks to the patient at the nurse station: 0.5557512
+Nurse visited patient: 0.5429104
+
+20- The highest matching goals for: The nurses are notified through public announcement system
+
+Nurse notified: 0.7425817
+System notifies the nurse through speakers: 0.721596
+System notifies the nurse through earphones: 0.7111178
+Nurse turns request off: 0.4361399
+Nurse talks to the patient at the nurse station: 0.4268687
+
+21- The highest matching goals for: System announce the patient's request through speakers
+
+System notifies the nurse through speakers: 0.6397499
+Nurse talked with patient: 0.5642607
+Nurse talks with patient by mobile: 0.42981252
+System notifies the nurse through earphones: 0.41635504
+Nurse talks to the patient at the nurse station: 0.4127948
+
+22- The highest matching goals for: To notify a nurse, their name is called through the speakers.
+
+System notifies the nurse through speakers: 0.7379231
+Nurse notified: 0.72255653
+Nurse talked with patient: 0.5955412
+Nurse responded to the call: 0.5708035
+Nurse turns request off: 0.5382005
+
+23- The highest matching goals for: Speakers serve as a notification point for nurses
+
+System notifies the nurse through speakers: 0.7217626
+Nurse notified: 0.71854275
+Nurse talked with patient: 0.5458231
+Nurse talks to the patient at the nurse station: 0.5280291
+Nurse turns request off: 0.5088558
+
+24- The highest matching goals for: Nurse get notified by speakers
+
+System notifies the nurse through speakers: 0.76197743
+Nurse notified: 0.75590396
+Nurse talked with patient: 0.58920264
+System notifies the nurse through earphones: 0.5139839
+Nurse turns request off: 0.5003634
+
+25- The highest matching goals for: To notify the nurse, They are called out via the speakers.
+
+System notifies the nurse through speakers: 0.8077282
+Nurse notified: 0.7658004
+Nurse talked with patient: 0.6391599
+Nurse responded to the call: 0.5733029
+Nurse turns request off: 0.5679219
+
+26- The highest matching goals for: Nurse receive notification by speakers
+
+System notifies the nurse through speakers: 0.7691662
+Nurse notified: 0.7603381
+Nurse talked with patient: 0.5852955
+Nurse turns request off: 0.56581783
+System notifies the nurse through earphones: 0.518418
+
+27- The highest matching goals for: Nurse receives a message through speakers
+
+Nurse talked with patient: 0.59397316
+Nurse turns request off: 0.56423855
+System notifies the nurse through speakers: 0.5411752
+Nurse talks to the patient at the nurse station: 0.5168778
+Nurse responded to the call: 0.49213967
+
+The count of the having the right goal the first option: 22
+The count of the having the right goal the second option: 2
+The count of the having the right goal the third option: 2
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 1

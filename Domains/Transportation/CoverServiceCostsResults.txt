@@ -1,0 +1,214 @@
+1- The highest matching goals for: break even for cost
+
+Decide service cost: 0.43351245
+Estimate service costs: 0.42548832
+Manage service costs: 0.40059572
+Cover service costs: 0.3956135
+Minimize cost per user: 0.37379754
+
+2- The highest matching goals for: Break even on costs
+
+Estimate service costs: 0.43530577
+Cover service costs: 0.410083
+Decide service cost: 0.40700352
+Manage service costs: 0.4068572
+Minimize cost per user: 0.3813453
+
+3- The highest matching goals for: Pay for services costs
+
+Estimate service costs: 0.82970315
+Manage service costs: 0.8104451
+Cover service costs: 0.8041516
+Decide service cost: 0.7991867
+Invest on the service: 0.6082404
+
+4- The highest matching goals for: Cover service expenditure.
+
+Cover service costs: 0.92237514
+Invest on the service: 0.6570618
+Estimate service costs: 0.62432843
+Manage service costs: 0.609991
+Decide service cost: 0.5913966
+
+5- The highest matching goals for: Pay service costs
+
+Estimate service costs: 0.82970315
+Manage service costs: 0.8104451
+Cover service costs: 0.8041516
+Decide service cost: 0.7991867
+Invest on the service: 0.6082404
+
+6- The highest matching goals for: Cover service expanse
+
+Invest on the service: 0.4233985
+Provide new services: 0.40972173
+Manage service costs: 0.40251863
+Decide service cost: 0.38191813
+Improve transport services: 0.3755442
+
+7- The highest matching goals for: handle the service costs 
+
+Manage service costs: 0.96265274
+Cover service costs: 0.8342935
+Estimate service costs: 0.7248389
+Decide service cost: 0.6943225
+Invest on the service: 0.5264809
+
+8- The highest matching goals for: Pay back the costs
+
+Estimate service costs: 0.7408423
+Cover service costs: 0.7152908
+Manage service costs: 0.7123937
+Decide service cost: 0.7103259
+Minimize cost per user: 0.63156897
+
+9- The highest matching goals for: generate enough revenue to cover costs
+
+Cover service costs: 0.55692303
+Manage service costs: 0.4139845
+Estimate service costs: 0.39786875
+Decide service cost: 0.39711213
+Minimize cost per user: 0.36710504
+
+10- The highest matching goals for: Finance service costs
+
+Estimate service costs: 0.70687395
+Manage service costs: 0.6876159
+Cover service costs: 0.68026614
+Decide service cost: 0.6763575
+Invest on the service: 0.5085159
+
+11- The highest matching goals for: Cover service tariff.
+
+Use special instruments: 8.0546764e-05
+Invest on the service: 0.43105635
+Provide new services: 0.4161843
+Manage service costs: 0.41401878
+Decide service cost: 0.3954243
+
+12- The highest matching goals for: Balance service costs
+
+Manage service costs: 0.7320184
+Estimate service costs: 0.7197207
+Cover service costs: 0.6868075
+Decide service cost: 0.6828989
+Invest on the service: 0.52315885
+
+13- The highest matching goals for: Cover service maintenance
+
+Cover service costs: 0.74915874
+Invest on the service: 0.45935443
+Manage service costs: 0.4489221
+Improve transport services: 0.44444698
+Improve old services: 0.4440961
+
+14- The highest matching goals for: Take care of the service costs
+
+Estimate service costs: 0.66847384
+Decide service cost: 0.6627326
+Manage service costs: 0.65803283
+Cover service costs: 0.6451002
+Invest on the service: 0.5171994
+
+15- The highest matching goals for: Recoup the costs
+
+Estimate service costs: 0.5452856
+Manage service costs: 0.516837
+Cover service costs: 0.5154108
+Decide service cost: 0.51476914
+Minimize cost per user: 0.4913251
+
+16- The highest matching goals for: cover operating costs
+
+Cover service costs: 0.71107835
+Estimate service costs: 0.43426755
+Manage service costs: 0.42060417
+Decide service cost: 0.4010353
+Minimize cost per user: 0.37432426
+
+17- The highest matching goals for: Cover service expenses
+
+Cover service costs: 1.0
+Estimate service costs: 0.69767755
+Manage service costs: 0.6876159
+Decide service cost: 0.6690214
+Invest on the service: 0.48413977
+
+18- The highest matching goals for: Cover service toll.
+
+Cover service costs: 0.74500555
+Invest on the service: 0.44774726
+Manage service costs: 0.43262145
+Provide new services: 0.42785433
+Estimate service costs: 0.42638102
+
+19- The highest matching goals for: Cover service spending
+
+Cover service costs: 0.74815995
+Invest on the service: 0.62809277
+Manage service costs: 0.43577585
+Estimate service costs: 0.4288416
+Decide service cost: 0.42609468
+
+20- The highest matching goals for: Pay for the service costs
+
+Estimate service costs: 0.82970315
+Manage service costs: 0.8104451
+Cover service costs: 0.8041516
+Decide service cost: 0.7991867
+Invest on the service: 0.6082404
+
+21- The highest matching goals for: Service cost cover
+
+Manage service costs: 0.7095258
+Decide service cost: 0.68995696
+Invest on the service: 0.52211535
+Provide new services: 0.5101946
+Make public service available : 0.46585968
+
+22- The highest matching goals for: Deal with the service costs
+
+Estimate service costs: 0.70687395
+Manage service costs: 0.6876159
+Cover service costs: 0.68026614
+Decide service cost: 0.6763575
+Invest on the service: 0.5085159
+
+23- The highest matching goals for: Cover work cost
+
+Cover service costs: 0.8711864
+Estimate service costs: 0.57806027
+Manage service costs: 0.57725394
+Decide service cost: 0.5475439
+Minimize cost per user: 0.36929566
+
+24- The highest matching goals for: embrace the service costs
+
+Cover service costs: 0.8792503
+Estimate service costs: 0.7108641
+Manage service costs: 0.69160604
+Decide service cost: 0.6803477
+Invest on the service: 0.5287182
+
+25- The highest matching goals for: Cover work expanse
+
+Serve path: 0.33316743
+Invest on the service: 0.30163112
+Make public service available : 0.2823811
+Provide new services: 0.2705567
+Manage service costs: 0.25304884
+
+26- The highest matching goals for: No service cost
+
+Estimate service costs: 0.8735406
+Manage service costs: 0.85428256
+Cover service costs: 0.84693277
+Decide service cost: 0.8430242
+Invest on the service: 0.6140551
+
+The count of the having the right goal the first option: 9
+The count of the having the right goal the second option: 3
+The count of the having the right goal the third option: 8
+The count of the having the right goal the fourth option: 2
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 4

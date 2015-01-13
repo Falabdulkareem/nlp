@@ -1,0 +1,238 @@
+1- The highest matching goals for: balance the budget
+
+Manage financial budget: 0.55157715
+Plan transport service: 0.244255
+Manage service costs: 0.21194349
+Minimize cost per user: 0.20805022
+Manage profits: 0.18930571
+
+2- The highest matching goals for: Be profitable
+
+Manage profits: 0.32291526
+Increase profits: 0.30794364
+Use profits: 0.30344197
+Define profits to reach: 0.2779873
+Invest on the service: 0.114121266
+
+3- The highest matching goals for: Achieve financial budget
+
+Manage financial budget: 0.70182294
+Define profits to reach: 0.40757284
+Make to respect the law: 0.31136137
+Make public service available : 0.30223948
+Plan transport service: 0.24125372
+
+4- The highest matching goals for: Manage fiscal budget
+
+Manage financial budget: 0.97129095
+Manage profits: 0.5206587
+Manage service costs: 0.4734931
+Manage mobility: 0.45256463
+Check drivers capabilities: 0.28658807
+
+5- The highest matching goals for: maintain financial budget
+
+Manage financial budget: 0.7479032
+Maintain means of transport: 0.38208526
+Protect from pollution: 0.28097045
+Protect users: 0.26947206
+Protect user health: 0.26111242
+
+6- The highest matching goals for: Maintain financial balance
+
+Manage financial budget: 0.49886692
+Maintain means of transport: 0.4126586
+Protect users: 0.28978392
+Protect from pollution: 0.28953946
+Protect user health: 0.27443856
+
+7- The highest matching goals for: take care of the financial budget
+
+Manage financial budget: 0.637705
+Plan transport service: 0.2999371
+Invest on the service: 0.25172275
+Make public service available : 0.24758533
+Decide service cost: 0.24543759
+
+8- The highest matching goals for: Reduce the cost and earn much money
+
+Minimize cost per user: 0.50252414
+Estimate service costs: 0.45713606
+Increase profits: 0.45013013
+Cover service costs: 0.4249482
+Decide service cost: 0.42161822
+
+9- The highest matching goals for: do budget planning
+
+Manage financial budget: 0.46254385
+Plan transport service: 0.39944154
+Minimizing time: 0.24679686
+Organize public competition: 0.24340752
+Decide service cost: 0.23685777
+
+10- The highest matching goals for: Be fiscally responsible
+
+Monitor pollution: 0.11250687
+Choose directly company: 0.092620574
+Manage financial budget: 0.08733736
+Ensure structures: 0.086025424
+Regulate reserved lanes: 0.08551237
+
+11- The highest matching goals for: Manage economic budget
+
+Manage financial budget: 0.837357
+Manage profits: 0.56739265
+Manage service costs: 0.4843271
+Manage mobility: 0.46294934
+Check drivers health: 0.32318512
+
+12- The highest matching goals for: Manage economic budget
+
+Manage financial budget: 0.837357
+Manage profits: 0.56739265
+Manage service costs: 0.4843271
+Manage mobility: 0.46294934
+Check drivers health: 0.32318512
+
+13- The highest matching goals for: Help make sure financial budget is under control
+
+Manage financial budget: 0.70944166
+Manage profits: 0.4253134
+Use profits: 0.4133548
+Build infrastructure: 0.40692464
+Provide rules: 0.3591305
+
+14- The highest matching goals for: Oversee financial budget
+
+Manage financial budget: 0.91774565
+Manage profits: 0.42791042
+Manage service costs: 0.39483187
+Manage mobility: 0.347364
+Build infrastructure: 0.23644157
+
+15- The highest matching goals for: conduct the financial budget
+
+Manage financial budget: 0.82079184
+Manage profits: 0.3067182
+Manage service costs: 0.2978781
+Plan transport service: 0.26530343
+Manage mobility: 0.22617176
+
+16- The highest matching goals for: Control over the financial budget
+
+Manage financial budget: 0.90566814
+Manage profits: 0.41281354
+Manage service costs: 0.38275436
+Manage mobility: 0.3322671
+Verify tickets: 0.26654118
+
+17- The highest matching goals for: Plan my budget
+
+Plan transport service: 0.55529237
+Manage financial budget: 0.4752663
+Estimate service costs: 0.16118541
+Manage service costs: 0.1404316
+Increase profits: 0.1339438
+
+18- The highest matching goals for: Manage financial plan
+
+Manage financial budget: 0.8515009
+Manage profits: 0.5380425
+Manage mobility: 0.4777443
+Manage service costs: 0.44591206
+Plan transport service: 0.42202318
+
+19- The highest matching goals for: Manage monetary budget
+
+Manage financial budget: 0.7742798
+Manage profits: 0.52753025
+Manage service costs: 0.48897263
+Manage mobility: 0.4495166
+Check drivers capabilities: 0.3001988
+
+20- The highest matching goals for: Keep a balance on the budget
+
+Manage financial budget: 0.48259372
+Avoid traffic: 0.42882502
+Avoid fraud: 0.42637822
+Maintain means of transport: 0.39046413
+Minimize cost per user: 0.2689554
+
+21- The highest matching goals for: Administrate financial budget
+
+Manage financial budget: 0.68515104
+Plan transport service: 0.22565952
+Estimate service costs: 0.17468446
+Manage service costs: 0.16223729
+Increase profits: 0.15672737
+
+22- The highest matching goals for: oversee the financial budget
+
+Manage financial budget: 0.91774565
+Manage profits: 0.42791042
+Manage service costs: 0.39483187
+Manage mobility: 0.347364
+Build infrastructure: 0.23644157
+
+23- The highest matching goals for: Accomplish financial plan
+
+Manage financial budget: 0.5559078
+Plan transport service: 0.38428304
+Decide sale strategy: 0.34953672
+Organize public competition: 0.2883556
+Ensure structures: 0.22412057
+
+24- The highest matching goals for: Calculate financial budget
+
+Manage financial budget: 0.69449157
+Estimate service costs: 0.47708622
+Estimate sale places: 0.40536147
+Plan transport service: 0.24453206
+Minimize cost per user: 0.20000814
+
+25- The highest matching goals for: run the financial budget
+
+Manage financial budget: 0.74530935
+Serve path: 0.3688509
+Check drivers health: 0.28172368
+Plan transport service: 0.27569753
+Check drivers capabilities: 0.2743027
+
+26- The highest matching goals for: Setup financial budget
+
+Manage financial budget: 0.6919916
+Estimate service costs: 0.1997359
+Manage service costs: 0.18728872
+Minimize cost per user: 0.1801009
+Cover service costs: 0.17317933
+
+27- The highest matching goals for: administer the financial budget
+
+Manage financial budget: 0.8639746
+Manage profits: 0.3606966
+Manage service costs: 0.34106082
+Manage mobility: 0.28015018
+Plan transport service: 0.25414374
+
+28- The highest matching goals for: Get financial budget managed
+
+Manage financial budget: 0.8797439
+Manage profits: 0.47783554
+Manage service costs: 0.4272203
+Manage mobility: 0.40609363
+Check drivers health: 0.27578616
+
+29- The highest matching goals for: handle the financial budget
+
+Manage financial budget: 0.96265274
+Manage profits: 0.48404425
+Manage service costs: 0.4430646
+Manage mobility: 0.40349784
+Cover service costs: 0.31470537
+
+The count of the having the right goal the first option: 25
+The count of the having the right goal the second option: 1
+The count of the having the right goal the third option: 1
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 2

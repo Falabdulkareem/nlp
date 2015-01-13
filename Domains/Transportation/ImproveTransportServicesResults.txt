@@ -1,0 +1,254 @@
+1- The highest matching goals for: Giver better service
+
+Improve transport services: 0.5381235
+Improve old services: 0.5279342
+Provide new services: 0.42860994
+Invest on the service: 0.427411
+Manage service costs: 0.41548634
+
+2- The highest matching goals for: Update buses and trains
+
+Improve transport services: 0.34279758
+Plan transport service: 0.30972698
+Transport users to destination: 0.30545855
+Supply means of transport: 0.30299506
+Clean means of transport: 0.3029127
+
+3- The highest matching goals for: Increase transport services
+
+Improve transport services: 0.8150456
+Plan transport service: 0.6929245
+Supply public transport service: 0.6469152
+Improve old services: 0.5044899
+Use means of transport: 0.49197543
+
+4- The highest matching goals for: Improve transit services
+
+Improve transport services: 0.794123
+Improve old services: 0.67930716
+Make public service available : 0.529645
+Plan transport service: 0.49960732
+Supply public transport service: 0.45616347
+
+5- The highest matching goals for: Fix transport services
+
+Improve transport services: 0.8146709
+Plan transport service: 0.704895
+Supply public transport service: 0.6564051
+Repair means of transport: 0.649535
+Improve old services: 0.518238
+
+6- The highest matching goals for: Satisfaction transport service
+
+Improve transport services: 0.72037446
+Plan transport service: 0.70103407
+Supply public transport service: 0.65239805
+Use means of transport: 0.51037645
+Manage service costs: 0.5059314
+
+7- The highest matching goals for: Make transport services better
+
+Improve transport services: 0.691155
+Plan transport service: 0.61279255
+Supply public transport service: 0.56341094
+Use means of transport: 0.42763498
+Improve old services: 0.4225348
+
+8- The highest matching goals for: Increase the quality of transport services
+
+Improve transport services: 0.7544653
+Plan transport service: 0.6341303
+Supply public transport service: 0.5874643
+Improve old services: 0.47988182
+Improve quality of life: 0.46630573
+
+9- The highest matching goals for: make our service better
+
+Make public service available : 0.6655837
+Improve transport services: 0.63452536
+Improve old services: 0.6243361
+Provide new services: 0.5850079
+Decide service cost: 0.56508875
+
+10- The highest matching goals for: Update vehicles
+
+Repair means of transport: 0.2741171
+Build means of transport: 0.26696905
+Use means of transport: 0.26297098
+Improve transport services: 0.26211387
+Exchange means of transport: 0.2564838
+
+11- The highest matching goals for: Enhance transport services
+
+Improve transport services: 0.99723554
+Plan transport service: 0.69332105
+Improve old services: 0.6887146
+Supply public transport service: 0.6480063
+Invest on the service: 0.48275098
+
+12- The highest matching goals for: Improve carrier services
+
+Improve transport services: 0.8830387
+Improve old services: 0.7084269
+Plan transport service: 0.58852303
+Make public service available : 0.56623363
+Supply public transport service: 0.53396475
+
+13- The highest matching goals for: Make the transport service function better
+
+Improve transport services: 0.74930394
+Plan transport service: 0.6038758
+Build means of transport: 0.58746904
+Use means of transport: 0.5710142
+Make public service available : 0.54920995
+
+14- The highest matching goals for: Better transport service
+
+Plan transport service: 0.69143045
+Improve transport services: 0.6807205
+Supply public transport service: 0.64279443
+Use means of transport: 0.47653145
+Invest on the service: 0.4461269
+
+15- The highest matching goals for: Develop transport services 
+
+Improve transport services: 0.89381814
+Plan transport service: 0.713019
+Supply public transport service: 0.66540784
+Build means of transport: 0.63300586
+Make public service available : 0.60677
+
+16- The highest matching goals for: Provide efficient transport service
+
+Supply public transport service: 0.7286447
+Improve transport services: 0.69397753
+Plan transport service: 0.66185236
+Provide new services: 0.6447124
+Use means of transport: 0.5908257
+
+17- The highest matching goals for: Add more conveniences
+
+Provide comfort: 0.59302694
+Provide visual comfort: 0.49952352
+Provide acoustic comfort: 0.48927245
+Provide climatic comfort: 0.48497075
+Provide postural comfort: 0.4813221
+
+18- The highest matching goals for: Improve transport offer
+
+Improve transport services: 0.769513
+Build means of transport: 0.55185795
+Repair means of transport: 0.5302806
+Provide comfort: 0.50363636
+Provide tickets: 0.49456432
+
+19- The highest matching goals for: Improve moving services
+
+Improve transport services: 0.8717796
+Improve old services: 0.67354983
+Make public service available : 0.64736956
+Plan transport service: 0.59074473
+Supply public transport service: 0.524113
+
+20- The highest matching goals for: Exceptional transport service
+
+Plan transport service: 0.6989938
+Improve transport services: 0.69283736
+Supply public transport service: 0.6503578
+Use means of transport: 0.48216978
+Invest on the service: 0.45369023
+
+21- The highest matching goals for: Enhance transport services
+
+Improve transport services: 0.99723554
+Plan transport service: 0.69332105
+Improve old services: 0.6887146
+Supply public transport service: 0.6480063
+Invest on the service: 0.48275098
+
+22- The highest matching goals for: Improve transportation services
+
+Improve transport services: 0.9451124
+Improve old services: 0.70328707
+Plan transport service: 0.65059674
+Supply public transport service: 0.61474717
+Make public service available : 0.54937595
+
+23- The highest matching goals for: Improve hauling services
+
+Improve transport services: 0.94950056
+Improve old services: 0.675491
+Plan transport service: 0.6549849
+Supply public transport service: 0.59211886
+Make public service available : 0.5215798
+
+24- The highest matching goals for: Transport service improvement
+
+Improve transport services: 0.9774192
+Improve old services: 0.65433055
+Repair means of transport: 0.5666539
+Build means of transport: 0.5411939
+Make public service available : 0.5064223
+
+25- The highest matching goals for: Revamp transport services
+
+Improve transport services: 0.74499065
+Plan transport service: 0.69391
+Supply public transport service: 0.6540008
+Use means of transport: 0.479011
+Invest on the service: 0.47821045
+
+26- The highest matching goals for: improve shipment services
+
+Improve transport services: 0.9174113
+Improve old services: 0.6734912
+Plan transport service: 0.62289566
+Supply public transport service: 0.5826042
+Make public service available : 0.52595735
+
+27- The highest matching goals for: Improve service rating for our transportation system
+
+Improve transport services: 0.78761363
+Plan transport service: 0.66011506
+Improve old services: 0.58900195
+Supply public transport service: 0.5135327
+Provide new services: 0.46763587
+
+28- The highest matching goals for: Upgrade transport services
+
+Improve transport services: 0.89417136
+Plan transport service: 0.7078315
+Supply public transport service: 0.65914345
+Improve old services: 0.60440105
+Invest on the service: 0.57351285
+
+29- The highest matching goals for: improve travel services.
+
+Improve transport services: 0.753089
+Improve old services: 0.67955714
+Make public service available : 0.5311616
+Improve quality of life: 0.47345015
+Invest on the service: 0.46134
+
+30- The highest matching goals for: Room to improve transport service
+
+Improve transport services: 0.8827464
+Improve old services: 0.6477209
+Plan transport service: 0.6263839
+Supply public transport service: 0.5828893
+Build means of transport: 0.51249176
+
+31- The highest matching goals for: Reform the transport services
+
+Plan transport service: 0.69143045
+Improve transport services: 0.6807205
+Supply public transport service: 0.64279443
+Use means of transport: 0.47653145
+Invest on the service: 0.4461269
+
+The count of the having the right goal the first option: 24
+The count of the having the right goal the second option: 5
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 1
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 1

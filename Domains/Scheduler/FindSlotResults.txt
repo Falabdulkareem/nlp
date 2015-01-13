@@ -1,0 +1,238 @@
+1- The highest matching goals for: Find a time slot
+
+Find suitable slot: 0.71186155
+Have meeting scheduled: 0.4191851
+Find suitable room: 0.407526
+Wait one day for responses to arrive: 0.39769995
+Wait three days for responses to arrive: 0.39769995
+
+2- The highest matching goals for: Discover suitable opening.
+
+Find suitable slot: 0.5149126
+Find suitable room: 0.39279035
+Send invitation: 0.10817398
+Request constraints by calling everybody: 0.08630244
+Have meeting scheduled: 0.07514663
+
+3- The highest matching goals for: Schedule a meeting according to my timetable.
+
+Have meeting scheduled: 0.79389924
+Have meeting announced: 0.4926456
+Participants attend meeting: 0.4652114
+Book the meeting: 0.43185145
+Constraints gathered: 0.38550946
+
+4- The highest matching goals for: Seek out an appropriate meeting time.
+
+Have meeting scheduled: 0.51732415
+Participants attend meeting: 0.4357211
+Have meeting announced: 0.42048797
+Constraints gathered by request based: 0.41344795
+Book the meeting: 0.4056049
+
+5- The highest matching goals for: Find out a time that all the participants can attend the meeting
+
+Participants attend meeting: 0.86423385
+Have meeting scheduled: 0.6072791
+Have meeting announced: 0.51228154
+Book the meeting: 0.50846833
+Find suitable room: 0.40711805
+
+6- The highest matching goals for: Find appropriate time
+
+Find suitable room: 0.5452959
+Find suitable slot: 0.54420763
+Response received: 0.4270387
+Receive responses: 0.4270387
+Wait one day for responses to arrive: 0.4180532
+
+7- The highest matching goals for: find the appropriate time
+
+Find suitable room: 0.5452959
+Find suitable slot: 0.54420763
+Response received: 0.4270387
+Receive responses: 0.4270387
+Wait one day for responses to arrive: 0.4180532
+
+8- The highest matching goals for: find free slot
+
+Find suitable slot: 0.70354694
+Find suitable room: 0.41809258
+Response received: 0.38949427
+Receive responses: 0.38949427
+Have meeting scheduled: 0.31476083
+
+9- The highest matching goals for: Look for a time slot
+
+Find suitable slot: 0.49965054
+Wait one day for responses to arrive: 0.37278947
+Wait three days for responses to arrive: 0.37278947
+Have meeting scheduled: 0.21825059
+Find suitable room: 0.19748925
+
+10- The highest matching goals for: Figure out suitable slot.
+
+Find suitable slot: 0.6905915
+Find suitable room: 0.38149628
+Request constraints by calling everybody: 0.12837772
+Maximize attendance: 0.08407027
+Have meeting scheduled: 0.08271772
+
+11- The highest matching goals for: Schedule a meeting no later than 5:00.
+
+Have meeting scheduled: 0.74162996
+Have meeting announced: 0.46927315
+Participants attend meeting: 0.4570646
+Book the meeting: 0.42239645
+Constraints gathered: 0.37497005
+
+12- The highest matching goals for: Find the perfect meeting time for everybody.
+
+Have meeting scheduled: 0.5384631
+Participants attend meeting: 0.4579676
+Find suitable room: 0.45014852
+Have meeting announced: 0.4434656
+Book the meeting: 0.43965232
+
+13- The highest matching goals for: Find the best time for everybody
+
+Find suitable room: 0.3970422
+Find suitable slot: 0.39595395
+Request constraints by calling everybody: 0.36410555
+Have meeting scheduled: 0.36300248
+Response received: 0.35340124
+
+14- The highest matching goals for: Send meeting schedule request
+
+Have meeting scheduled: 0.7712194
+Send invitation: 0.63721645
+Constraints gathered by request based: 0.54241073
+Have meeting announced: 0.49668574
+Send attendance reminder: 0.48504564
+
+15- The highest matching goals for: find free spot
+
+Find suitable room: 0.49630544
+Find suitable slot: 0.4865296
+Response received: 0.38639867
+Receive responses: 0.38639867
+Have meeting announced: 0.2843806
+
+16- The highest matching goals for: Look for an available slot
+
+Find suitable slot: 0.52600026
+Find suitable room: 0.22383897
+Request constraints by calling everybody: 0.17336562
+Constraints gathered by request based: 0.14393759
+Request constraints by email: 0.12741694
+
+17- The highest matching goals for: Discover suitable opening.
+
+Find suitable slot: 0.5149126
+Find suitable room: 0.39279035
+Send invitation: 0.10817398
+Request constraints by calling everybody: 0.08630244
+Have meeting scheduled: 0.07514663
+
+18- The highest matching goals for: Please find a suitable time for a meeting.
+
+Find suitable room: 0.65869445
+Find suitable slot: 0.63946456
+Have meeting scheduled: 0.5824346
+Have meeting announced: 0.50108504
+Participants attend meeting: 0.4997074
+
+19- The highest matching goals for: When's it okay for everybody to meet?
+
+Request constraints by calling everybody: 0.5238171
+Constraints gathered: 0.43654367
+Have meeting announced: 0.36621675
+Have meeting scheduled: 0.3637408
+Constraints gathered automatically: 0.3472633
+
+20- The highest matching goals for: Find the most possible time for all participants
+
+Participants attend meeting: 0.51129276
+Avoid annoying the participants: 0.41537124
+Have meeting scheduled: 0.37191087
+Find suitable room: 0.35743734
+Find suitable slot: 0.3543163
+
+21- The highest matching goals for: Select available time slot
+
+Find suitable slot: 0.40864462
+Wait one day for responses to arrive: 0.32501206
+Wait three days for responses to arrive: 0.32501206
+Have meeting scheduled: 0.1842764
+Wait one week for responses to arrive: 0.16647217
+
+22- The highest matching goals for: Ensure suitable date and time are found
+
+Find suitable room: 0.60639286
+Find suitable slot: 0.6053046
+Wait one day for responses to arrive: 0.38336027
+Wait three days for responses to arrive: 0.38336027
+Have meeting scheduled: 0.37948585
+
+23- The highest matching goals for: Please schedule two meetings between Monday to Wednesday
+
+Have meeting scheduled: 0.79945207
+Have meeting announced: 0.5164742
+Participants attend meeting: 0.4864931
+Book the meeting: 0.44208822
+Constraints gathered: 0.35333282
+
+24- The highest matching goals for: What would be a good time for everybody to meet?
+
+Request constraints by calling everybody: 0.4686402
+Have meeting scheduled: 0.44585258
+Constraints gathered: 0.40882066
+Wait one day for responses to arrive: 0.36212268
+Wait three days for responses to arrive: 0.36212268
+
+25- The highest matching goals for: Provide correct meeting time and date details
+
+Have meeting scheduled: 0.51597136
+Book the meeting: 0.4429249
+Participants attend meeting: 0.4236465
+Have meeting announced: 0.42161506
+Wait one day for responses to arrive: 0.35717195
+
+26- The highest matching goals for: Find a slot suitable to the staffs schedule.
+
+Find suitable slot: 0.82194555
+Find suitable room: 0.59101385
+Have meeting scheduled: 0.57873404
+Response received: 0.33950427
+Receive responses: 0.33950427
+
+27- The highest matching goals for: Give me a time when everybody can meet.
+
+Request constraints by calling everybody: 0.53025556
+Have meeting scheduled: 0.45521873
+Constraints gathered: 0.4269665
+Have meeting announced: 0.38110307
+Wait one day for responses to arrive: 0.38006288
+
+28- The highest matching goals for: Find out suitable time and date for the meeting.
+
+Find suitable room: 0.65739447
+Find suitable slot: 0.638495
+Have meeting scheduled: 0.56994754
+Have meeting announced: 0.467848
+Participants attend meeting: 0.46628937
+
+29- The highest matching goals for: Confirm suitable slot before scheduling.
+
+Find suitable slot: 0.6601481
+Quick scheduling: 0.39539784
+Find suitable room: 0.39080003
+Have meeting announced: 0.11040073
+Response received: 0.085097894
+
+The count of the having the right goal the first option: 10
+The count of the having the right goal the second option: 7
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 1
+The count of not having the right goal in the first five options: 11

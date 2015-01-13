@@ -1,0 +1,190 @@
+1- The highest matching goals for: Nurse is going to the nursing station
+
+Nurse walks to the nursing station: 0.9307995
+Nurse talks to the patient at the nurse station: 0.78999585
+Nurse visited patient: 0.69506073
+Nurse skips visit: 0.6741096
+Nurse turns request off: 0.655892
+
+2- The highest matching goals for: Nursing station starts to appear closer to nurse
+
+Nurse walks to the nursing station: 0.6516463
+Nurse talks to the patient at the nurse station: 0.5389332
+Nurse turns request off: 0.44121912
+Patient feels cared for: 0.39635214
+Nurse talked with patient: 0.36629313
+
+3- The highest matching goals for: Nurse entering the nursing station
+
+Nurse walks to the nursing station: 0.8143426
+Nurse talks to the patient at the nurse station: 0.7168984
+Nurse visited patient: 0.5226104
+Comfortable nurse: 0.520317
+Happy nurse: 0.5109705
+
+4- The highest matching goals for: Find your way to nursing station
+
+Nurse walks to the nursing station: 0.7157648
+Nurse talks to the patient at the nurse station: 0.56807965
+Nurse turns request off: 0.4752137
+Patient feels cared for: 0.46989593
+Nurse walks to patients room: 0.44842836
+
+5- The highest matching goals for: Nurse goes to the nursing station
+
+Nurse walks to the nursing station: 0.9307995
+Nurse talks to the patient at the nurse station: 0.78999585
+Nurse visited patient: 0.69506073
+Nurse skips visit: 0.6741096
+Nurse turns request off: 0.655892
+
+6- The highest matching goals for: A nurse is going to the nursing station
+
+Nurse walks to the nursing station: 0.9307995
+Nurse talks to the patient at the nurse station: 0.78999585
+Nurse visited patient: 0.69506073
+Nurse skips visit: 0.6741096
+Nurse turns request off: 0.655892
+
+7- The highest matching goals for: The nurse is approaching the nursing station
+
+Nurse walks to the nursing station: 0.8138463
+Nurse talks to the patient at the nurse station: 0.74240106
+Nurse talked with patient: 0.53205156
+Comfortable nurse: 0.5177836
+Nurse talks with patient by mobile: 0.510365
+
+8- The highest matching goals for: Nurse is approaching the nursing station
+
+Nurse walks to the nursing station: 0.8138463
+Nurse talks to the patient at the nurse station: 0.74240106
+Nurse talked with patient: 0.53205156
+Comfortable nurse: 0.5177836
+Nurse talks with patient by mobile: 0.510365
+
+9- The highest matching goals for: Distance to nursing station reduces as time increases
+
+Increase nurse productivity: 0.5643309
+Nurse walks to the nursing station: 0.5507086
+Nurse talks to the patient at the nurse station: 0.478133
+Nurse turns request off: 0.3713445
+Avoid nurse disturbance: 0.34609103
+
+10- The highest matching goals for: Nurse has arrived at time to the nursing station
+
+Nurse walks to the nursing station: 0.7267578
+Nurse talks to the patient at the nurse station: 0.65128547
+Nurse visited patient: 0.5088617
+Nurse notified: 0.4796486
+Nurse skips visit: 0.4781561
+
+11- The highest matching goals for: Report to the nursing station
+
+Nurse walks to the nursing station: 0.71059316
+Nurse talks to the patient at the nurse station: 0.62130386
+Comfortable nurse: 0.41165036
+Happy nurse: 0.40230384
+Nurse notified: 0.40139407
+
+12- The highest matching goals for: Nurse reach the nursing station by walk
+
+Nurse walks to the nursing station: 0.9155564
+Nurse talks to the patient at the nurse station: 0.66829634
+Nurse walks to patients room: 0.6290792
+Nurse visited patient: 0.5064225
+Comfortable nurse: 0.47580415
+
+13- The highest matching goals for: Nurse is attending the nursing station
+
+Nurse walks to the nursing station: 0.7727727
+Nurse attend to patient: 0.7604191
+Nurse talks to the patient at the nurse station: 0.729038
+Nurse visited patient: 0.5729097
+Nurse skips visit: 0.54075986
+
+14- The highest matching goals for: Nursing station is being approached by the nurse
+
+Nurse walks to the nursing station: 0.8138463
+Nurse talks to the patient at the nurse station: 0.62780845
+Nurse talked with patient: 0.41745892
+Comfortable nurse: 0.39830014
+Nurse talks with patient by mobile: 0.3957724
+
+15- The highest matching goals for: Nurse is walking towards the nursing station
+
+Nurse walks to the nursing station: 1.0
+Nurse talks to the patient at the nurse station: 0.7387344
+Nurse walks to patients room: 0.68967295
+Nurse visited patient: 0.5567503
+Nurse talked with patient: 0.5269666
+
+16- The highest matching goals for: Nurse moves closer to nursing station with every step he/she takes
+
+Nurse walks to the nursing station: 0.71901107
+Nurse talks to the patient at the nurse station: 0.54137254
+Nurse walks to patients room: 0.4738992
+Nurse turns request off: 0.46636254
+Nurse talked with patient: 0.44103438
+
+17- The highest matching goals for: Come to the nursing station.
+
+Nurse walks to the nursing station: 0.7600693
+Nurse talks to the patient at the nurse station: 0.646511
+Nurse turns request off: 0.5648256
+Nurse responded to the call: 0.4984946
+Patient feels cared for: 0.4748256
+
+18- The highest matching goals for: Nurse is walking towards the nursing stations
+
+Nurse walks to the nursing station: 1.0
+Nurse talks to the patient at the nurse station: 0.7387344
+Nurse walks to patients room: 0.68967295
+Nurse visited patient: 0.5567503
+Nurse talked with patient: 0.5269666
+
+19- The highest matching goals for: The nurse is arriving at the nursing station
+
+Nurse walks to the nursing station: 0.80326575
+Nurse talks to the patient at the nurse station: 0.7242469
+Nurse visited patient: 0.5640801
+Nurse notified: 0.52595377
+Happy nurse: 0.52530086
+
+20- The highest matching goals for: Go to the nursing station
+
+Nurse walks to the nursing station: 0.9088587
+Nurse talks to the patient at the nurse station: 0.72724813
+Nurse skips visit: 0.60948414
+Nurse visited patient: 0.60005796
+Nurse turns request off: 0.59194547
+
+21- The highest matching goals for: Nurse in on hi/her way to the nursing station
+
+Nurse walks to the nursing station: 0.7497302
+Nurse talks to the patient at the nurse station: 0.6449469
+Nurse walks to patients room: 0.5238243
+Comfortable nurse: 0.46798155
+Happy nurse: 0.4572645
+
+22- The highest matching goals for: Nurse is approaching the nursing station
+
+Nurse walks to the nursing station: 0.8138463
+Nurse talks to the patient at the nurse station: 0.74240106
+Nurse talked with patient: 0.53205156
+Comfortable nurse: 0.5177836
+Nurse talks with patient by mobile: 0.510365
+
+23- The highest matching goals for: Nurse travels
+
+Nurse walks to the nursing station: 0.5006384
+Nurse notified: 0.5
+Nurse talks to the patient at the nurse station: 0.4974534
+Nurse visited patient: 0.48590323
+Nurse attend to patient: 0.4820983
+
+The count of the having the right goal the first option: 22
+The count of the having the right goal the second option: 1
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 0

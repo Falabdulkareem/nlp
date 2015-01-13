@@ -1,0 +1,230 @@
+1- The highest matching goals for: Ask for participants availability
+
+Participants attend meeting: 0.48518717
+Request constraints by calling everybody: 0.37967795
+Avoid annoying the participants: 0.36670333
+Request constraints by email: 0.31538543
+Constraints gathered by request based: 0.31065688
+
+2- The highest matching goals for: Demand constraints via email
+
+Request constraints by email: 0.8864393
+Request constraints by calling everybody: 0.51069915
+Constraints gathered by request based: 0.49168283
+Constraints gathered: 0.46341768
+Send email: 0.4326563
+
+3- The highest matching goals for: Please send email reminders to appropriate faculty.
+
+Send email: 0.68150115
+Send attendance reminder: 0.55058384
+Send invitation: 0.43915814
+Request constraints by email: 0.3999064
+Response received: 0.23333631
+
+4- The highest matching goals for: Ask participants by email when they are busy.
+
+Participants attend meeting: 0.4106049
+Send email: 0.38186863
+Request constraints by email: 0.33238128
+Avoid annoying the participants: 0.32523462
+Have meeting scheduled: 0.16258478
+
+5- The highest matching goals for: Send an email to get the meeting constraints from everybody
+
+Send email: 0.6945026
+Request constraints by calling everybody: 0.614174
+Request constraints by email: 0.60238135
+Constraints gathered: 0.60161865
+Constraints gathered automatically: 0.47388697
+
+6- The highest matching goals for: Share available times by email
+
+Send email: 0.3997798
+Request constraints by email: 0.39581904
+Wait one day for responses to arrive: 0.324272
+Wait three days for responses to arrive: 0.324272
+Have meeting scheduled: 0.21179305
+
+7- The highest matching goals for: ask about constraints by email
+
+Request constraints by email: 0.92101675
+Request constraints by calling everybody: 0.59737384
+Constraints gathered by request based: 0.522636
+Send email: 0.5056383
+Constraints gathered: 0.44506595
+
+8- The highest matching goals for: send out email
+
+Send email: 1.0
+Request constraints by email: 0.55965704
+Send invitation: 0.5563052
+Send attendance reminder: 0.43578917
+Response received: 0.28269923
+
+9- The highest matching goals for: Email participants to get their availability
+
+Send email: 0.45743814
+Participants attend meeting: 0.4194284
+Request constraints by email: 0.37164158
+Avoid annoying the participants: 0.34012237
+Have meeting scheduled: 0.16333443
+
+10- The highest matching goals for: Invite participants to send constraints through email
+
+Send email: 0.7235753
+Request constraints by email: 0.7232204
+Send invitation: 0.70357907
+Constraints gathered: 0.47482395
+Request constraints by calling everybody: 0.44296098
+
+11- The highest matching goals for: Please send an email.
+
+Send email: 0.85502595
+Send invitation: 0.51695454
+Request constraints by email: 0.49980563
+Send attendance reminder: 0.39947876
+Response received: 0.26276582
+
+12- The highest matching goals for: Find out by email when the attendees cannot meet.
+
+Send email: 0.44224864
+Find suitable room: 0.40034926
+Constraints gathered: 0.3994457
+Find suitable slot: 0.3927524
+Request constraints by email: 0.38237387
+
+13- The highest matching goals for: Please check by email whether there are any restriction from all the participants
+
+Request constraints by email: 0.5107391
+Participants attend meeting: 0.46060717
+Send email: 0.40463558
+Avoid annoying the participants: 0.3458845
+Constraints gathered: 0.2574095
+
+14- The highest matching goals for: Request electronic calendar availability
+
+Request constraints by calling everybody: 0.36496502
+Request constraints by email: 0.34180784
+Send invitation: 0.34056768
+Constraints gathered by request based: 0.3021264
+Send attendance reminder: 0.22125797
+
+15- The highest matching goals for: Email participants and ask for their constraints
+
+Request constraints by email: 0.81425583
+Request constraints by calling everybody: 0.54665744
+Constraints gathered by request based: 0.476351
+Send email: 0.45736402
+Participants attend meeting: 0.44332823
+
+16- The highest matching goals for: Solicit constraints using email.
+
+Request constraints by email: 0.7506764
+Request constraints by calling everybody: 0.53909963
+Constraints gathered by request based: 0.46137464
+Send email: 0.45522898
+Constraints gathered: 0.4355525
+
+17- The highest matching goals for: Please have an email sent.
+
+Send email: 0.85502595
+Send invitation: 0.51695454
+Request constraints by email: 0.49980563
+Send attendance reminder: 0.39947876
+Response received: 0.26276582
+
+18- The highest matching goals for: Send an email to the participants asking when they are booked.
+
+Send email: 0.7231848
+Request constraints by email: 0.52803546
+Send invitation: 0.47175565
+Participants attend meeting: 0.4216837
+Send attendance reminder: 0.4131068
+
+19- The highest matching goals for: Please get the constraints from all the participants by email
+
+Request constraints by email: 0.6215877
+Participants attend meeting: 0.46757522
+Send email: 0.4367568
+Constraints gathered: 0.4027816
+Request constraints by calling everybody: 0.3518698
+
+20- The highest matching goals for: Request meeting time constraints by email
+
+Request constraints by email: 0.8236398
+Constraints gathered: 0.6337597
+Constraints gathered by request based: 0.63356286
+Request constraints by calling everybody: 0.5809087
+Have meeting scheduled: 0.51074445
+
+21- The highest matching goals for: Ask participants for their restraints by emailing them
+
+Participants attend meeting: 0.41209778
+Avoid annoying the participants: 0.32399207
+Constraints gathered: 0.16785215
+Have meeting scheduled: 0.14894958
+Constraints gathered automatically: 0.13462622
+
+22- The highest matching goals for: Ask for constraints by email
+
+Request constraints by email: 0.92101675
+Request constraints by calling everybody: 0.59737384
+Constraints gathered by request based: 0.522636
+Send email: 0.5056383
+Constraints gathered: 0.44506595
+
+23- The highest matching goals for: Please send an email for me.
+
+Send email: 0.85502595
+Send invitation: 0.51695454
+Request constraints by email: 0.49980563
+Send attendance reminder: 0.39947876
+Response received: 0.26276582
+
+24- The highest matching goals for: Send an email to ask constraints
+
+Request constraints by email: 0.8487868
+Send email: 0.7766915
+Request constraints by calling everybody: 0.5668105
+Constraints gathered by request based: 0.50391936
+Send invitation: 0.47887507
+
+25- The highest matching goals for: Petition to receive constraint replies by email
+
+Request constraints by email: 0.81678796
+Response received: 0.69594306
+Receive responses: 0.69594306
+Send email: 0.55396485
+Constraints gathered by request based: 0.51195455
+
+26- The highest matching goals for: Please convey this message via email.
+
+Send email: 0.57235605
+Request constraints by email: 0.54668236
+Send invitation: 0.37786752
+Send attendance reminder: 0.29411933
+Response received: 0.27348655
+
+27- The highest matching goals for: Invite participants to reply with constraints through email
+
+Request constraints by email: 0.7145273
+Constraints gathered: 0.46251965
+Send email: 0.4474879
+Participants attend meeting: 0.43777207
+Request constraints by calling everybody: 0.4342679
+
+28- The highest matching goals for: Please send this email via Gmail
+
+Send email: 0.76626945
+Send invitation: 0.4652591
+Request constraints by email: 0.43159494
+Send attendance reminder: 0.35135096
+Response received: 0.23761065
+
+The count of the having the right goal the first option: 11
+The count of the having the right goal the second option: 6
+The count of the having the right goal the third option: 7
+The count of the having the right goal the fourth option: 2
+The count of the having the right goal the fifth option: 1
+The count of not having the right goal in the first five options: 1

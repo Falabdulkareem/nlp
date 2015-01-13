@@ -1,0 +1,214 @@
+1- The highest matching goals for: Provide transportation
+
+Supply means of transport: 0.663242
+Use means of transport: 0.64058524
+Supply public transport service: 0.63693404
+Provide tickets: 0.62046045
+Guarantee transportation: 0.57862663
+
+2- The highest matching goals for: Take users to their desired location
+
+Satisfy users: 0.46949908
+Locate stations: 0.4396061
+Group users: 0.43292934
+Transport users to destination: 0.42755687
+Protect users: 0.40462652
+
+3- The highest matching goals for: Transport people to destination
+
+Transport users to destination: 0.74515593
+Supply means of transport: 0.4380175
+Supply public transport service: 0.43256184
+Exchange means of transport: 0.42861694
+User special means of transport: 0.42623794
+
+4- The highest matching goals for: Take users to their stop.
+
+Protect users: 0.48676375
+Group users: 0.4676597
+Transport users to destination: 0.43234128
+Satisfy users: 0.42499828
+Protect user health: 0.38998422
+
+5- The highest matching goals for: Take users to their desired location
+
+Satisfy users: 0.46949908
+Locate stations: 0.4396061
+Group users: 0.43292934
+Transport users to destination: 0.42755687
+Protect users: 0.40462652
+
+6- The highest matching goals for: Select the start and destination point
+
+Connect points: 0.46024692
+Transport users to destination: 0.37412018
+Add sale points on the path: 0.35553867
+Minimizing time: 0.35404783
+Use historical information: 0.2198582
+
+7- The highest matching goals for: deliver users to destination
+
+Transport users to destination: 0.7610418
+Satisfy users: 0.49334204
+Group users: 0.45742083
+Protect users: 0.4545006
+User special means of transport: 0.44277087
+
+8- The highest matching goals for: Move people to the place where they want to go
+
+Estimate sale places: 0.37125954
+Make public service available : 0.34613732
+Make to respect the law: 0.34566605
+Repair means of transport: 0.33005983
+Transport users to destination: 0.3241173
+
+9- The highest matching goals for: move people to their destination
+
+Transport users to destination: 0.47545516
+Group users: 0.3008494
+Make to respect the law: 0.24701056
+Make public service available : 0.2444613
+Define profits to reach: 0.22840498
+
+10- The highest matching goals for: Move users from point A to point B
+
+Connect points: 0.48666668
+Transport users to destination: 0.46422765
+Add sale points on the path: 0.4279187
+Group users: 0.41716
+Satisfy users: 0.40045416
+
+11- The highest matching goals for: Carry users to destination
+
+Transport users to destination: 0.91953206
+User special means of transport: 0.5860538
+Use means of transport: 0.50734466
+Protect users: 0.49053043
+Satisfy users: 0.46251038
+
+12- The highest matching goals for: Take users to their terminal.
+
+Group users: 0.4653537
+Transport users to destination: 0.43944222
+Protect users: 0.4341649
+Satisfy users: 0.43137443
+User special means of transport: 0.37613776
+
+13- The highest matching goals for: Carry users to where they are going
+
+Transport users to destination: 0.65989584
+User special means of transport: 0.5990205
+Use means of transport: 0.52031136
+Protect users: 0.48273858
+Satisfy users: 0.457452
+
+14- The highest matching goals for: Choose the route to the destination
+
+Serve path: 0.5264415
+Transport users to destination: 0.5111774
+Define path: 0.49883693
+Add sale points on the path: 0.3928482
+Choose directly company: 0.38765645
+
+15- The highest matching goals for: Drop off users at destination
+
+Transport users to destination: 0.72009194
+Group users: 0.45476556
+Satisfy users: 0.45245978
+Protect users: 0.44078362
+User special means of transport: 0.39224425
+
+16- The highest matching goals for: transport from point A to point B
+
+Connect points: 0.51558125
+Add sale points on the path: 0.38558218
+Transport users to destination: 0.37141684
+Supply means of transport: 0.3616882
+Exchange means of transport: 0.36133575
+
+17- The highest matching goals for: Take users to their target
+
+Group users: 0.5073287
+Protect users: 0.45758507
+Satisfy users: 0.44586596
+Transport users to destination: 0.39238343
+Minimize cost per user: 0.38003543
+
+18- The highest matching goals for: Take a commuter to destination 
+
+Transport users to destination: 0.42558503
+Provide parking area: 0.23691294
+Provide tickets: 0.2027201
+Make to respect the law: 0.19978403
+Make public service available : 0.19182771
+
+19- The highest matching goals for: Take the users to destination
+
+Transport users to destination: 0.71861196
+Group users: 0.46158683
+Satisfy users: 0.4456553
+Protect users: 0.43606108
+User special means of transport: 0.3946505
+
+20- The highest matching goals for: Take users to their objective.
+
+Group users: 0.46146894
+Satisfy users: 0.4585365
+Protect users: 0.439352
+Minimize cost per user: 0.3789253
+Transport users to destination: 0.36810142
+
+21- The highest matching goals for: Get users to destination
+
+Transport users to destination: 0.7211416
+Satisfy users: 0.4556353
+Group users: 0.45128524
+Protect users: 0.43659467
+Guarantee the user behavior: 0.3992749
+
+22- The highest matching goals for: Transfer users to destination
+
+Transport users to destination: 0.8612162
+User special means of transport: 0.524852
+Satisfy users: 0.45612457
+Group users: 0.44796106
+Use means of transport: 0.44445395
+
+23- The highest matching goals for: Transport user to end point
+
+Transport users to destination: 0.675177
+User special means of transport: 0.5333825
+Use means of transport: 0.48609588
+Connect points: 0.47207665
+Group users: 0.42580125
+
+24- The highest matching goals for: Transport the user to location
+
+Transport users to destination: 0.7581464
+User special means of transport: 0.6284565
+Use means of transport: 0.55575305
+Locate stations: 0.503186
+Group users: 0.45272973
+
+25- The highest matching goals for: User select the destination
+
+Transport users to destination: 0.7279815
+Group users: 0.48343995
+Satisfy users: 0.46034935
+Protect users: 0.4486732
+User special means of transport: 0.43136308
+
+26- The highest matching goals for: bring the user to destination
+
+Transport users to destination: 0.83480996
+User special means of transport: 0.5137175
+Protect users: 0.45414165
+Group users: 0.45134556
+Satisfy users: 0.4468832
+
+The count of the having the right goal the first option: 14
+The count of the having the right goal the second option: 4
+The count of the having the right goal the third option: 2
+The count of the having the right goal the fourth option: 3
+The count of the having the right goal the fifth option: 2
+The count of not having the right goal in the first five options: 1

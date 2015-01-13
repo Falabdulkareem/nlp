@@ -1,0 +1,238 @@
+1- The highest matching goals for: The call was responded by the nurse
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.6312431
+Nurse visited patient: 0.5385095
+Nurse skips visit: 0.5308018
+Nurse talked with patient: 0.53007704
+
+2- The highest matching goals for: Call answered by Nurse
+
+Nurse responded to the call: 0.91338784
+Nurse turns request off: 0.6071516
+Nurse talked with patient: 0.60263395
+Nurse visited patient: 0.58594
+Nurse talks to the patient at the nurse station: 0.5782634
+
+3- The highest matching goals for: Nurse has answered the call
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.63328
+Nurse talked with patient: 0.5585362
+Nurse skips visit: 0.54083765
+Nurse visited patient: 0.5376175
+
+4- The highest matching goals for: Nurse answered the call
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.63328
+Nurse talked with patient: 0.5585362
+Nurse skips visit: 0.54083765
+Nurse visited patient: 0.5376175
+
+5- The highest matching goals for: Nurse replied to patient
+
+Nurse talked with patient: 0.7265207
+Nurse responded to the call: 0.72617656
+Nurse visited patient: 0.69535893
+Nurse attend to patient: 0.68766713
+Nurse talks to the patient at the nurse station: 0.68519753
+
+6- The highest matching goals for: Nurse answered the call
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.63328
+Nurse talked with patient: 0.5585362
+Nurse skips visit: 0.54083765
+Nurse visited patient: 0.5376175
+
+7- The highest matching goals for: The nurse attended to the patient
+
+Nurse attend to patient: 1.0
+Nurse visited patient: 0.7811288
+Nurse talked with patient: 0.71318525
+Nurse talks to the patient at the nurse station: 0.6786979
+Nurse talks with patient by mobile: 0.63644046
+
+8- The highest matching goals for: Nurse answered the call
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.63328
+Nurse talked with patient: 0.5585362
+Nurse skips visit: 0.54083765
+Nurse visited patient: 0.5376175
+
+9- The highest matching goals for: Nurse talking to person who placed call
+
+Nurse talked with patient: 0.7574305
+Nurse talks to the patient at the nurse station: 0.663383
+Nurse responded to the call: 0.6491055
+Nurse talks with patient by mobile: 0.6338657
+Nurse visited patient: 0.5796774
+
+10- The highest matching goals for: Call picked up: Nurse
+
+Nurse responded to the call: 0.6179461
+Nurse turns request off: 0.599053
+Nurse talked with patient: 0.5796907
+Nurse visited patient: 0.57747453
+Nurse talks to the patient at the nurse station: 0.5557661
+
+11- The highest matching goals for: Nurse replied to the call
+
+Nurse responded to the call: 0.9799786
+Nurse turns request off: 0.63301504
+Nurse talked with patient: 0.5424854
+Nurse skips visit: 0.54213536
+Nurse visited patient: 0.53765774
+
+12- The highest matching goals for: Nurse has communicated to the patient
+
+Nurse talked with patient: 0.88115853
+Nurse talks to the patient at the nurse station: 0.8008314
+Nurse talks with patient by mobile: 0.77294827
+Nurse visited patient: 0.7046035
+Nurse attend to patient: 0.69135344
+
+13- The highest matching goals for: Call was answered by the nurse
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.63328
+Nurse talked with patient: 0.5585362
+Nurse skips visit: 0.54083765
+Nurse visited patient: 0.5376175
+
+14- The highest matching goals for: Nurse is in process attending to the patient
+
+Nurse attend to patient: 0.8837841
+Nurse visited patient: 0.6888379
+Nurse talked with patient: 0.678166
+Nurse talks to the patient at the nurse station: 0.5974371
+Nurse walks to patients room: 0.55454564
+
+15- The highest matching goals for: The call was answered by the nurse
+
+Nurse responded to the call: 1.0
+Nurse turns request off: 0.63328
+Nurse talked with patient: 0.5585362
+Nurse skips visit: 0.54083765
+Nurse visited patient: 0.5376175
+
+16- The highest matching goals for: Patient no longer needs assistance from nurse
+
+Nurse attend to patient: 0.5534828
+Nurse visited patient: 0.54440886
+Nurse talked with patient: 0.52879
+Nurse talks to the patient at the nurse station: 0.49959955
+Nurse talks with patient by mobile: 0.45766503
+
+17- The highest matching goals for: New reply by Nurse
+
+Nurse responded to the call: 0.7123979
+Nurse notified: 0.48338094
+Nurse turns request off: 0.46608695
+Happy nurse: 0.4547899
+Nurse talked with patient: 0.45367748
+
+18- The highest matching goals for: Make sure to not miss any calls from the patients. 
+
+Nurse visited patient: 0.41315457
+Nurse talked with patient: 0.40626585
+Nurse skips visit: 0.3867987
+Nurse responded to the call: 0.3857244
+Happy patient: 0.38525638
+
+19- The highest matching goals for: Nurse talked to the patient
+
+Nurse talked with patient: 1.0
+Nurse talks to the patient at the nurse station: 0.8896977
+Nurse talks with patient by mobile: 0.8672215
+Nurse visited patient: 0.72159404
+Nurse attend to patient: 0.71318525
+
+20- The highest matching goals for: Nurse responded to the request
+
+Nurse responded to the call: 0.893031
+Nurse turns request off: 0.72930646
+Nurse notified: 0.620573
+System notifies the nurse through speakers: 0.47343954
+Happy nurse: 0.44390896
+
+21- The highest matching goals for: The nurse had acknowledge the call
+
+Nurse responded to the call: 0.7386348
+Nurse turns request off: 0.604285
+Nurse talked with patient: 0.53307897
+Nurse skips visit: 0.53236127
+Nurse visited patient: 0.52764684
+
+22- The highest matching goals for: Answer the calls with patience
+
+Nurse responded to the call: 0.7144637
+Nurse turns request off: 0.34774372
+Nurse skips visit: 0.2553014
+Nurse talked with patient: 0.24839085
+Patient feels cared for: 0.24206984
+
+23- The highest matching goals for: Nurse responded to patient's inquiry 
+
+Nurse responded to the call: 0.6999686
+Nurse talked with patient: 0.64580214
+Nurse visited patient: 0.63155067
+Nurse attend to patient: 0.6173167
+Nurse talks to the patient at the nurse station: 0.5842898
+
+24- The highest matching goals for: Nurse replied to the call
+
+Nurse responded to the call: 0.9799786
+Nurse turns request off: 0.63301504
+Nurse talked with patient: 0.5424854
+Nurse skips visit: 0.54213536
+Nurse visited patient: 0.53765774
+
+25- The highest matching goals for: The nurse had been paged to the call
+
+Nurse responded to the call: 0.7258713
+Nurse turns request off: 0.6116673
+Nurse visited patient: 0.5459527
+Nurse skips visit: 0.53883237
+Nurse talked with patient: 0.5339183
+
+26- The highest matching goals for: The request has already been taken care of
+
+Nurse turns request off: 0.48856696
+Patient feels cared for: 0.3926672
+Nurse responded to the call: 0.36599156
+Nurse notified: 0.31879675
+Nurse attend to patient: 0.30622253
+
+27- The highest matching goals for: Page had been received by the nurse
+
+Nurse attend to patient: 0.4552393
+Nurse notified: 0.4444388
+Comfortable nurse: 0.43887442
+Happy nurse: 0.43509582
+Nurse turns request off: 0.43021384
+
+28- The highest matching goals for: Nurse answered patients call
+
+Nurse responded to the call: 0.83942133
+Nurse talked with patient: 0.766316
+Nurse visited patient: 0.7558279
+Nurse talks to the patient at the nurse station: 0.6988579
+Nurse attend to patient: 0.6932563
+
+29- The highest matching goals for: The nurse provided response to the call
+
+Nurse responded to the call: 0.87132937
+Nurse turns request off: 0.5711417
+Nurse visited patient: 0.4833976
+Nurse talked with patient: 0.47286755
+Nurse skips visit: 0.4678672
+
+The count of the having the right goal the first option: 19
+The count of the having the right goal the second option: 1
+The count of the having the right goal the third option: 2
+The count of the having the right goal the fourth option: 1
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 6

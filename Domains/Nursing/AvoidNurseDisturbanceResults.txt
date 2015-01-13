@@ -1,0 +1,238 @@
+1- The highest matching goals for: Do not disturb the nurse
+
+Avoid nurse disturbance: 0.5962863
+Avoid patient disturbance: 0.4441147
+Happy nurse: 0.4136185
+Comfortable nurse: 0.3928818
+Nurse walks to the nursing station: 0.38554135
+
+2- The highest matching goals for: Do not disturb the nurse
+
+Avoid nurse disturbance: 0.5962863
+Avoid patient disturbance: 0.4441147
+Happy nurse: 0.4136185
+Comfortable nurse: 0.3928818
+Nurse walks to the nursing station: 0.38554135
+
+3- The highest matching goals for: Do not bother nurse
+
+Comfortable nurse: 0.42893544
+Happy nurse: 0.41161767
+Nurse notified: 0.3955938
+Nurse walks to the nursing station: 0.38624102
+Nurse talks to the patient at the nurse station: 0.38284978
+
+4- The highest matching goals for: Avoid troubles
+
+Avoid nurse disturbance: 0.69794935
+Avoid patient disturbance: 0.69378513
+Communication handled: 0.13746071
+Nurse skips visit: 0.10912099
+Patient feels cared for: 0.08528914
+
+5- The highest matching goals for: Nurse should avoid disturbance
+
+Avoid nurse disturbance: 1.0
+Avoid patient disturbance: 0.8260896
+Happy nurse: 0.4526097
+Comfortable nurse: 0.4484447
+Nurse walks to the nursing station: 0.43708012
+
+6- The highest matching goals for: Avoid disturbing the nurses
+
+Avoid nurse disturbance: 0.9742007
+Avoid patient disturbance: 0.8002904
+Happy nurse: 0.45557058
+Comfortable nurse: 0.44869825
+Nurse walks to the nursing station: 0.4339157
+
+7- The highest matching goals for: Please do not interrupt the nurses.
+
+Happy nurse: 0.46176767
+Nurse turns request off: 0.3944958
+Nurse notified: 0.39273387
+Comfortable nurse: 0.38950923
+Nurse skips visit: 0.385954
+
+8- The highest matching goals for: Try not to disturb the nurse
+
+Avoid nurse disturbance: 0.63106525
+Avoid patient disturbance: 0.47889367
+Happy nurse: 0.41309497
+Nurse talks to the patient at the nurse station: 0.40650105
+Nurse talked with patient: 0.40201414
+
+9- The highest matching goals for: Do not distract nurse from what he/she is doing
+
+Avoid nurse disturbance: 0.35899425
+Comfortable nurse: 0.35482275
+Happy nurse: 0.35098064
+Nurse notified: 0.3437579
+Nurse walks to the nursing station: 0.34142837
+
+10- The highest matching goals for: Do not contact nurse
+
+Nurse notified: 0.6177308
+Nurse turns request off: 0.45820403
+System notifies the nurse through speakers: 0.44935867
+System notifies the nurse through earphones: 0.4393282
+Nurse visited patient: 0.42717525
+
+11- The highest matching goals for: Avoid making noises
+
+Avoid patient disturbance: 0.47370028
+Avoid nurse disturbance: 0.4663047
+Communication handled: 0.28097183
+Nurse turns request off: 0.25205564
+Nurse responded to the call: 0.112878524
+
+12- The highest matching goals for: Nurse should not disturb
+
+Avoid nurse disturbance: 0.6685428
+Avoid patient disturbance: 0.49463245
+Happy nurse: 0.4582364
+Comfortable nurse: 0.4361961
+Nurse walks to the nursing station: 0.4275991
+
+13- The highest matching goals for: do not allow the nurses to be bothered
+
+Comfortable nurse: 0.41522482
+Happy nurse: 0.38662842
+Nurse notified: 0.370524
+Nurse talks to the patient at the nurse station: 0.36127645
+Nurse walks to the nursing station: 0.3607485
+
+14- The highest matching goals for: Interrupting nurses must be avoided
+
+Avoid nurse disturbance: 0.7672242
+Avoid patient disturbance: 0.5933138
+Nurse skips visit: 0.48698485
+Comfortable nurse: 0.44843978
+Nurse walks to the nursing station: 0.44182366
+
+15- The highest matching goals for: Wait until nurse has finished his/her tasks
+
+Nurse walks to the nursing station: 0.41621944
+Nurse notified: 0.38696313
+Nurse talks to the patient at the nurse station: 0.3805795
+Comfortable nurse: 0.37628004
+Nurse talked with patient: 0.37169138
+
+16- The highest matching goals for: Avoid disturbance of nurse
+
+Avoid nurse disturbance: 1.0
+Avoid patient disturbance: 0.8260896
+Happy nurse: 0.4526097
+Comfortable nurse: 0.4484447
+Nurse walks to the nursing station: 0.43708012
+
+17- The highest matching goals for: Be quiet when doing tasks
+
+Comfortable nurse: 0.15575871
+Communication handled: 0.12610327
+Avoid patient disturbance: 0.12518589
+Avoid nurse disturbance: 0.11955129
+Happy nurse: 0.111687645
+
+18- The highest matching goals for: Nurse should not cause disturbance
+
+Avoid nurse disturbance: 0.69479233
+Avoid patient disturbance: 0.5426207
+Nurse turns request off: 0.42922795
+Happy nurse: 0.41210374
+Comfortable nurse: 0.39326456
+
+19- The highest matching goals for: do not bother the nurses
+
+Comfortable nurse: 0.42893544
+Happy nurse: 0.41161767
+Nurse notified: 0.3955938
+Nurse walks to the nursing station: 0.38624102
+Nurse talks to the patient at the nurse station: 0.38284978
+
+20- The highest matching goals for: It is not advisable to interrupt nurses
+
+Nurse notified: 0.6171665
+System notifies the nurse through speakers: 0.44647086
+System notifies the nurse through earphones: 0.43466642
+Comfortable nurse: 0.42904595
+Avoid nurse disturbance: 0.42469144
+
+21- The highest matching goals for: Avoid doing noisy things
+
+Avoid nurse disturbance: 0.36342123
+Avoid patient disturbance: 0.3619146
+Communication handled: 0.13204326
+Nurse talked with patient: 0.09879754
+Patient feels cared for: 0.092960365
+
+22- The highest matching goals for: Nurse is not suppose to disturb
+
+Avoid nurse disturbance: 0.5904778
+Avoid patient disturbance: 0.43830627
+Happy nurse: 0.42116737
+Nurse talks to the patient at the nurse station: 0.40551656
+Nurse talked with patient: 0.4006488
+
+23- The highest matching goals for: Do not distract the nurse
+
+Avoid nurse disturbance: 0.41168728
+Comfortable nurse: 0.39979702
+Happy nurse: 0.3946232
+Nurse notified: 0.3876394
+Nurse walks to the nursing station: 0.38492823
+
+24- The highest matching goals for: The disturbance of the nurses must be minimized
+
+Avoid nurse disturbance: 0.8450932
+Avoid patient disturbance: 0.6711828
+Nurse notified: 0.4551724
+Happy nurse: 0.45196125
+Comfortable nurse: 0.43978775
+
+25- The highest matching goals for: Do not bother anyone
+
+Patient feels cared for: 0.13926366
+Nurse responded to the call: 0.07239782
+Avoid patient disturbance: 0.071181275
+Nurse skips visit: 0.06989993
+Avoid nurse disturbance: 0.06803276
+
+26- The highest matching goals for: Do not disturb the nurse
+
+Avoid nurse disturbance: 0.5962863
+Avoid patient disturbance: 0.4441147
+Happy nurse: 0.4136185
+Comfortable nurse: 0.3928818
+Nurse walks to the nursing station: 0.38554135
+
+27- The highest matching goals for: The level of disturbance of nurses must be kept to minimum
+
+Avoid nurse disturbance: 0.82006717
+Avoid patient disturbance: 0.68093884
+Increase nurse productivity: 0.42150182
+Nurse walks to patients room: 0.3891148
+Nurse walks to the nursing station: 0.38589507
+
+28- The highest matching goals for: Nurses are not to be pestered.
+
+Comfortable nurse: 0.44172725
+Nurse notified: 0.4415593
+Nurse walks to the nursing station: 0.43933228
+Happy nurse: 0.43422478
+Nurse talks to the patient at the nurse station: 0.42965844
+
+29- The highest matching goals for: Nurses should not be disturbed
+
+Avoid nurse disturbance: 0.6685428
+Avoid patient disturbance: 0.49463245
+Happy nurse: 0.4582364
+Comfortable nurse: 0.4361961
+Nurse walks to the nursing station: 0.4275991
+
+The count of the having the right goal the first option: 18
+The count of the having the right goal the second option: 1
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 1
+The count of the having the right goal the fifth option: 2
+The count of not having the right goal in the first five options: 7

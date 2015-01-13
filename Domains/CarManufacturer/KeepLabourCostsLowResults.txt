@@ -1,0 +1,246 @@
+1- The highest matching goals for: reduce labour costs
+
+Keep labour costs low: 0.7474995
+Reduce operating costs: 0.69769144
+Reduce raw materials costs: 0.62551093
+Increase sales price: 0.6104608
+Lower purchase costs: 0.44150937
+
+2- The highest matching goals for: maintain low labour costs
+
+Keep labour costs low: 1.0
+Increase sales price: 0.49165025
+Gas price rises: 0.45110956
+Reduce operating costs: 0.4291239
+Us gas price rises: 0.40801778
+
+3- The highest matching goals for: The costs of labour shall remain low
+
+Keep labour costs low: 0.9132586
+Increase sales price: 0.47075307
+Gas price rises: 0.45159134
+Reduce operating costs: 0.4228874
+Us gas price rises: 0.40961784
+
+4- The highest matching goals for: Do not increase labour costs
+
+Increase sales price: 0.58896506
+Keep labour costs low: 0.5867812
+Reduce operating costs: 0.45575878
+Reduce raw materials costs: 0.40034753
+Gas price rises: 0.38460565
+
+5- The highest matching goals for: Reduce labour costs low
+
+Keep labour costs low: 0.8551371
+Reduce operating costs: 0.6481081
+Increase sales price: 0.5852585
+Reduce raw materials costs: 0.5759277
+Gas price rises: 0.46927276
+
+6- The highest matching goals for: Labour costs should remain low
+
+Keep labour costs low: 0.9132586
+Increase sales price: 0.47075307
+Gas price rises: 0.45159134
+Reduce operating costs: 0.4228874
+Us gas price rises: 0.40961784
+
+7- The highest matching goals for: cut back on labor costs
+
+Keep labour costs low: 0.6023186
+Increase sales price: 0.43899402
+Reduce operating costs: 0.43228245
+Reduce raw materials costs: 0.40367103
+Lower purchase costs: 0.37113056
+
+8- The highest matching goals for: cut the labour costs.
+
+Reduce operating costs: 0.65024465
+Keep labour costs low: 0.63305545
+Reduce raw materials costs: 0.59646255
+Increase sales price: 0.46644717
+Gas price rises: 0.43045363
+
+9- The highest matching goals for: reserve low labour costs
+
+Keep labour costs low: 0.75791836
+Increase sales price: 0.4824325
+Reduce operating costs: 0.4151355
+Lower sales price: 0.39114895
+Lower purchase costs: 0.39099756
+
+10- The highest matching goals for: Stabilize low labour costs
+
+Keep labour costs low: 0.7737077
+Increase sales price: 0.4794647
+Gas price rises: 0.4647715
+Reduce operating costs: 0.42615718
+Us gas price rises: 0.41997603
+
+11- The highest matching goals for: Do not alter the cost of labour
+
+Keep labour costs low: 0.51743364
+Increase sales price: 0.45675436
+Reduce operating costs: 0.40145162
+Reduce raw materials costs: 0.3544531
+Lower purchase costs: 0.32865006
+
+12- The highest matching goals for: Lower labour costs
+
+Lower purchase costs: 0.7398954
+Lower sales price: 0.7335519
+Lower production costs: 0.72469056
+Lower gas price: 0.71022266
+Keep labour costs low: 0.60670614
+
+13- The highest matching goals for: Keep costs for labour low
+
+Keep labour costs low: 1.0
+Increase sales price: 0.4897216
+Reduce operating costs: 0.47910142
+Gas price rises: 0.44969147
+Reduce raw materials costs: 0.43013427
+
+14- The highest matching goals for: need to lower labour costs
+
+Lower purchase costs: 0.6753668
+Lower production costs: 0.660162
+Lower sales price: 0.6437637
+Lower gas price: 0.6204345
+Keep labour costs low: 0.57124007
+
+15- The highest matching goals for: lower the labour costs
+
+Lower purchase costs: 0.7398954
+Lower sales price: 0.7335519
+Lower production costs: 0.72469056
+Lower gas price: 0.71022266
+Keep labour costs low: 0.60670614
+
+16- The highest matching goals for: maintain low labour costs
+
+Keep labour costs low: 1.0
+Increase sales price: 0.49165025
+Gas price rises: 0.45110956
+Reduce operating costs: 0.4291239
+Us gas price rises: 0.40801778
+
+17- The highest matching goals for: Keep labour costs at a reduced rate
+
+Keep labour costs low: 0.8461854
+Reduce operating costs: 0.66853553
+Reduce raw materials costs: 0.5963551
+Increase sales price: 0.5798126
+Japanese rates rise: 0.45533702
+
+18- The highest matching goals for: minimize labour costs
+
+Keep labour costs low: 0.7185075
+Reduce operating costs: 0.5475405
+Reduce raw materials costs: 0.49532452
+Increase sales price: 0.46031746
+Lower purchase costs: 0.43071562
+
+19- The highest matching goals for: Lower labour costs should be kept
+
+Keep labour costs low: 0.76969606
+Lower purchase costs: 0.6524826
+Lower sales price: 0.64486736
+Lower production costs: 0.6372778
+Lower gas price: 0.6201983
+
+20- The highest matching goals for: decrease labour costs
+
+Keep labour costs low: 0.71042055
+Reduce operating costs: 0.69769144
+Reduce raw materials costs: 0.62458044
+Increase sales price: 0.62138224
+Lower purchase costs: 0.41720143
+
+21- The highest matching goals for: lessen the costs of labour
+
+Reduce operating costs: 0.6281651
+Keep labour costs low: 0.61508113
+Reduce raw materials costs: 0.5637449
+Increase sales price: 0.48793852
+Gas price rises: 0.41495824
+
+22- The highest matching goals for: hold the low labour costs
+
+Keep labour costs low: 1.0
+Increase sales price: 0.47764915
+Gas price rises: 0.458949
+Reduce operating costs: 0.4202559
+Us gas price rises: 0.41415352
+
+23- The highest matching goals for: Low labour costs must be kept
+
+Keep labour costs low: 0.76969606
+Reduce operating costs: 0.43759516
+Increase sales price: 0.40523183
+Reduce raw materials costs: 0.388628
+Lower purchase costs: 0.36081594
+
+24- The highest matching goals for: increase efficiency in our staff
+
+Increase customer loyalty: 0.48054546
+Increase return on investment: 0.44700652
+Increase profit per vehicle: 0.3999395
+Increase sales volume: 0.39870593
+Increase sales price: 0.3979894
+
+25- The highest matching goals for: the labour costs needs to be kept low
+
+Keep labour costs low: 0.94594216
+Reduce operating costs: 0.47657493
+Increase sales price: 0.45193803
+Reduce raw materials costs: 0.42946646
+Gas price rises: 0.40978888
+
+26- The highest matching goals for: labour costs should be kept low
+
+Keep labour costs low: 1.0
+Increase sales price: 0.4897216
+Reduce operating costs: 0.47910142
+Gas price rises: 0.44969147
+Reduce raw materials costs: 0.43013427
+
+27- The highest matching goals for: Cost of labour should remain low
+
+Keep labour costs low: 0.9132586
+Increase sales price: 0.47075307
+Gas price rises: 0.45159134
+Reduce operating costs: 0.4228874
+Us gas price rises: 0.40961784
+
+28- The highest matching goals for: keep labour costs under control
+
+Keep labour costs low: 0.83486176
+Reduce operating costs: 0.47644565
+Reduce raw materials costs: 0.42886922
+Increase sales price: 0.42021936
+Lower purchase costs: 0.36596987
+
+29- The highest matching goals for: retain low labour costs
+
+Keep labour costs low: 0.9534215
+Increase sales price: 0.47868794
+Gas price rises: 0.4467947
+Reduce operating costs: 0.42386353
+Us gas price rises: 0.4019992
+
+30- The highest matching goals for: Keep the cost of labour low
+
+Keep labour costs low: 1.0
+Increase sales price: 0.4897216
+Reduce operating costs: 0.47910142
+Gas price rises: 0.44969147
+Reduce raw materials costs: 0.43013427
+
+The count of the having the right goal the first option: 23
+The count of the having the right goal the second option: 3
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 3
+The count of not having the right goal in the first five options: 1

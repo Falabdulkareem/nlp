@@ -1,0 +1,246 @@
+1- The highest matching goals for: decrease the cost of raw materials
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.54084826
+Gas price rises: 0.451828
+Us gas price rises: 0.4065965
+
+2- The highest matching goals for: cut down the cost of raw materials
+
+Reduce raw materials costs: 0.9644149
+Reduce operating costs: 0.5498528
+Gas price rises: 0.4086712
+Increase sales price: 0.40528002
+Lower production costs: 0.39225343
+
+3- The highest matching goals for: shrink costs of raw materials
+
+Reduce raw materials costs: 0.86662567
+Reduce operating costs: 0.4357654
+Gas price rises: 0.4303805
+Increase sales price: 0.40596852
+Us gas price rises: 0.38821295
+
+4- The highest matching goals for: Use cheaper materials
+
+Reduce raw materials costs: 0.3196143
+Outsource units of production: 0.088035464
+Increase sales volume: 0.08027813
+Improve economies of production: 0.07847857
+Lower production costs: 0.05647997
+
+5- The highest matching goals for: Minimize raw material costs
+
+Reduce raw materials costs: 0.8873868
+Reduce operating costs: 0.45998666
+Keep labour costs low: 0.40216827
+Increase sales price: 0.40064934
+Lower production costs: 0.39346385
+
+6- The highest matching goals for: Reduce costs for raw materials
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.53129196
+Keep labour costs low: 0.43013427
+Gas price rises: 0.4125508
+
+7- The highest matching goals for: cut down on raw material costs
+
+Reduce raw materials costs: 0.9644149
+Reduce operating costs: 0.5498528
+Gas price rises: 0.4086712
+Increase sales price: 0.40528002
+Lower production costs: 0.39225343
+
+8- The highest matching goals for: the raw material cost needs to be reduces
+
+Reduce raw materials costs: 0.94594216
+Reduce operating costs: 0.58570385
+Increase sales price: 0.49279335
+Keep labour costs low: 0.43851826
+Lower production costs: 0.4080168
+
+9- The highest matching goals for: lowering raw materials costs
+
+Reduce raw materials costs: 0.93328106
+Reduce operating costs: 0.51353
+Gas price rises: 0.46853325
+Increase sales price: 0.4507181
+Us gas price rises: 0.4209153
+
+10- The highest matching goals for: trim raw material costs
+
+Reduce raw materials costs: 0.7829252
+Lower production costs: 0.38206336
+Increase sales price: 0.38083863
+Lower gas price: 0.3619679
+Lower purchase costs: 0.35032505
+
+11- The highest matching goals for: Decrease costs on raw materials
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.54084826
+Gas price rises: 0.451828
+Us gas price rises: 0.4065965
+
+12- The highest matching goals for: Lower raw material costs
+
+Reduce raw materials costs: 0.7762105
+Lower production costs: 0.6670153
+Lower gas price: 0.6534691
+Lower sales price: 0.6389967
+Lower purchase costs: 0.63527703
+
+13- The highest matching goals for: Raw materials costs should be reduced
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.53129196
+Keep labour costs low: 0.43013427
+Gas price rises: 0.4125508
+
+14- The highest matching goals for: decrease raw material costs 
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.54084826
+Keep labour costs low: 0.39550832
+Lower production costs: 0.38402313
+
+15- The highest matching goals for: can you please lower the cost of raw materials
+
+Reduce raw materials costs: 0.706722
+Lower production costs: 0.610376
+Lower gas price: 0.5968025
+Lower purchase costs: 0.58777344
+Lower sales price: 0.5860222
+
+16- The highest matching goals for: decline the raw materals costs
+
+Reduce raw materials costs: 0.5653592
+Increase sales price: 0.4789605
+Gas price rises: 0.45983368
+Us gas price rises: 0.41204888
+Japanese gas price rises: 0.39462847
+
+17- The highest matching goals for: lower raw material costs
+
+Reduce raw materials costs: 0.7762105
+Lower production costs: 0.6670153
+Lower gas price: 0.6534691
+Lower sales price: 0.6389967
+Lower purchase costs: 0.63527703
+
+18- The highest matching goals for: Decrease raw material costs
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.54084826
+Keep labour costs low: 0.39550832
+Lower production costs: 0.38402313
+
+19- The highest matching goals for: Reduce the cost of raw materials
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.53129196
+Keep labour costs low: 0.43013427
+Gas price rises: 0.4125508
+
+20- The highest matching goals for: reduce suppliers costs
+
+Reduce operating costs: 0.6820518
+Reduce raw materials costs: 0.6338794
+Increase sales price: 0.631686
+Keep labour costs low: 0.5006467
+Lower purchase costs: 0.4742201
+
+21- The highest matching goals for: Have you reduced the raw material cost?
+
+Reduce raw materials costs: 0.9
+Reduce operating costs: 0.53976166
+Increase sales price: 0.48668835
+Keep labour costs low: 0.3925761
+Gas price rises: 0.37567332
+
+22- The highest matching goals for: weaken the cost of raw materials
+
+Reduce raw materials costs: 0.7853356
+Increase sales price: 0.39536074
+Gas price rises: 0.3895717
+Lower production costs: 0.37955573
+Lower gas price: 0.3637578
+
+23- The highest matching goals for: Lower raw materials costs
+
+Reduce raw materials costs: 0.7762105
+Lower production costs: 0.6670153
+Lower gas price: 0.6534691
+Lower sales price: 0.6389967
+Lower purchase costs: 0.63527703
+
+24- The highest matching goals for: improve on raw material consumption
+
+Reduce raw materials costs: 0.66052634
+Improve economies of production: 0.45863652
+Improve mileage: 0.4147799
+Improve car quality: 0.40312833
+Improve car service: 0.3281217
+
+25- The highest matching goals for: lessen the raw materials cost
+
+Reduce raw materials costs: 0.94785523
+Reduce operating costs: 0.5305332
+Increase sales price: 0.424085
+Gas price rises: 0.39511272
+Lower production costs: 0.3816299
+
+26- The highest matching goals for: scale down on the cost of raw materials
+
+Reduce raw materials costs: 0.794046
+Increase sales price: 0.39350417
+Lower production costs: 0.39318419
+Gas price rises: 0.3818715
+Lower gas price: 0.374996
+
+27- The highest matching goals for: The cost of raw materials must be reduced
+
+Reduce raw materials costs: 1.0
+Reduce operating costs: 0.59136873
+Increase sales price: 0.53129196
+Keep labour costs low: 0.43013427
+Gas price rises: 0.4125508
+
+28- The highest matching goals for: cut the cost of the raw materials
+
+Reduce raw materials costs: 0.9644149
+Reduce operating costs: 0.5498528
+Gas price rises: 0.4086712
+Increase sales price: 0.40528002
+Lower production costs: 0.39225343
+
+29- The highest matching goals for: raw materials cost should not increase
+
+Reduce raw materials costs: 0.82143754
+Increase sales price: 0.5860674
+Reduce operating costs: 0.44357228
+Gas price rises: 0.4153198
+Increase sales volume: 0.38872305
+
+30- The highest matching goals for: Reduction in the costs of raw materials
+
+Reduce raw materials costs: 0.98032814
+Reduce operating costs: 0.56841826
+Increase sales price: 0.5237171
+Keep labour costs low: 0.41859528
+Gas price rises: 0.41782165
+
+The count of the having the right goal the first option: 29
+The count of the having the right goal the second option: 1
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 0
+The count of not having the right goal in the first five options: 0

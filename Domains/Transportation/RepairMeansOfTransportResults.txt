@@ -1,0 +1,214 @@
+1- The highest matching goals for: fix transport vehicles
+
+Repair means of transport: 0.5578644
+Supply means of transport: 0.50101954
+Improve transport services: 0.49060175
+Transport users to destination: 0.48313203
+Exchange means of transport: 0.4803159
+
+2- The highest matching goals for: Fix transport vehicles
+
+Repair means of transport: 0.72430915
+Improve transport services: 0.601667
+Exchange means of transport: 0.4984853
+Supply means of transport: 0.4981061
+Transport users to destination: 0.4808596
+
+3- The highest matching goals for: Maintain means of transport
+
+Maintain means of transport: 1.0
+Protect means of transport: 0.86987823
+Repair means of transport: 0.79283214
+Build means of transport: 0.7678267
+Supply means of transport: 0.73358583
+
+4- The highest matching goals for: Reconstruct means of transport.
+
+Repair means of transport: 0.7951716
+Use means of transport: 0.7204994
+Supply means of transport: 0.71427953
+Build means of transport: 0.7119507
+Exchange means of transport: 0.7101037
+
+5- The highest matching goals for: Fix means of transport
+
+Repair means of transport: 0.9453174
+Exchange means of transport: 0.71949357
+Supply means of transport: 0.71911436
+Use means of transport: 0.7176394
+Maintain means of transport: 0.70138735
+
+6- The highest matching goals for: Repair means of transit
+
+Repair means of transport: 0.794123
+Build means of transport: 0.52114064
+Use means of transport: 0.51874727
+Supply means of transport: 0.50907314
+Maintain means of transport: 0.5075979
+
+7- The highest matching goals for: fix means of transport
+
+Repair means of transport: 0.77887267
+Supply means of transport: 0.7220278
+Use means of transport: 0.7130544
+Exchange means of transport: 0.70132416
+Maintain means of transport: 0.69847155
+
+8- The highest matching goals for: Maintenance way of transport
+
+Repair means of transport: 0.92227346
+Maintain means of transport: 0.88420486
+Protect means of transport: 0.77817875
+Use means of transport: 0.708196
+Build means of transport: 0.7043528
+
+9- The highest matching goals for: Repair transportation means
+
+Repair means of transport: 0.9451124
+Supply means of transport: 0.68265855
+Build means of transport: 0.67213005
+Use means of transport: 0.6697366
+Maintain means of transport: 0.65858734
+
+10- The highest matching goals for: Reform means of transport.
+
+Plan transport service: 0.5172456
+Supply means of transport: 0.44342974
+Exchange means of transport: 0.43492624
+Use means of transport: 0.43400878
+Maintain means of transport: 0.4166885
+
+11- The highest matching goals for: Make sure means of transport is working properly
+
+Build means of transport: 0.65285087
+Use means of transport: 0.6188958
+Maintain means of transport: 0.57979417
+Protect means of transport: 0.57206076
+Supply means of transport: 0.5713297
+
+12- The highest matching goals for: Repair means of vehicle
+
+Repair means of transport: 0.8617702
+Build means of transport: 0.58878785
+Use means of transport: 0.5863944
+Supply means of transport: 0.57672036
+Maintain means of transport: 0.57524514
+
+13- The highest matching goals for: adjust means of transport
+
+Use means of transport: 0.7200613
+Maintain means of transport: 0.7058187
+Supply means of transport: 0.7055037
+Exchange means of transport: 0.7035194
+Repair means of transport: 0.6996718
+
+14- The highest matching goals for: Fix means of transport
+
+Repair means of transport: 0.9453174
+Exchange means of transport: 0.71949357
+Supply means of transport: 0.71911436
+Use means of transport: 0.7176394
+Maintain means of transport: 0.70138735
+
+15- The highest matching goals for: Adjust means of transport.
+
+Use means of transport: 0.7200613
+Maintain means of transport: 0.7058187
+Supply means of transport: 0.7055037
+Exchange means of transport: 0.7035194
+Repair means of transport: 0.6996718
+
+16- The highest matching goals for: Repair means of carrier
+
+Repair means of transport: 0.8830387
+Build means of transport: 0.6100564
+Use means of transport: 0.607663
+Supply means of transport: 0.59798884
+Maintain means of transport: 0.5965136
+
+17- The highest matching goals for: improve means of transport
+
+Build means of transport: 0.85407484
+Repair means of transport: 0.84242463
+Maintain means of transport: 0.75565773
+Use means of transport: 0.73171246
+Supply means of transport: 0.7166275
+
+18- The highest matching goals for: Rectify means of transport.
+
+Repair means of transport: 0.7744271
+Supply means of transport: 0.7217425
+Use means of transport: 0.7143748
+Exchange means of transport: 0.7023778
+Maintain means of transport: 0.68990916
+
+19- The highest matching goals for: Reconstruct means of transport
+
+Repair means of transport: 0.7951716
+Use means of transport: 0.7204994
+Supply means of transport: 0.71427953
+Build means of transport: 0.7119507
+Exchange means of transport: 0.7101037
+
+20- The highest matching goals for: correct the means of transport
+
+Repair means of transport: 0.78359544
+Supply means of transport: 0.7266922
+Use means of transport: 0.71172357
+Exchange means of transport: 0.7023528
+Maintain means of transport: 0.70066226
+
+21- The highest matching goals for: Refurbish means of transport.
+
+Repair means of transport: 0.79691845
+Use means of transport: 0.7249983
+Supply means of transport: 0.71877843
+Exchange means of transport: 0.7102749
+Build means of transport: 0.7054219
+
+22- The highest matching goals for: Substitution means of transport
+
+Use means of transport: 0.73494005
+Exchange means of transport: 0.724468
+Supply means of transport: 0.7218827
+Maintain means of transport: 0.7007748
+Build means of transport: 0.68699723
+
+23- The highest matching goals for: patch the means of transport
+
+Repair means of transport: 0.7321937
+Supply means of transport: 0.7121601
+Use means of transport: 0.71172357
+Maintain means of transport: 0.7001089
+Exchange means of transport: 0.6970002
+
+24- The highest matching goals for: Remedy means of transport.
+
+Use means of transport: 0.7420019
+Supply means of transport: 0.735782
+Exchange means of transport: 0.72727853
+Maintain means of transport: 0.7175362
+Repair means of transport: 0.71653533
+
+25- The highest matching goals for: New part means of transport
+
+Use means of transport: 0.5080481
+Plan transport service: 0.47305933
+Supply means of transport: 0.41047788
+Exchange means of transport: 0.40197438
+Repair means of transport: 0.39251608
+
+26- The highest matching goals for: restore means of transport
+
+Repair means of transport: 0.9170005
+Maintain means of transport: 0.80589986
+Protect means of transport: 0.75610137
+Build means of transport: 0.72495455
+Clean means of transport: 0.724658
+
+The count of the having the right goal the first option: 17
+The count of the having the right goal the second option: 1
+The count of the having the right goal the third option: 1
+The count of the having the right goal the fourth option: 0
+The count of the having the right goal the fifth option: 4
+The count of not having the right goal in the first five options: 3

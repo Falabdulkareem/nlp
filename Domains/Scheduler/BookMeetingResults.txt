@@ -1,0 +1,246 @@
+1- The highest matching goals for: Schedule a meeting
+
+Have meeting scheduled: 0.9704113
+Participants attend meeting: 0.5990465
+Have meeting announced: 0.5969938
+Book the meeting: 0.55853415
+Constraints gathered: 0.48830995
+
+2- The highest matching goals for: Book the gathering. 
+
+Book the meeting: 0.90755624
+Constraints gathered: 0.49236882
+Have meeting scheduled: 0.41578382
+Have meeting announced: 0.4156129
+Constraints gathered automatically: 0.41417417
+
+3- The highest matching goals for: Please book the meeting.
+
+Book the meeting: 0.9045845
+Have meeting scheduled: 0.54558057
+Have meeting announced: 0.53465515
+Participants attend meeting: 0.5332775
+Constraints gathered: 0.35836318
+
+4- The highest matching goals for: Book a meeting
+
+Book the meeting: 1.0
+Have meeting scheduled: 0.55000186
+Participants attend meeting: 0.5376988
+Have meeting announced: 0.5254284
+Constraints gathered: 0.4139017
+
+5- The highest matching goals for: Set the meeting in the time slot
+
+Have meeting scheduled: 0.54112345
+Find suitable slot: 0.5036558
+Participants attend meeting: 0.43643647
+Have meeting announced: 0.4249061
+Book the meeting: 0.41383407
+
+6- The highest matching goals for: Request meeting
+
+Constraints gathered by request based: 0.6824626
+Have meeting scheduled: 0.609356
+Have meeting announced: 0.6084871
+Request constraints by calling everybody: 0.59500635
+Participants attend meeting: 0.57947654
+
+7- The highest matching goals for: arrange a time for the meeting
+
+Have meeting scheduled: 0.61477613
+Participants attend meeting: 0.49649006
+Have meeting announced: 0.48421967
+Book the meeting: 0.48076293
+Wait one day for responses to arrive: 0.4047767
+
+8- The highest matching goals for: schedule the meeting
+
+Have meeting scheduled: 0.9704113
+Participants attend meeting: 0.5990465
+Have meeting announced: 0.5969938
+Book the meeting: 0.55853415
+Constraints gathered: 0.48830995
+
+9- The highest matching goals for: Create an appointment
+
+Have meeting scheduled: 0.15409578
+Have meeting announced: 0.13454658
+Request constraints by calling everybody: 0.13370928
+Constraints gathered by request based: 0.12989749
+Find suitable slot: 0.11756272
+
+10- The highest matching goals for: Book the get together.
+
+Book the meeting: 0.47885513
+Constraints gathered: 0.15451421
+Constraints gathered automatically: 0.14776877
+Send invitation: 0.14137919
+Find suitable room: 0.12494417
+
+11- The highest matching goals for: Please appoint the meeting.
+
+Have meeting announced: 0.5640453
+Have meeting scheduled: 0.5602173
+Participants attend meeting: 0.54791427
+Book the meeting: 0.52170676
+Request constraints by calling everybody: 0.3851234
+
+12- The highest matching goals for: Ensure the meeting is booked.
+
+Have meeting scheduled: 0.7015496
+Participants attend meeting: 0.49272907
+Have meeting announced: 0.46857542
+Book the meeting: 0.45769623
+Constraints gathered: 0.3688539
+
+13- The highest matching goals for: Put the meeting schedule in the time slot
+
+Have meeting scheduled: 0.73214686
+Find suitable slot: 0.4779049
+Have meeting announced: 0.43283558
+Participants attend meeting: 0.4229353
+Book the meeting: 0.400122
+
+14- The highest matching goals for: Send meeting request
+
+Send invitation: 0.71324074
+Constraints gathered by request based: 0.59289
+Have meeting scheduled: 0.5292259
+Have meeting announced: 0.52850187
+Request constraints by calling everybody: 0.5247683
+
+15- The highest matching goals for: have the meeting booked
+
+Have meeting scheduled: 0.8182945
+Participants attend meeting: 0.56578803
+Have meeting announced: 0.53569275
+Book the meeting: 0.5256705
+Constraints gathered: 0.42716375
+
+16- The highest matching goals for: reserve the meeting
+
+Have meeting scheduled: 0.5715794
+Participants attend meeting: 0.55927634
+Have meeting announced: 0.54700595
+Book the meeting: 0.5415169
+Constraints gathered: 0.4249182
+
+17- The highest matching goals for: Book the meeting occasion.
+
+Book the meeting: 0.8729662
+Have meeting scheduled: 0.50630134
+Participants attend meeting: 0.49399832
+Have meeting announced: 0.48172793
+Constraints gathered: 0.37107402
+
+18- The highest matching goals for: Please reserve the meeting.
+
+Have meeting scheduled: 0.5523047
+Have meeting announced: 0.54137933
+Participants attend meeting: 0.54000163
+Book the meeting: 0.52224225
+Constraints gathered: 0.3609107
+
+19- The highest matching goals for: Book the meeting officially.
+
+Book the meeting: 0.8337117
+Have meeting announced: 0.5301383
+Have meeting scheduled: 0.47360158
+Participants attend meeting: 0.4627304
+Constraints gathered: 0.35160387
+
+20- The highest matching goals for: Schedule meeting
+
+Have meeting scheduled: 0.9704113
+Participants attend meeting: 0.5990465
+Have meeting announced: 0.5969938
+Book the meeting: 0.55853415
+Constraints gathered: 0.48830995
+
+21- The highest matching goals for: Arrange the get together.
+
+Have meeting scheduled: 0.19682403
+Constraints gathered: 0.1774336
+Constraints gathered automatically: 0.16998354
+Find suitable room: 0.16651103
+Send invitation: 0.15822372
+
+22- The highest matching goals for: Please arrange the meeting.
+
+Have meeting scheduled: 0.6095084
+Have meeting announced: 0.56056637
+Participants attend meeting: 0.5591887
+Book the meeting: 0.5418778
+Constraints gathered: 0.37437192
+
+23- The highest matching goals for: Finalize the meeting booking.
+
+Quick scheduling: 9.3613286e-05
+Have meeting scheduled: 0.7118533
+Have meeting announced: 0.4955209
+Participants attend meeting: 0.48313972
+Book the meeting: 0.44810688
+
+24- The highest matching goals for: Send meeting schedule request
+
+Have meeting scheduled: 0.7712194
+Send invitation: 0.63721645
+Constraints gathered by request based: 0.54241073
+Have meeting announced: 0.49668574
+Send attendance reminder: 0.48504564
+
+25- The highest matching goals for: Book the social occasion.
+
+Book the meeting: 0.5256684
+Participants attend meeting: 0.13940479
+Have meeting scheduled: 0.11766789
+Have meeting announced: 0.11321577
+Send invitation: 0.11233041
+
+26- The highest matching goals for: Please allot the meeting.
+
+Have meeting scheduled: 0.6568786
+Have meeting announced: 0.64595324
+Participants attend meeting: 0.6445756
+Book the meeting: 0.618368
+Constraints gathered: 0.41855177
+
+27- The highest matching goals for: Confirm the meeting booking.
+
+Have meeting scheduled: 0.68770015
+Have meeting announced: 0.5207382
+Participants attend meeting: 0.47741202
+Book the meeting: 0.43836826
+Constraints gathered: 0.36746028
+
+28- The highest matching goals for: Book the social affair.
+
+Book the meeting: 0.63058764
+Have meeting announced: 0.225753
+Have meeting scheduled: 0.21984026
+Participants attend meeting: 0.20702612
+Reduce labor: 0.09342518
+
+29- The highest matching goals for: Please schedule the meeting.
+
+Have meeting scheduled: 0.9045845
+Have meeting announced: 0.57383007
+Participants attend meeting: 0.5690876
+Book the meeting: 0.5327437
+Constraints gathered: 0.37213996
+
+30- The highest matching goals for: Submit the meeting booking.
+
+Have meeting scheduled: 0.70568526
+Participants attend meeting: 0.50255686
+Constraints gathered by request based: 0.46634915
+Have meeting announced: 0.46506277
+Book the meeting: 0.45418355
+
+The count of the having the right goal the first option: 8
+The count of the having the right goal the second option: 0
+The count of the having the right goal the third option: 0
+The count of the having the right goal the fourth option: 13
+The count of the having the right goal the fifth option: 4
+The count of not having the right goal in the first five options: 5
