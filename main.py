@@ -17,6 +17,7 @@ import string
 from Pattern import test_patterns
 from Domain import ChooseDomain
 
+
 bottle.debug(True)
 
 @bottle.route("/")
@@ -25,6 +26,41 @@ def tryquestion():
     
 @bottle.post("/request")
 def answerq():
+    # For analysing purposes
+    """
+    #read file
+    file = open('Domains/Transportation/RepairMeansOfTransport.txt', 'r')
+    f = open("Domains/Transportation/RepairMeansOfTransportResults.txt", "w")
+    DomainType = request.forms.get('optionsRadios')
+    count = 1
+    
+    FirstMatch = 0
+    SecondMatch = 0
+    ThirdMatch = 0
+    FourthMatch = 0
+    FifthMatch = 0 
+    NoMatch = 0
+
+    for line in file:
+        print line
+        q = line
+    
+        GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, FirstMatch, SecondMatch, \
+        ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+        
+        f.write(str(count) + "- " + "The highest matching goals for: " + line + "\n" + MatchingGoal + "\n" + SecondMatchingGoal + 
+        "\n" + ThirdMatchingGoal + "\n" + FourthMatchingGoal + "\n" + FifthMatchingGoal + "\n\n")
+        
+        count = count + 1
+    
+    f.write("The count of the having the right goal the first option: " + str(FirstMatch) + "\n" + "The count of the having the right goal the second option: " + str(SecondMatch) + "\n" + 
+    "The count of the having the right goal the third option: " + str(ThirdMatch) + "\n" + "The count of the having the right goal the fourth option: " + str(FourthMatch) + "\n" + 
+    "The count of the having the right goal the fifth option: " + str(FifthMatch) + "\n" + "The count of not having the right goal in the first five options: " + str(NoMatch) + "\n" )
+    
+    file.close()
+    f.close()
+    """
+
     q = request.forms.get('input')
     
     ContainsRegex = request.forms.get('RegexRadios')
@@ -85,7 +121,9 @@ def answerq():
     print DomainType
     print "regex is " + ContainsRegex
     
-    GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal = ChooseDomain(q, DomainType)
+    
+    GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+    FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, 0,0,0,0,0,0)
     
     if GoalForm is None:
         # Get a bag of words without punctuation
@@ -112,7 +150,8 @@ def answerq():
             GoalForm = "Positive"
     
     
-    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, ThirdMatchingGoal= ThirdMatchingGoal, GoalForm=GoalForm, PrefForm=PrefForm)
+    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
+        ThirdMatchingGoal= ThirdMatchingGoal, FourthMatchingGoal=FourthMatchingGoal, FifthMatchingGoal=FifthMatchingGoal, GoalForm=GoalForm, PrefForm=PrefForm)
 
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

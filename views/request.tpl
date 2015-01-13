@@ -86,7 +86,7 @@
         <div class="col-md-12">
             <div class="panel panel-primary">
                <div class="panel-heading">
-                  <h3 class="panel-title">Most Similar Goal</h3>
+                  <h3 class="panel-title">Most Similar Goals</h3>
                </div>
                <div class="panel-body">
                     %if MatchingGoal is not None:
@@ -95,6 +95,10 @@
                       2- {{SecondMatchingGoal}} 
                       <br>
                       3- {{ThirdMatchingGoal}}
+                      <br>
+                      4- {{FourthMatchingGoal}}
+                      <br>
+                      5- {{FifthMatchingGoal}}
                     %else:
                       No high score 
                     %end
