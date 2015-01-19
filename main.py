@@ -16,8 +16,9 @@ import os
 import string
 from Pattern import test_patterns
 from Domain import ChooseDomain
-#import MySQLdb
+import MySQLdb
 from Negation import Find_Negation
+import re
 
 
 
@@ -69,33 +70,54 @@ def answerq():
     # convert to lowercase
     q = q.lower()
     
+    # remove period at the end of the sentence
+    q = re.sub(r'\.+$', '', q)
+    
+    # remove comma
+    q = q.replace(",", "")
+    print q
+    
     ContainsRegex = request.forms.get('RegexRadios')
     print "regex is " + ContainsRegex
     
     if ContainsRegex == '1':
         Preference, Goal, GoalForm, PrefForm = test_patterns(q, 3,
-                                                [ 'upmost importance (.*)',
+                                                [ # Rules specified from 100% and 75%
+                                                  'upmost importance (.*)',
+                                                  'you must try (.*)',
                                                   'you must (.*)',
                                                   'it is most important (.*)',
                                                   'must complete (.*)',
                                                   'never ignore (.*)',
-                                                  '(.*) must be achieved before another task is started',
-                                                  '(.*) must be achieved',
-                                                  '(.*) must be completed',
-                                                  'without achieving (.*), there is no purpose of (.*)',
-                                                  '(.*) must be at the top of the priority list',
+                                                  #'(.*) must be achieved before another task is started',
+                                                  #'(.*) must be achieved',
+                                                  #'(.*) must be completed',
+                                                  #'(.*) must be at the top of the priority list',
+                                                  '(.*) must be [a-z\s]+',                                                  
+                                                  'without achieving (.*) there is no purpose of (.*)',                                                 
                                                   '(.*) cannot be neglected',
                                                   '(.*) requires immediate attention',
                                                   'under no circumstances should you not (.*)',
-                                                  '(.*) should be completed as soon as possible',
+                                                  #'(.*) should be completed as soon as possible',
                                                   'let go of anything and do (.*)',
-                                                  '(.*) need to be achieve at 100 percent of the goal',
+                                                  '(.*) need to be achieve at [0-9]+ percent of the goal',
+                                                  # Rules specified from 75%
+                                                  '(.*) is (.*) please [a-z\s]+',                                                  
+                                                  '(.*) is important to be achieved',
+                                                  'why don[\S]*t you achieve (.*)[?]*',
+                                                  'get (.*) done',
+                                                  '(.*) should be [a-z\s]+',
+                                                  '(.*) need[a-z]{0,1} [a-z\s]+',
+                                                  'most resource will go to (.*)',
+                                                  '(.*) will [a-z\s]+',                                                 
+                                                  '(.*) could [a-z\s]+',
+                                                  
                                                  ])
                                                  
         if Preference is None:    
             Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
-                                                    [ 'is (.*) if (.*)',
-                                                      '(.*) if (.*)', 
+                                                    [ 'is (.*) if (.*)',  
+                                                      'it (.*) if (.*)',
                                                       'is (.*?) keeping (.*)',  
                                                       'is (.*?) letting (.*)',  
                                                       'is (.*?) having (.*)',  
@@ -115,30 +137,37 @@ def answerq():
                                                       'is (.*?) that (.*)',
                                                       '(.*?) that (.*)',
                                                       'is (.*?) in (.*)',
+                                                      'i[\S]*[\s]*[a-z]{0,2} (.*?) in (.*)',
+                                                      'i (.*) achieve (.*)',
                                                       '(.*?) in (.*)',
-                                                      '(.*?) is to (.*)',
-                                                      'I am (.*?) in (.*)',
-                                                      'I am (.*?) to (.*)',                                                    
+                                                      '(.*?) is to (.*)',                                                      
+                                                      'i[\S]*[\s]*[a-z]{0,2} (.*?) to (.*)',   
+                                                      'i (.*) to (.*)',
                                                       '(.*?) on (.*)',
                                                       '(.*?) to (.*)',
                                                       '(.*?) about (.*)',
-                                                      'you (.*) achieve (.*)',
+                                                      'you (.*) achieve (.*)', 
+                                                      'i[\S]*[\s]*[a-z]{0,2} (.*?) [a-z]{0,2}[\s]*achieving (.*)',
                                                       '(.*) achieving (.*)',
+                                                      '(.*) but (.*)',
+                                                      
                                                      ])
 
         if Preference is None:
             Preference, Goal, GoalForm, PrefForm = test_patterns(q, 2,
-                                                [ '(.*) is of (.*)',
+                                                [ '(.*) is of (.*)',                                                 
                                                   '(.*) has the (.*)',
                                                   '(.*) has (.*)',
+                                                  #'(.*) should be (achieved|done) (.*)',
                                                   '(.*) can be (.*)',
                                                   '(.*) by any means (.*)',
                                                   'the importance of (.*) is (.*)', 
-                                                  '(.*) is (.*)',  
+                                                  '(.*) is (.*)', 
+                                                  'start on (.*) and (.*)',
                                                  ])
                                                  
         
-        """                                     
+        """                                  
         if Preference is not None:
             # Open database connection
             db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="mysql")
@@ -148,35 +177,30 @@ def answerq():
 
             try:
                 # Check if the Preference is already in DB and get the Count
-                cursor.execute("Select * from Hundred_Percent where Pref = %s", [Preference])
+                cursor.execute("Select * from Fifty_Percent where Pref = %s", [Preference])
                 result = cursor.fetchone()
                 count = result[2]
                 count = count+1
                 print "this is the count"
                 print count
 
-                cursor.execute ("UPDATE Hundred_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
+                cursor.execute ("UPDATE Fifty_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
 
             # if Preference is not in DB, INSERT it.
             except:
                 # Execute the SQL command
-                cursor.execute("INSERT INTO Hundred_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
+                cursor.execute("INSERT INTO Fifty_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
                 # Commit your changes in the database
                 db.commit()
-
-            # Fetch a single row using fetchone() method.
-            data = cursor.fetchone()
-            #print data
 
             # disconnect from server
             db.close()
 
             # write the Preference in File
-            with open("Pref/Hundred.txt", "a") as Pref_file:
+            with open("Pref/Fifty.txt", "a") as Pref_file:
                 Pref_file.write(Preference + "\n")
             Pref_file.close()
-        
-        """  
+        """   
         
         # if there is a separate goal and preference, send only the goal to the semantic similarity function
         # if there was no prefernce specified, send all the sentence to the semantic similarity
