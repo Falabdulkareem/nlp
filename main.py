@@ -16,7 +16,7 @@ import os
 import string
 from Pattern import test_patterns
 from Domain import ChooseDomain
-import MySQLdb
+#import MySQLdb
 from Negation import Find_Negation
 import re
 
