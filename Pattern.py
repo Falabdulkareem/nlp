@@ -22,10 +22,15 @@ def test_patterns(text, Pref_loc, patterns=[]):
             if match:
                 if Pref_loc == 1:   
                     # The preference then the goal is specified in the sentence
-                    PrefForm = Find_Negation(match.group(1))
-                    GoalForm = Find_Negation(match.group(2))
-                    return match.group(1), match.group(2), GoalForm, PrefForm 
-                
+                    if pattern == 'i[\W]?( am|m) (.*?) in (.*)' or pattern == 'i[\W]?( am|m) (.*?) to (.*)' or pattern == 'i[\W]?( am|m) (.*?) [a-z]{0,2}[\s]*achieving (.*)':
+                         PrefForm = Find_Negation(match.group(2))
+                         GoalForm = Find_Negation(match.group(3))
+                         return match.group(2), match.group(3), GoalForm, PrefForm 
+                    else:
+                        PrefForm = Find_Negation(match.group(1))
+                        GoalForm = Find_Negation(match.group(2))
+                        return match.group(1), match.group(2), GoalForm, PrefForm 
+
                 elif Pref_loc == 2: 
                     # The goal then the preference is specified in the sentence
                     GoalForm = Find_Negation(match.group(1))
@@ -35,13 +40,20 @@ def test_patterns(text, Pref_loc, patterns=[]):
                 elif Pref_loc == 3:
                     # The preference then the goal is specified in the sentence
                     # The preference is defined in the regex
-                    print match.group(1)
-                    Pref = match.group().replace(match.group(1),'').lstrip()
-                    GoalForm = Find_Negation(match.group(1))
-                    PrefForm = Find_Negation(Pref)
-                    print Pref
-                    return Pref, match.group(1), GoalForm, PrefForm
-                
+                    if pattern == '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not' or pattern == 'if there[\W]?( is|s) time left (.*)':
+                        Pref = match.group().replace(match.group(2),'').lstrip()
+                        GoalForm = Find_Negation(match.group(2))
+                        PrefForm = Find_Negation(Pref)
+                        print Pref
+                        return Pref, match.group(2), GoalForm, PrefForm
+                    else:
+                        print match.group(1)
+                        Pref = match.group().replace(match.group(1),'').lstrip()
+                        GoalForm = Find_Negation(match.group(1))
+                        PrefForm = Find_Negation(Pref)
+                        print Pref
+                        return Pref, match.group(1), GoalForm, PrefForm
+
     return None, None, None, None
             
             

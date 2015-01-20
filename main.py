@@ -82,42 +82,44 @@ def answerq():
     
     if ContainsRegex == '1':
         Preference, Goal, GoalForm, PrefForm = test_patterns(q, 3,
-                                                [ # Rules specified from 100% and 75%
-                                                  'upmost importance (.*)',
+                                                [ 'upmost importance (.*)',
                                                   'you must try (.*)',
-                                                  'you must (.*)',
+                                                  'you must (.*)',                                                
                                                   'it is most important (.*)',
                                                   'must complete (.*)',
                                                   'never ignore (.*)',
-                                                  #'(.*) must be achieved before another task is started',
-                                                  #'(.*) must be achieved',
-                                                  #'(.*) must be completed',
-                                                  #'(.*) must be at the top of the priority list',
                                                   '(.*) must be [a-z\s]+',                                                  
                                                   'without achieving (.*) there is no purpose of (.*)',                                                 
                                                   '(.*) cannot be neglected',
                                                   '(.*) requires immediate attention',
                                                   'under no circumstances should you not (.*)',
-                                                  #'(.*) should be completed as soon as possible',
                                                   'let go of anything and do (.*)',
                                                   '(.*) need to be achieve at [0-9]+ percent of the goal',
-                                                  # Rules specified from 75%
                                                   '(.*) is (.*) please [a-z\s]+',                                                  
                                                   '(.*) is important to be achieved',
                                                   'why don[\S]*t you achieve (.*)[?]*',
                                                   'get (.*) done',
-                                                  '(.*) should be [a-z\s]+',
+                                                  #'(.*) should be [a-z\s]+',
+                                                  #'(.*) would be [a-z\s]+',
                                                   '(.*) need[a-z]{0,1} [a-z\s]+',
                                                   'most resource will go to (.*)',
+                                                  '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not',
                                                   '(.*) will [a-z\s]+',                                                 
-                                                  '(.*) could [a-z\s]+',
-                                                  
+                                                  '(.*) (can|could|would|should) [a-z\s]+',
+                                                  'don[\W]t forget (.*)',
+                                                  '(.*) to be completed[a-z\s]*',
+                                                  'you may or may not (.*)',                                                 
+                                                  '(.*) may or may not[a-z\s]*',
+                                                  'if possible (.*)',
+                                                  'if there[\W]?( is|s) time left (.*)',
+                                                  '(.*) doesn[\W]?t have great significance',
+                                                  '[a-z\s]* consider (.*)',
                                                  ])
                                                  
         if Preference is None:    
             Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
-                                                    [ 'is (.*) if (.*)',  
-                                                      'it (.*) if (.*)',
+                                                    [ 'is (.*?) if (.*)',  
+                                                      'it (.*?) if (.*)',
                                                       'is (.*?) keeping (.*)',  
                                                       'is (.*?) letting (.*)',  
                                                       'is (.*?) having (.*)',  
@@ -137,20 +139,21 @@ def answerq():
                                                       'is (.*?) that (.*)',
                                                       '(.*?) that (.*)',
                                                       'is (.*?) in (.*)',
-                                                      'i[\S]*[\s]*[a-z]{0,2} (.*?) in (.*)',
+                                                      'i[\W]?( am|m) (.*?) in (.*)',
+                                                      'i (.*) if you achieve (.*)',
                                                       'i (.*) achieve (.*)',
                                                       '(.*?) in (.*)',
                                                       '(.*?) is to (.*)',                                                      
-                                                      'i[\S]*[\s]*[a-z]{0,2} (.*?) to (.*)',   
+                                                      'i[\W]?( am|m) (.*?) to (.*)',   
                                                       'i (.*) to (.*)',
                                                       '(.*?) on (.*)',
                                                       '(.*?) to (.*)',
                                                       '(.*?) about (.*)',
                                                       'you (.*) achieve (.*)', 
-                                                      'i[\S]*[\s]*[a-z]{0,2} (.*?) [a-z]{0,2}[\s]*achieving (.*)',
+                                                      'i[\W]?( am|m) (.*?) [a-z]{0,2}[\s]*achieving (.*)',
                                                       '(.*) achieving (.*)',
                                                       '(.*) but (.*)',
-                                                      
+                                                                                                           
                                                      ])
 
         if Preference is None:
@@ -177,19 +180,19 @@ def answerq():
 
             try:
                 # Check if the Preference is already in DB and get the Count
-                cursor.execute("Select * from Fifty_Percent where Pref = %s", [Preference])
+                cursor.execute("Select * from TwentyFive_Percent where Pref = %s", [Preference])
                 result = cursor.fetchone()
                 count = result[2]
                 count = count+1
                 print "this is the count"
                 print count
 
-                cursor.execute ("UPDATE Fifty_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
+                cursor.execute ("UPDATE TwentyFive_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
 
             # if Preference is not in DB, INSERT it.
             except:
                 # Execute the SQL command
-                cursor.execute("INSERT INTO Fifty_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
+                cursor.execute("INSERT INTO TwentyFive_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
                 # Commit your changes in the database
                 db.commit()
 
@@ -197,7 +200,7 @@ def answerq():
             db.close()
 
             # write the Preference in File
-            with open("Pref/Fifty.txt", "a") as Pref_file:
+            with open("Pref/TwentyFive.txt", "a") as Pref_file:
                 Pref_file.write(Preference + "\n")
             Pref_file.close()
         """   
