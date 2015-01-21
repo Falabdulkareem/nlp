@@ -98,13 +98,15 @@ def answerq():
                                                   '(.*) is (.*) please [a-z\s]+',                                                  
                                                   '(.*) is important to be achieved',
                                                   'why don[\S]*t you achieve (.*)[?]*',
+                                                  'start on (.*) as [a-z\s]+',
                                                   'get (.*) done',
                                                   #'(.*) should be [a-z\s]+',
                                                   #'(.*) would be [a-z\s]+',
                                                   '(.*) need[a-z]{0,1} [a-z\s]+',
                                                   'most resource will go to (.*)',
                                                   '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not',
-                                                  '(.*) will [a-z\s]+',                                                 
+                                                  '(.*) will [a-z\s]+', 
+                                                  'if you can[\W]? (.*)',
                                                   '(.*) (can|could|would|should) [a-z\s]+',
                                                   'don[\W]t forget (.*)',
                                                   '(.*) to be completed[a-z\s]*',
@@ -114,6 +116,10 @@ def answerq():
                                                   'if there[\W]?( is|s) time left (.*)',
                                                   '(.*) doesn[\W]?t have great significance',
                                                   '[a-z\s]* consider (.*)',
+                                                  'not that [a-z\s]+ (to|you) (.*)',
+                                                  '(.*) is not that [a-z\s]+',                                                 
+                                                  '(.*) if (nothing to do|you have time|possible)',
+                                                  '(.*) provides [a-z\s]+',
                                                  ])
                                                  
         if Preference is None:    
@@ -131,12 +137,12 @@ def answerq():
                                                       'is of (.*?) that (.*)',
                                                       'is (.*) to me (.*)',
                                                       'is (.*) we (.*)',
+                                                       'is (.*?) for (.*)',
                                                       'is (.*) to us (.*)',
                                                       'is (.*?) to (.*)',
                                                       'is (.*) for me (.*)',
                                                       'is (.*) for us (.*)',
-                                                      'is (.*?) for (.*)',
-                                                      'is (.*?) that (.*)',
+                                                      'is (.*) that (.*)',
                                                       '(.*?) that (.*)',
                                                       'is (.*?) in (.*)',
                                                       'i[\W]?( am|m) (.*?) in (.*)',
@@ -147,12 +153,14 @@ def answerq():
                                                       'i[\W]?( am|m) (.*?) to (.*)',   
                                                       'i (.*) to (.*)',
                                                       '(.*?) on (.*)',
+                                                      '(.*) from (.*)',
                                                       '(.*?) to (.*)',
                                                       '(.*?) about (.*)',
                                                       'you (.*) achieve (.*)', 
                                                       'i[\W]?( am|m) (.*?) [a-z]{0,2}[\s]*achieving (.*)',
                                                       '(.*) achieving (.*)',
                                                       '(.*) but (.*)',
+                                                      '(.*) over (.*)',
                                                                                                            
                                                      ])
 
@@ -167,6 +175,7 @@ def answerq():
                                                   'the importance of (.*) is (.*)', 
                                                   '(.*) is (.*)', 
                                                   'start on (.*) and (.*)',
+                                                 
                                                  ])
                                                  
         
