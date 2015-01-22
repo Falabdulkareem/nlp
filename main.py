@@ -105,9 +105,10 @@ def answerq():
                                                   #'(.*) need[a-z]{0,1} [^to] [a-z\s]+',
                                                   'most resource will go to (.*)',
                                                   '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not',
-                                                  '(.*) will [a-z\s]+', 
-                                                  'if you can[\W]? (.*)',
-                                                  '(.*) (can|could|would|should) [a-z\s]+',
+                                                  '(.*) will (improve [a-z\s]+|make [a-z\s]+|be a bonus|not help [a-z\s]+)', 
+                                                  '^if you can[\W]? (.*)',
+                                                  #'(.*) (can|could|would|should) [a-z\s]+',
+                                                  '(.*) (can|could|would|should) (be nice[a-z\s]*|be achieved[a-z\s]*|wait|be given[a-z\s]*|work|help[a-z\s]*|be finished[a-z\s]*|be completed[a-z\s]*)',
                                                   'don[\W]t forget (.*)',
                                                   '(.*) to be completed[a-z\s]*',
                                                   'you may or may not (.*)',                                                 
@@ -148,8 +149,7 @@ def answerq():
                                                       'is (.*?) in (.*)',
                                                       'i[\W]?( am|m) (.*?) in (.*)',
                                                       'i (.*) if you achieve (.*)',
-                                                      'i (.*) achieve (.*)',
-                                                      '(.*) achieve (.*)',
+                                                      'i (.*) achieve (.*)',                                                     
                                                       '(.*?) in (.*)',
                                                       '(.*) if (.*)',
                                                       '(.*?) is to (.*)',                                                      
@@ -165,7 +165,7 @@ def answerq():
                                                       '(.*) doing (.*)',
                                                       '(.*) but (.*)',
                                                       '(.*) over (.*)',
-                                                                                                           
+                                                      '(.*) achieve (.*)',                                                    
                                                      ])
 
         if Preference is None:
