@@ -102,7 +102,7 @@ def answerq():
                                                   'get (.*) done',
                                                   #'(.*) should be [a-z\s]+',
                                                   #'(.*) would be [a-z\s]+',
-                                                  '(.*) need[a-z]{0,1} [a-z\s]+',
+                                                  #'(.*) need[a-z]{0,1} [^to] [a-z\s]+',
                                                   'most resource will go to (.*)',
                                                   '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not',
                                                   '(.*) will [a-z\s]+', 
@@ -120,12 +120,13 @@ def answerq():
                                                   '(.*) is not that [a-z\s]+',                                                 
                                                   '(.*) if (nothing to do|you have time|possible)',
                                                   '(.*) provides [a-z\s]+',
+                                                  '(disregard|ignore entirely) (.*)',
                                                  ])
                                                  
         if Preference is None:    
             Preference, Goal, GoalForm, PrefForm = test_patterns(q, 1,
                                                     [ 'is (.*?) if (.*)',  
-                                                      'it (.*?) if (.*)',
+                                                      'it (.*?) if (.*)',                                                      
                                                       'is (.*?) keeping (.*)',  
                                                       'is (.*?) letting (.*)',  
                                                       'is (.*?) having (.*)',  
@@ -137,7 +138,7 @@ def answerq():
                                                       'is of (.*?) that (.*)',
                                                       'is (.*) to me (.*)',
                                                       'is (.*) we (.*)',
-                                                       'is (.*?) for (.*)',
+                                                      'is (.*?) for (.*)',
                                                       'is (.*) to us (.*)',
                                                       'is (.*?) to (.*)',
                                                       'is (.*) for me (.*)',
@@ -148,7 +149,9 @@ def answerq():
                                                       'i[\W]?( am|m) (.*?) in (.*)',
                                                       'i (.*) if you achieve (.*)',
                                                       'i (.*) achieve (.*)',
+                                                      '(.*) achieve (.*)',
                                                       '(.*?) in (.*)',
+                                                      '(.*) if (.*)',
                                                       '(.*?) is to (.*)',                                                      
                                                       'i[\W]?( am|m) (.*?) to (.*)',   
                                                       'i (.*) to (.*)',
@@ -159,6 +162,7 @@ def answerq():
                                                       'you (.*) achieve (.*)', 
                                                       'i[\W]?( am|m) (.*?) [a-z]{0,2}[\s]*achieving (.*)',
                                                       '(.*) achieving (.*)',
+                                                      '(.*) doing (.*)',
                                                       '(.*) but (.*)',
                                                       '(.*) over (.*)',
                                                                                                            
@@ -175,6 +179,7 @@ def answerq():
                                                   'the importance of (.*) is (.*)', 
                                                   '(.*) is (.*)', 
                                                   'start on (.*) and (.*)',
+                                                  '(.*) does (.*)',
                                                  
                                                  ])
                                                  
@@ -189,19 +194,19 @@ def answerq():
 
             try:
                 # Check if the Preference is already in DB and get the Count
-                cursor.execute("Select * from TwentyFive_Percent where Pref = %s", [Preference])
+                cursor.execute("Select * from Zero_Percent where Pref = %s", [Preference])
                 result = cursor.fetchone()
                 count = result[2]
                 count = count+1
                 print "this is the count"
                 print count
 
-                cursor.execute ("UPDATE TwentyFive_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
+                cursor.execute ("UPDATE Zero_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
 
             # if Preference is not in DB, INSERT it.
             except:
                 # Execute the SQL command
-                cursor.execute("INSERT INTO TwentyFive_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
+                cursor.execute("INSERT INTO Zero_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
                 # Commit your changes in the database
                 db.commit()
 
@@ -209,7 +214,7 @@ def answerq():
             db.close()
 
             # write the Preference in File
-            with open("Pref/TwentyFive.txt", "a") as Pref_file:
+            with open("Pref/Zero.txt", "a") as Pref_file:
                 Pref_file.write(Preference + "\n")
             Pref_file.close()
         """   

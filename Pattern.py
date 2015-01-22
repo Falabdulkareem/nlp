@@ -40,7 +40,8 @@ def test_patterns(text, Pref_loc, patterns=[]):
                 elif Pref_loc == 3:
                     # The preference then the goal is specified in the sentence
                     # The preference is defined in the regex
-                    if pattern == '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not' or pattern == 'if there[\W]?( is|s) time left (.*)' or pattern == 'not that [a-z\s]+ (to|you) (.*)':
+                    if pattern == '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not' or pattern == 'if there[\W]?( is|s) time left (.*)' or \
+                    pattern == 'not that [a-z\s]+ (to|you) (.*)' or pattern == '(disregard|ignore entirely) (.*)':
                         Pref = match.group().replace(match.group(2),'').lstrip()
                         GoalForm = Find_Negation(match.group(2))
                         PrefForm = Find_Negation(Pref)
