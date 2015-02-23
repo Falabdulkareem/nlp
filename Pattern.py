@@ -7,12 +7,16 @@ __date__ ="$1-Oct-2014 12:31:07 PM$"
 
 import re
 from Negation import Find_Negation
+import xlsxwriter
+
 
 def test_patterns(text, Pref_loc, patterns=[]):
     """Given source text and a list of patterns, look for
     matches for each pattern within the text and print
     them to stdout.
     """
+    # Add a number to each regex, to assign it to the excel sheet (for K fold cross validation)
+    #RegexNo = No
     
     # Look for each pattern in the text and print the results
     for pattern in patterns:
@@ -20,6 +24,12 @@ def test_patterns(text, Pref_loc, patterns=[]):
         print 'Matching "%s"' % pattern
         for match in re.finditer(pattern, text):
             if match:
+                """
+                col = 1
+                write_worksheet.write(curr_row, col, text)
+                write_worksheet.write(curr_row, col + 1, RegexNo)
+                write_worksheet.write(curr_row, col + 2, pattern)
+                """
                 if Pref_loc == 1:   
                     # The preference then the goal is specified in the sentence
                     if pattern == 'i[\W]?( am|m) (.*?) in (.*)' or pattern == 'i[\W]?( am|m) (.*?) to (.*)' or pattern == 'i[\W]?( am|m) (.*?) [a-z]{0,2}[\s]*achieving (.*)':
@@ -54,7 +64,8 @@ def test_patterns(text, Pref_loc, patterns=[]):
                         PrefForm = Find_Negation(Pref)
                         print Pref
                         return Pref, match.group(1), GoalForm, PrefForm
-
+        #RegexNo += 1
+        
     return None, None, None, None
             
             
