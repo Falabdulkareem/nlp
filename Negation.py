@@ -21,6 +21,9 @@ def Find_Negation(s):
     NegativeWords = ["not", "haven't", "havent", "hasn't", "hasnt", "didn't", "didnt", "doesn't",\
     "doesnt", "don't", "dont", "shouldn't", "shouldnt", "couldn't", "couldnt", "can't", "cant", "cannot", \
     "no" , "nobody"]
+    
+    # List with Adj
+   # Words = ["reduce", "limit", "restrict", "avoid", "decrease", "lower", "minimize", ]
 
     # Check if the sentence written have any negative words
     FoundNeg = set(NegativeWords).intersection(my_list)

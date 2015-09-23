@@ -16,13 +16,10 @@ import os
 import string
 from Pattern import test_patterns
 from Domain import ChooseDomain
-import MySQLdb
+from GetPrefValue import GetValue
 from Negation import Find_Negation
 import re
 import xlsxwriter
-from umbc2 import sss
-import xlrd
-
 
 
 bottle.debug(True)
@@ -33,11 +30,12 @@ def tryquestion():
     
 @bottle.post("/request")
 def answerq():
-    # For analysing purposes
+    # For Semantic Analysis Purposes
+    # Plus finding the semantic similarity between goals within goal model
     """
     #read file
-    file = open('Domains/Transportation/RepairMeansOfTransport.txt', 'r')
-    f = open("Domains/Transportation/RepairMeansOfTransportResults.txt", "w")
+    file = open('GoalAnalysis/Transportation.txt', 'r')
+    f = open("GoalAnalysis/TransportationResults_1.txt", "w")
     DomainType = request.forms.get('optionsRadios')
     count = 1
     
@@ -48,13 +46,38 @@ def answerq():
     FifthMatch = 0 
     NoMatch = 0
 
+    
+    count = 0
+    GoalsInFile = []
+    
+    # Initialize 21 elements in the list
+    for i in range(0, 82):
+        GoalsInFile.append([])
+    
     for line in file:
         print line
         q = line
-    
-        GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, FirstMatch, SecondMatch, \
-        ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+            
+            
+        # set the first goal     
+        GoalsInFile[count].append(q[:-1])
+        count = count + 1
+
+        print "this is Goals in File:"
+        print GoalsInFile
+
+        # To run it I need to add (GoalsSimilarityAnalysis) + (GoalsInFile, count) in the rest of the system
+        GoalsSimilarity, GoalsSimilarityAnalysis, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+        PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, GoalsInFile, count, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+
+        for i in range(0, 82 - count):      
+            f.write(str(GoalsSimilarityAnalysis[i]) + "\n")
         
+        f.write("\n\n")
+    """
+    """
+        # Find the top 5 matching
         f.write(str(count) + "- " + "The highest matching goals for: " + line + "\n" + MatchingGoal + "\n" + SecondMatchingGoal + 
         "\n" + ThirdMatchingGoal + "\n" + FourthMatchingGoal + "\n" + FifthMatchingGoal + "\n\n")
         
@@ -67,28 +90,16 @@ def answerq():
     file.close()
     f.close()
     """
+    # to run the system if there is no prference specified (Already Added PrefLoc in GetPrefValue)
+    PrefValue = None
+    #PrefLoc = None
+    PostP = None      
     
-    with open ("Pref/Hundred.txt", "r") as Pref_File1:
-        Hundred_Pref=Pref_File1.read().replace('\n', ' ')
-    
-    with open ("Pref/SeventyFive.txt", "r") as Pref_File2:
-        SeventyFive_Pref=Pref_File2.read().replace('\n', ' ')
-    
-    with open ("Pref/Fifty.txt", "r") as Pref_File3:
-        Fifty_Pref=Pref_File3.read().replace('\n', ' ')
-    
-    with open ("Pref/TwentyFive.txt", "r") as Pref_File4:
-        TwentyFive_Pref=Pref_File4.read().replace('\n', ' ')
-    
-    with open ("Pref/Zero.txt", "r") as Pref_File5:
-        Zero_Pref=Pref_File5.read().replace('\n', ' ')
-        
-    
-    
+    # To do analysis for each Domain and output the result on Excel (Task3,4,5)
     """
     count = 0
-    file = open('TaskFour/Transportation.txt', 'r')
-    workbook = xlsxwriter.Workbook('TaskFour/TransportationResults.xlsx')
+    file = open('TaskThree/Task3.txt', 'r')
+    workbook = xlsxwriter.Workbook('TaskThree/Task3Results.xlsx')
     worksheet = workbook.add_worksheet()
     
    
@@ -97,27 +108,28 @@ def answerq():
         q = line
         
         q = q.rstrip()
+    
     """
     # read excel with the goals and output excel with the count and regex rule for each goal
     """
     write_workbook = xlsxwriter.Workbook('Task1Result.xlsx')
     write_worksheet = write_workbook.add_worksheet()
-                
+
     workbook = xlrd.open_workbook('Task1.xlsx')
     worksheet = workbook.sheet_by_name('Sheet1')
     num_rows = worksheet.nrows - 1
     #num_cells = worksheet.ncols - 1
     curr_row = -1
     curr_cell = 1
-    
+
     while curr_row < num_rows:
-	curr_row += 1
-	row = worksheet.row(curr_row)
-	print 'Row:', curr_row
+        curr_row += 1
+        row = worksheet.row(curr_row)
+        print 'Row:', curr_row
         cell_value = worksheet.cell_value(curr_row, curr_cell)
-	print cell_value
-    """
-    """
+        print cell_value
+
+
     # read data from Task 1 excel 
     workbook = xlrd.open_workbook('Testing/Testing10.xlsx')
     worksheet = workbook.sheet_by_name('Sheet1')
@@ -160,7 +172,7 @@ def answerq():
                 write_worksheet.write(curr_row, col + 2, "Parse")
                 found = 1 
     """        
-        
+
     #return back after finish with analysis
     q = request.forms.get('input')
     #q = cell_value
@@ -181,9 +193,15 @@ def answerq():
     ContainsRegex = request.forms.get('RegexRadios')
     print "regex is " + ContainsRegex
 
+    ResultPage = request.forms.get('ResultRadios')
+
+    db =  request.forms.get('dbRadios')
+    print "this is db: " + str(db)
+
     # pattern count number for excel 
     # in k fold cross validation; i sent (write_worksheet,curr_row, No) to test_patterns function
     No = 0 
+
     if ContainsRegex == '1':
         Preference, Goal, GoalForm, PrefForm = test_patterns(q, 3,
                                                 [ 'upmost importance (.*)',
@@ -210,9 +228,9 @@ def answerq():
                                                   'most resource will go to (.*)',
                                                   '[a-z\s\W]+ (achieve|achieving|complete|completing) (.*) or not',
                                                   '(.*) will (improve [a-z\s]+|make [a-z\s]+|be a bonus|not help [a-z\s]+)', 
-                                                  '^if you can[\W]? (.*)',
+                                                  '^if you can[\W]?t (.*)',
                                                   #'(.*) (can|could|would|should) [a-z\s]+',
-                                                  '(.*) (can|could|would|should) (be nice[a-z\s]*|be achieved[a-z\s]*|wait|be given[a-z\s]*|work|help[a-z\s]*|be finished[a-z\s]*|be completed[a-z\s]*|make us[a-z\s]*)',
+                                                  '(.*) (can|could|would|should) (be nice[a-z\s]*|be achieved[a-z\s]*|wait|be given[a-z\s]*|work|help[a-z\s]*|be finished[a-z\s]*|be completed[a-z\s]*|make us[a-z\s]*|be done[a-z\s]*)',
                                                   'don[\W]t forget (.*)',
                                                   '(.*) to be completed[a-z\s]*',
                                                   'you may or may not (.*)',                                                 
@@ -287,175 +305,86 @@ def answerq():
                                                   '(.*) does (.*)',
 
                                                  ])
-    """
-            write_worksheet.write(curr_row, col + 3, Goal)
-            write_worksheet.write(curr_row, col + 4, Preference)
+        """
+                write_worksheet.write(curr_row, col + 3, Goal)
+                write_worksheet.write(curr_row, col + 4, Preference)
 
-    training_row1 +=1
+        training_row1 +=1
 
-    if found == 0:
-        # write no matching regex
-        #print "did  enter found"
-        col = 1
-        write_worksheet.write(curr_row, col, cell_value)
-        write_worksheet.write(curr_row, col + 1, Regex_Count)
-        write_worksheet.write(curr_row, col + 2, "Could not Parse")
-    """
-    # get the value for the preference from db
-    if Preference is not None:
-        # Open database connection
-        db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="mysql")
+        if found == 0:
+            # write no matching regex
+            #print "did  enter found"
+            col = 1
+            write_worksheet.write(curr_row, col, cell_value)
+            write_worksheet.write(curr_row, col + 1, Regex_Count)
+            write_worksheet.write(curr_row, col + 2, "Could not Parse")
+        """
 
-        # prepare a cursor object using cursor() method
-        cursor = db.cursor()
+        print "this is the preference before function: " + Preference
+        print "this is db: " + str(db)
 
-        try:
-            # Check the value of the Preference and get the MAX Count
-            cursor.execute("select * from (select %s as TableName, count, pref from Hundred_Percent where pref = %s \
-                                union all \
-                                select %s as TableName, count, pref from SeventyFive_Percent where pref = %s \
-                                union all \
-                                select %s as TableName, count, pref from Fifty_Percent where pref = %s \
-                                union all \
-                                select %s as TableName, count, pref from TwentyFive_Percent where pref = %s \
-                                union all \
-                                select %s as TableName, count, pref from Zero_Percent where pref = %s \
-                                ) as result order by count desc", ('100%',[Preference],'75%',[Preference],'50%',[Preference],'25%',[Preference],'0%',[Preference]))
+        # get the value for the preference from db
+        # return back after analysis
+        if Preference is not None:
+            print "in function page main"
+            PrefValue, PrefLoc, MaxExcel = GetValue(Preference, db)
 
-            #result = cursor.fetchone()
+        # insert into db the preference according to each table (100,75,50,25,0)
+        """
+        if Preference is not None:
+            # Open database connection
+            db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
 
-            # if the MAX count was in more than one table
-            result = cursor.fetchall()
-            print result
-            print len(result)
-            MaxCount = result[0][1]
+            # prepare a cursor object using cursor() method
+            cursor = db.cursor()
 
-            print "this is max count: "
-            print MaxCount
+            try:  
+                # Check if the Preference is already in DB and get the Count
+                cursor.execute("Select * from Unnecessary where Pref = %s", [Preference])
+                result = cursor.fetchone()
+                count = result[2]
+                count = count+1
+                print "this is the count"
+                print count
 
-            MaxRepeated = []
-            for number in result:
-                if number[1] == MaxCount:
-                    MaxRepeated.append(number)
+                cursor.execute ("UPDATE Unnecessary SET Count=%s WHERE Pref=%s", (count,[Preference]))
 
-            print "max repeated"
-            print MaxRepeated
+            # if Preference is not in DB, INSERT it.
+            except:
+                # Execute the SQL command
+                cursor.execute("INSERT INTO Unnecessary(Pref, Count) VALUES (%s,%s)", (Preference,1))
+                # Commit your changes in the database
+                db.commit()
 
-            PrefLoc = 1
-            PrefValue = []
-            for row in MaxRepeated:
-               PrefValue.append(row[0])
-            print PrefValue
+            # disconnect from server
+            db.close()
 
-            # for excel sheet
-            MaxExcel = result[0][0]
-            print MaxExcel
+            # write the Preference in File
+            with open("Task5Pref/Unnecessary.txt", "a") as Pref_file:
+                Pref_file.write(Preference + "\n")
+            Pref_file.close()
+        """
 
-            MaxExcel1 = None
-            MaxExcel2 = None
-
-            if len(result) - 1 == 1:
-                if MaxCount == result[1][1]:
-                    MaxExcel1 = result[1][0]
-            if len(result) - 1 == 2:
-                if MaxCount == result[2][1]:
-                    MaxExcel2 = result[2][0]
-            # end for excel 
+        # if there is a separate goal and preference, send only the goal to the semantic similarity function
+        # if there was no prefernce specified, send all the sentence to the semantic similarity
+        if Goal is not None:
+            OriginalQ = q
+            q = Goal
+            print "If Goal is not none print Q"
+            print q 
+        else:
+            # The goal part specified in the interface will be the whole sentence
+            Goal = q
+            PrefValue = None
 
 
-        # if Preference is not in DB
-        except:
-            print "enter the except"
-            Pref100 = sss(Preference,Hundred_Pref)
-            Pref75 = sss(Preference,SeventyFive_Pref)
-            Pref50 = sss(Preference,Fifty_Pref)
-            Pref25 = sss(Preference,TwentyFive_Pref)
-            Pref0 = sss(Preference,Zero_Pref)
-
-            print Pref100
-            print Pref75
-            print Pref50
-            print Pref25
-            print Pref0
-
-            Value = max(Pref100, Pref75, Pref50, Pref25,Pref0)
-
-            if Value == Pref100:
-                PrefValue = "100%"
-            elif Value == Pref75:
-                PrefValue = "75%"
-            elif Value == Pref50:
-                PrefValue = "50%"
-            elif Value == Pref25:
-                PrefValue = "25%"
-            elif Value == Pref0:
-                PrefValue = "0%"
-
-            PrefLoc = 2
-            print "this is pref value"
-            print PrefValue
-            #PrefValue = None
-            MaxExcel = "Pref from SS"
-            #MaxExcel1 = None
-            #MaxExcel2 = None
-
-        # disconnect from server
-        db.close()
-
-     
-    # insert into db the preference according to each table (100,75,50,25,0)
-    if Preference is not None:
-        # Open database connection
-        db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="mysql")
-
-        # prepare a cursor object using cursor() method
-        cursor = db.cursor()
-
-        try:
-            # Check if the Preference is already in DB and get the Count
-            cursor.execute("Select * from Zero_Percent where Pref = %s", [Preference])
-            result = cursor.fetchone()
-            count = result[2]
-            count = count+1
-            print "this is the count"
-            print count
-
-            cursor.execute ("UPDATE Zero_Percent SET Count=%s WHERE Pref=%s", (count,[Preference]))
-
-        # if Preference is not in DB, INSERT it.
-        except:
-            # Execute the SQL command
-            cursor.execute("INSERT INTO Zero_Percent(Pref, Count) VALUES (%s,%s)", (Preference,1))
-            # Commit your changes in the database
-            db.commit()
-
-        # disconnect from server
-        db.close()
-
-        # write the Preference in File
-        with open("Pref/Zero.txt", "a") as Pref_file:
-            Pref_file.write(Preference + "\n")
-        Pref_file.close()
-       
-
-    # if there is a separate goal and preference, send only the goal to the semantic similarity function
-    # if there was no prefernce specified, send all the sentence to the semantic similarity
-    if Goal is not None:
-        q = Goal
-        print "If Goal is not none print Q"
-        print q 
-    else:
-        # The goal part specified in the interface will be the whole sentence
-        Goal = q
-        PrefValue = None
-
-    """    
     elif ContainsRegex == '2':
         Goal = q
         GoalForm = None
         Preference = "No preference option was chosen" 
         PrefForm = "No preference option was chosen"
-    """    
+
+
     # Get the Domain and if the sentence contains regex or not
     DomainType = request.forms.get('optionsRadios')
     ContainsRegex = request.forms.get('RegexRadios')
@@ -463,9 +392,20 @@ def answerq():
     print "regex is " + ContainsRegex
 
     # Get the highest matching goals for the entered sentence 
-    GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+    GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, PostP,\
+    MatchingGoalP, SecondMatchingGoalP, ThirdMatchingGoalP, FourthMatchingGoalP, FifthMatchingGoalP,\
     FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, 0,0,0,0,0,0)
 
+
+    #return it back !!!!!
+    #PrefV = re.sub('%', '', PrefValue) 
+    #PrefV = int(PrefV) / float(100)
+    #print PrefV
+    print PrefValue
+    #PostP = PostP + "[" + str(PrefV) + "]"
+
+
+    # Write the result on excel sheet 
     """
     # Start from the first cell. Rows and columns are zero indexed.
     col = 0
@@ -489,14 +429,15 @@ def answerq():
             if MaxExcel1 is  None and MaxExcel2 is None:
                 worksheet.write(row, col + 6, MatchingGoal)
         else:
-            worksheet.write(row, col + 5, PrefValue)
+            worksheet.write(row, col + 5, PrefValue) 
             worksheet.write(row, col + 6, MatchingGoal)
+            worksheet.write(row, col + 7, PrefForm)
     else:
         worksheet.write(row, col + 2, "Could not be parsed")
         worksheet.write(row, col + 6, MatchingGoal)
 
     count = count + 1
-    """      
+    """
 
     # if the sentence didn't contains preference, and was not checked for negation
     if GoalForm is None:
@@ -504,8 +445,41 @@ def answerq():
 
     #workbook.close()
 
-    return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
-        ThirdMatchingGoal= ThirdMatchingGoal, FourthMatchingGoal=FourthMatchingGoal, FifthMatchingGoal=FifthMatchingGoal, GoalForm=GoalForm, PrefForm=PrefForm, PrefValue=PrefValue, PrefLoc=PrefLoc)
+    if ResultPage == '2':
+        return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
+        ThirdMatchingGoal= ThirdMatchingGoal, FourthMatchingGoal=FourthMatchingGoal, FifthMatchingGoal=FifthMatchingGoal, PostP=PostP, \
+        MatchingGoalP =MatchingGoalP, SecondMatchingGoalP=SecondMatchingGoalP, ThirdMatchingGoalP=ThirdMatchingGoalP, FourthMatchingGoalP=FourthMatchingGoalP, FifthMatchingGoalP=FifthMatchingGoalP,
+        GoalForm=GoalForm, PrefForm=PrefForm, PrefValue=PrefValue, PrefLoc=PrefLoc)
 
+    elif ResultPage == '1':
+
+        # write the query entered by the participant, Goal, and Preference
+        #file = open("ChooseGoal/participant1.txt", "w")
+        with open("ChooseGoal/participant1.txt", "a") as file:
+            file.write(OriginalQ + ", " + Goal + ", " + Preference + ", " + str(PrefValue) + ", ")
+
+        return template("request_2", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
+            ThirdMatchingGoal= ThirdMatchingGoal, FourthMatchingGoal=FourthMatchingGoal, FifthMatchingGoal=FifthMatchingGoal, PostP=PostP, \
+            MatchingGoalP =MatchingGoalP, SecondMatchingGoalP=SecondMatchingGoalP, ThirdMatchingGoalP=ThirdMatchingGoalP, FourthMatchingGoalP=FourthMatchingGoalP, FifthMatchingGoalP=FifthMatchingGoalP,
+            GoalForm=GoalForm, PrefForm=PrefForm, PrefValue=PrefValue, PrefLoc=PrefLoc)
+
+@bottle.post("/request_2")
+def Goal():
+    # print the chosen goals
+    NegGoal = request.forms.get('optionsRadiosNeg')
+    print NegGoal
+    Goal = request.forms.get('optionsRadios')
+    print Goal
+
+    #--- write the results on txt file ---#
+    # open file
+    with open("ChooseGoal/participant1.txt", "a") as myfile:
+        myfile.write(NegGoal + ", " + Goal + "\n")
+
+
+    # return to home page
+    bottle.redirect('/', 301)
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
+

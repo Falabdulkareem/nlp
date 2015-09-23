@@ -103,91 +103,109 @@
                 </div> 
         </div>
     </div>
+ 
+    <form role="form" action="/request_2" method="POST">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-group">
+            <label class="col-lg-2 control-label">Did you mean: (Neg)</label>
+            <div class="col-lg-10">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadiosNeg" id="optionNeg1" value="{{MatchingGoalP}}, optionNeg1" >
+                  {{MatchingGoalP}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadiosNeg" id="optionNeg2" value="{{SecondMatchingGoalP}}, optionNeg2">
+                  {{SecondMatchingGoalP}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadiosNeg" id="optionNeg3" value="{{ThirdMatchingGoalP}}, optionNeg3">
+                  {{ThirdMatchingGoalP}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadiosNeg" id="optionsNeg4" value="{{FourthMatchingGoalP}}, optionsNeg4">
+                  {{FourthMatchingGoalP}}
+                </label>
+              </div>
+               <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadiosNeg" id="optionNeg5" value="{{FifthMatchingGoalP}}, optionNeg5">
+                  {{FifthMatchingGoalP}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadiosNeg" id="optionNeg6" value="None, optionNeg6">
+                  None of the above
+                </label>
+              </div>
+            </div>
+          </div>
+          
+                <br><br><br><br><br><br><br><br><br>
+                
+          <div class="form-group">
+            <label class="col-lg-2 control-label">Did you mean:</label>
+            <div class="col-lg-10">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="option1" value="{{MatchingGoal}}, option1" >
+                  {{MatchingGoal}} 
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="option2" value="{{SecondMatchingGoal}}, option2">
+                  {{SecondMatchingGoal}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="option3" value="{{ThirdMatchingGoal}}, option3">
+                  {{ThirdMatchingGoal}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="option4" value="{{FourthMatchingGoal}}, option4">
+                  {{FourthMatchingGoal}}
+                </label>
+              </div>
+               <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="option5" value="{{FifthMatchingGoal}}, option5">
+                  {{FifthMatchingGoal}}
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="option6" value="None, option6">
+                  None of the above
+                </label>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-15 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>      
+            </div>
+          </div>      
+        </div>
+    </div>
+    </form>
+        
     
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-primary">
-               <div class="panel-heading">
-                  <h3 class="panel-title">Post-Processor</h3>
-               </div>
-               <div class="panel-body">
-                   %if PostP is not None:
-                        {{ PostP }}
-                      %else:
-                        
-                      %end
                     
-               </div>
-             </div> 
-        </div>
-    </div>
-    
-                      <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-primary">
-               <div class="panel-heading">
-                  <h3 class="panel-title">Most Similar Goals with shadow goals</h3>
-               </div>
-               <div class="panel-body">
-                    %if MatchingGoalP is not None:
-                      1- {{MatchingGoalP}} 
-                      <br>
-                      2- {{SecondMatchingGoalP}} 
-                      <br>
-                      3- {{ThirdMatchingGoalP}}
-                      <br>
-                      4- {{FourthMatchingGoalP}}
-                      <br>
-                      5- {{FifthMatchingGoalP}}
-                    %else:
-                      No high score 
-                    %end
-               </div>
-             </div> 
-        </div>
-    </div>
-                    
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-primary">
-               <div class="panel-heading">
-                  <h3 class="panel-title">Most Similar Goals</h3>
-               </div>
-               <div class="panel-body">
-                    %if MatchingGoal is not None:
-                      1- {{MatchingGoal}} 
-                      <br>
-                      2- {{SecondMatchingGoal}} 
-                      <br>
-                      3- {{ThirdMatchingGoal}}
-                      <br>
-                      4- {{FourthMatchingGoal}}
-                      <br>
-                      5- {{FifthMatchingGoal}}
-                    %else:
-                      No high score 
-                    %end
-               </div>
-             </div> 
-        </div>
-    </div>
+   
 
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Results</h3>
-          </div>
-          <div class="panel-body">
-            %try:
-            <table class="table">
-              %for result in GoalsSimilarity:
-                <tr class="active"><td>{{ result }}</td></tr>
-              %end
-            </table>
-            %except:
-              No results
-            %end
-          </div>
-        </div> 
+        
          
       </div>
     </div>

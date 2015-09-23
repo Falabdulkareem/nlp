@@ -119,6 +119,56 @@
                     
                     <br><br>
 
+                    <div class ="col-md-10">
+                        <div class="form-group">
+                            <label class="col-lg-5 control-label">Did you mean page:</label>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="ResultRadios" id="Yes" value="1" checked="" type="radio">
+                                    Yes  
+                                  </label>
+                                </div>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="ResultRadios" id="No" value="2" type="radio">
+                                    No 
+                                  </label>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    
+                    <div class ="col-md-10">
+                        <div class="form-group">
+                            <label class="col-lg-5 control-label">Choose Pref database:</label>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="dbRadios" id="1" value="1" checked="" type="radio">
+                                    Original  
+                                  </label>
+                                </div>
+
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="dbRadios" id="2" value="4" type="radio">
+                                    Task 4 
+                                  </label>
+                                </div>
+                                <div class="col-lg-3 text-primary" "radio">
+                                  <label>
+                                    <input name="dbRadios" id="3" value="5" type="radio">
+                                    Task 5 
+                                  </label>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <br><br>
                     
                     <div class="col-md-8">
                         <div class="form-group">
