@@ -7,8 +7,7 @@ __date__ ="$1-Oct-2014 12:31:07 PM$"
 
 import re
 from Negation import Find_Negation
-import xlsxwriter
-
+#import xlsxwriter
 
 def test_patterns(text, Pref_loc, patterns=[]):
     """Given source text and a list of patterns, look for

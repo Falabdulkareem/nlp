@@ -19,7 +19,7 @@ from Domain import ChooseDomain
 from GetPrefValue import GetValue
 from Negation import Find_Negation
 import re
-import xlsxwriter
+#import xlsxwriter
 
 
 bottle.debug(True)
@@ -45,7 +45,6 @@ def answerq():
     FourthMatch = 0
     FifthMatch = 0 
     NoMatch = 0
-
     
     count = 0
     GoalsInFile = []
@@ -62,15 +61,12 @@ def answerq():
         # set the first goal     
         GoalsInFile[count].append(q[:-1])
         count = count + 1
-
         print "this is Goals in File:"
         print GoalsInFile
-
         # To run it I need to add (GoalsSimilarityAnalysis) + (GoalsInFile, count) in the rest of the system
         GoalsSimilarity, GoalsSimilarityAnalysis, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
         PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
         FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, GoalsInFile, count, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
-
         for i in range(0, 82 - count):      
             f.write(str(GoalsSimilarityAnalysis[i]) + "\n")
         
@@ -114,22 +110,18 @@ def answerq():
     """
     write_workbook = xlsxwriter.Workbook('Task1Result.xlsx')
     write_worksheet = write_workbook.add_worksheet()
-
     workbook = xlrd.open_workbook('Task1.xlsx')
     worksheet = workbook.sheet_by_name('Sheet1')
     num_rows = worksheet.nrows - 1
     #num_cells = worksheet.ncols - 1
     curr_row = -1
     curr_cell = 1
-
     while curr_row < num_rows:
         curr_row += 1
         row = worksheet.row(curr_row)
         print 'Row:', curr_row
         cell_value = worksheet.cell_value(curr_row, curr_cell)
         print cell_value
-
-
     # read data from Task 1 excel 
     workbook = xlrd.open_workbook('Testing/Testing10.xlsx')
     worksheet = workbook.sheet_by_name('Sheet1')
@@ -151,13 +143,11 @@ def answerq():
         print 'Row:', curr_row
         cell_value = worksheet.cell_value(curr_row, curr_cell)
         Regex_Count = worksheet.cell_value(curr_row, curr_cell + 1)
-
         print cell_value
         print 'Count: ', Regex_Count
         print 'curr row: ', curr_row
         print 'training_row: ', training_row
         print 'all rows: ', all_rows
-
         # loop through the training data and find the match
         while training_row1 < all_rows:
             value = worksheet.cell_value(training_row1, curr_cell + 1)
@@ -308,9 +298,7 @@ def answerq():
         """
                 write_worksheet.write(curr_row, col + 3, Goal)
                 write_worksheet.write(curr_row, col + 4, Preference)
-
         training_row1 +=1
-
         if found == 0:
             # write no matching regex
             #print "did  enter found"
@@ -334,10 +322,8 @@ def answerq():
         if Preference is not None:
             # Open database connection
             db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
-
             # prepare a cursor object using cursor() method
             cursor = db.cursor()
-
             try:  
                 # Check if the Preference is already in DB and get the Count
                 cursor.execute("Select * from Unnecessary where Pref = %s", [Preference])
@@ -346,19 +332,15 @@ def answerq():
                 count = count+1
                 print "this is the count"
                 print count
-
                 cursor.execute ("UPDATE Unnecessary SET Count=%s WHERE Pref=%s", (count,[Preference]))
-
             # if Preference is not in DB, INSERT it.
             except:
                 # Execute the SQL command
                 cursor.execute("INSERT INTO Unnecessary(Pref, Count) VALUES (%s,%s)", (Preference,1))
                 # Commit your changes in the database
                 db.commit()
-
             # disconnect from server
             db.close()
-
             # write the Preference in File
             with open("Task5Pref/Unnecessary.txt", "a") as Pref_file:
                 Pref_file.write(Preference + "\n")
@@ -410,7 +392,6 @@ def answerq():
     # Start from the first cell. Rows and columns are zero indexed.
     col = 0
     row = count
-
     # Iterate over the data and write it out row by row.
     #for q, Goal, Preference, PrefValue, MatchingGoal in (list):
     worksheet.write(row, col, original)
@@ -435,7 +416,6 @@ def answerq():
     else:
         worksheet.write(row, col + 2, "Could not be parsed")
         worksheet.write(row, col + 6, MatchingGoal)
-
     count = count + 1
     """
 
@@ -481,5 +461,3 @@ def Goal():
     bottle.redirect('/', 301)
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-
-
