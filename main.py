@@ -19,7 +19,7 @@ from Domain import ChooseDomain
 from GetPrefValue import GetValue
 from Negation import Find_Negation
 import re
-#import xlsxwriter
+import xlsxwriter
 
 
 bottle.debug(True)
