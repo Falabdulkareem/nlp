@@ -48,7 +48,9 @@ def GetValue(Preference , db_selected):
         print "Task 4 db"
         # Preferences in Table (Task4)
         # Open database connection
-        db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task4")
+        #db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task4")
+        db = MySQLdb.connect(host="us-cdbr-iron-east-02.cleardb.net", user="b62b27ccdd4efc", passwd="da3e7042", db="heroku_8372ebe815fe21e")
+
 
         # prepare a cursor object using cursor() method
         cursor = db.cursor()
@@ -73,7 +75,9 @@ def GetValue(Preference , db_selected):
         
         print "Task5 db"
         
-        db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
+        #db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
+        db = MySQLdb.connect(host="us-cdbr-iron-east-02.cleardb.net", user="b62b27ccdd4efc", passwd="da3e7042", db="heroku_8372ebe815fe21e")
+
 
         # prepare a cursor object using cursor() method
         cursor = db.cursor()

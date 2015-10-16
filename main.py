@@ -18,8 +18,10 @@ from Pattern import test_patterns
 from Domain import ChooseDomain
 from GetPrefValue import GetValue
 from Negation import Find_Negation
+from GetUserInfo import UserInfo
 import re
 import xlsxwriter
+import MySQLdb
 
 
 bottle.debug(True)
@@ -27,8 +29,32 @@ bottle.debug(True)
 @bottle.route("/")
 def tryquestion():
     return template("index")
+    #return template("ChooseUser")
+
+"""
+@bottle.post("/CollectData")
+def ChooseUser():
     
-@bottle.post("/request")
+    UserType = request.forms.get('UserRadios')
+    print "User Type is " + UserType
+    
+    if UserType == '1':
+        return template("index")
+    else:
+        return template("CollectData")
+    
+
+
+@bottle.post("/index")
+def collectUserInfo():
+    
+    UserInfo()
+    
+    return template("index")
+"""    
+    
+    
+@bottle.post("/request_1")
 def answerq():
     # For Semantic Analysis Purposes
     # Plus finding the semantic similarity between goals within goal model
@@ -94,7 +120,7 @@ def answerq():
     # To do analysis for each Domain and output the result on Excel (Task3,4,5)
     """
     count = 0
-    file = open('TaskThree/Task3.txt', 'r')
+    file = open('Task5Pref/UnnecessaryEntry.txt', 'r')
     workbook = xlsxwriter.Workbook('TaskThree/Task3Results.xlsx')
     worksheet = workbook.add_worksheet()
     
@@ -104,8 +130,8 @@ def answerq():
         q = line
         
         q = q.rstrip()
-    
     """
+    
     # read excel with the goals and output excel with the count and regex rule for each goal
     """
     write_workbook = xlsxwriter.Workbook('Task1Result.xlsx')
@@ -182,6 +208,7 @@ def answerq():
 
     ContainsRegex = request.forms.get('RegexRadios')
     print "regex is " + ContainsRegex
+
 
     ResultPage = request.forms.get('ResultRadios')
 
@@ -308,41 +335,45 @@ def answerq():
             write_worksheet.write(curr_row, col + 2, "Could not Parse")
         """
 
-        print "this is the preference before function: " + Preference
+        print "this is the preference before function: " 
+        print Preference
         print "this is db: " + str(db)
 
         # get the value for the preference from db
         # return back after analysis
+        
         if Preference is not None:
             print "in function page main"
             PrefValue, PrefLoc, MaxExcel = GetValue(Preference, db)
-
+        
         # insert into db the preference according to each table (100,75,50,25,0)
         """
         if Preference is not None:
             # Open database connection
-            db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
+            db = MySQLdb.connect(host="us-cdbr-iron-east-02.cleardb.net", user="b62b27ccdd4efc", passwd="da3e7042", db="heroku_8372ebe815fe21e")
+            #db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
+
             # prepare a cursor object using cursor() method
             cursor = db.cursor()
             try:  
                 # Check if the Preference is already in DB and get the Count
-                cursor.execute("Select * from Unnecessary where Pref = %s", [Preference])
+                cursor.execute("Select * from unnecessary where Pref = %s", [Preference])
                 result = cursor.fetchone()
                 count = result[2]
                 count = count+1
                 print "this is the count"
                 print count
-                cursor.execute ("UPDATE Unnecessary SET Count=%s WHERE Pref=%s", (count,[Preference]))
+                cursor.execute ("UPDATE unnecessary SET Count=%s WHERE Pref=%s", (count,[Preference]))
             # if Preference is not in DB, INSERT it.
             except:
                 # Execute the SQL command
-                cursor.execute("INSERT INTO Unnecessary(Pref, Count) VALUES (%s,%s)", (Preference,1))
+                cursor.execute("INSERT INTO unnecessary(Pref, Count) VALUES (%s,%s)", (Preference,1))
                 # Commit your changes in the database
                 db.commit()
             # disconnect from server
             db.close()
             # write the Preference in File
-            with open("Task5Pref/Unnecessary.txt", "a") as Pref_file:
+            with open("Task5Pref/unnecessary2.txt", "a") as Pref_file:
                 Pref_file.write(Preference + "\n")
             Pref_file.close()
         """
@@ -425,39 +456,12 @@ def answerq():
 
     #workbook.close()
 
-    if ResultPage == '2':
-        return template("request", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
+    return template("request_1", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
         ThirdMatchingGoal= ThirdMatchingGoal, FourthMatchingGoal=FourthMatchingGoal, FifthMatchingGoal=FifthMatchingGoal, PostP=PostP, \
         MatchingGoalP =MatchingGoalP, SecondMatchingGoalP=SecondMatchingGoalP, ThirdMatchingGoalP=ThirdMatchingGoalP, FourthMatchingGoalP=FourthMatchingGoalP, FifthMatchingGoalP=FifthMatchingGoalP,
         GoalForm=GoalForm, PrefForm=PrefForm, PrefValue=PrefValue, PrefLoc=PrefLoc)
-
-    elif ResultPage == '1':
-
-        # write the query entered by the participant, Goal, and Preference
-        #file = open("ChooseGoal/participant1.txt", "w")
-        with open("ChooseGoal/participant1.txt", "a") as file:
-            file.write(OriginalQ + ", " + Goal + ", " + Preference + ", " + str(PrefValue) + ", ")
-
-        return template("request_2", GoalsSimilarity=GoalsSimilarity, Preference=Preference, Goal=Goal, MatchingGoal=MatchingGoal, SecondMatchingGoal= SecondMatchingGoal, 
-            ThirdMatchingGoal= ThirdMatchingGoal, FourthMatchingGoal=FourthMatchingGoal, FifthMatchingGoal=FifthMatchingGoal, PostP=PostP, \
-            MatchingGoalP =MatchingGoalP, SecondMatchingGoalP=SecondMatchingGoalP, ThirdMatchingGoalP=ThirdMatchingGoalP, FourthMatchingGoalP=FourthMatchingGoalP, FifthMatchingGoalP=FifthMatchingGoalP,
-            GoalForm=GoalForm, PrefForm=PrefForm, PrefValue=PrefValue, PrefLoc=PrefLoc)
-
-@bottle.post("/request_2")
-def Goal():
-    # print the chosen goals
-    NegGoal = request.forms.get('optionsRadiosNeg')
-    print NegGoal
-    Goal = request.forms.get('optionsRadios')
-    print Goal
-
-    #--- write the results on txt file ---#
-    # open file
-    with open("ChooseGoal/participant1.txt", "a") as myfile:
-        myfile.write(NegGoal + ", " + Goal + "\n")
-
-
-    # return to home page
-    bottle.redirect('/', 301)
+        
+        
+    
 
 bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

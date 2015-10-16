@@ -60,125 +60,96 @@
                          
       <div class="jumbotron"> 
         <div class="row">    
-            <form role="form" action="/request" method="POST">
-                    <div class="col-md-10">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Choose Domain:</label>
-
-                                <div class="col-lg-2 text-primary" "radio">
-                                  <label>
-                                    <input name="optionsRadios" id="NurseRadios" value="1" checked="" type="radio">
-                                    Nurse  
-                                  </label>
+            <form role="form" action="/request_1" method="POST">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Choose Domain:</label>
+                            <div class="col-lg-8">
+                                <div class="text-primary radio">
+                                    <label>
+                                      <input name="optionsRadios" id="NurseRadios" value="1" checked="" type="radio">
+                                      Nurse  
+                                    </label>
+                                </div>
+                                
+                                <div class="text-primary radio">
+                                    <label>
+                                      <input name="optionsRadios" id="CarRadios" value="2" type="radio">
+                                      Car Manufacturer 
+                                    </label>
                                 </div>
 
-                                <div class="col-lg-3 text-primary" "radio">
-                                  <label>
-                                    <input name="optionsRadios" id="CarRadios" value="2" type="radio">
-                                    Manufacturer 
-                                  </label>
+                                <div class="text-primary radio">
+                                    <label>
+                                      <input name="optionsRadios" id="SchedulerRadios" value="3" type="radio">
+                                      Meeting Scheduler 
+                                    </label>
                                 </div>
 
-                                <div class="col-lg-2 text-primary" "radio">
-                                  <label>
-                                    <input name="optionsRadios" id="SchedulerRadios" value="3" type="radio">
-                                    Scheduler 
-                                  </label>
+                                <div class="text-primary radio">
+                                    <label>
+                                      <input name="optionsRadios" id="TransRadios" value="4" type="radio">
+                                      Transportation
+                                    </label>
                                 </div>
+                            </div>
 
-                                <div class="col-lg-3 text-primary" "radio">
-                                  <label>
-                                    <input name="optionsRadios" id="TransRadios" value="4" type="radio">
-                                    Transportation
-                                  </label>
-                                </div>
-                        </div>
-                   </div>
-            
-                    <br><br><br>
+                        <br><br><br>
 
-                    <div class ="col-md-10">
-                        <div class="form-group">
-                            <label class="col-lg-5 control-label">The sentence contains Preference:</label>
-
-                                <div class="col-lg-3 text-primary" "radio">
+                        <label class="col-lg-3 control-label">Contains Preference:</label>
+                            <div class="col-lg-8">
+                                <div class="text-primary radio">
                                   <label>
                                     <input name="RegexRadios" id="Yes" value="1" checked="" type="radio">
                                     Yes  
                                   </label>
                                 </div>
 
-                                <div class="col-lg-3 text-primary" "radio">
+                                <div class="text-primary radio">
                                   <label>
                                     <input name="RegexRadios" id="No" value="2" type="radio">
                                     No 
                                   </label>
                                 </div>
-                        </div>
-                    </div>
+                            </div>
                     
-                    <br><br>
-
-                    <div class ="col-md-10">
-                        <div class="form-group">
-                            <label class="col-lg-5 control-label">Did you mean page:</label>
-
-                                <div class="col-lg-3 text-primary" "radio">
-                                  <label>
-                                    <input name="ResultRadios" id="Yes" value="1" checked="" type="radio">
-                                    Yes  
-                                  </label>
-                                </div>
-
-                                <div class="col-lg-3 text-primary" "radio">
-                                  <label>
-                                    <input name="ResultRadios" id="No" value="2" type="radio">
-                                    No 
-                                  </label>
-                                </div>
-                        </div>
-                    </div>
-                    
-                    <br><br>
-                    
-                    <div class ="col-md-10">
-                        <div class="form-group">
-                            <label class="col-lg-5 control-label">Choose Pref database:</label>
-
-                                <div class="col-lg-3 text-primary" "radio">
+                        <br><br><br>
+               
+                        <label class="col-lg-3 control-label">Choose Pref database:</label>
+                            <div class="col-lg-8">
+                                <div class="text-primary radio">
                                   <label>
                                     <input name="dbRadios" id="1" value="1" checked="" type="radio">
-                                    Original  
+                                    Task 2  
                                   </label>
                                 </div>
 
-                                <div class="col-lg-3 text-primary" "radio">
+                                <div class="text-primary radio">
                                   <label>
                                     <input name="dbRadios" id="2" value="4" type="radio">
                                     Task 4 
                                   </label>
                                 </div>
-                                <div class="col-lg-3 text-primary" "radio">
+                                <div class="text-primary radio">
                                   <label>
                                     <input name="dbRadios" id="3" value="5" type="radio">
                                     Task 5 
                                   </label>
                                 </div>
-                        </div>
+                            </div>
                     </div>
-                    
-                    
-                    <br><br>
-                    
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label for="input">Enter you natural language query:</label>
-                            <input type="text" class="form-control" id="input" name="input" placeholder="Enter a question">
-                        </div>
 
-                        <button type="submit" class="btn btn-primary">Get answer</button>
+
+                <br><br>
+                
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="input">Enter you natural language query:</label>
+                        <input type="text" class="form-control" id="input" name="input" placeholder="Enter a question">
                     </div>
-                  
+
+                    <button type="submit" class="btn btn-primary">Get answer</button>
+                </div>
+
             </form>
                 
         </div>
