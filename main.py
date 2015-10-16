@@ -18,7 +18,6 @@ from Pattern import test_patterns
 from Domain import ChooseDomain
 from GetPrefValue import GetValue
 from Negation import Find_Negation
-from GetUserInfo import UserInfo
 import re
 import xlsxwriter
 import MySQLdb
