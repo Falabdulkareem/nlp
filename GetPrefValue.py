@@ -201,21 +201,21 @@ def GetValue(Preference , db_selected):
 
             Pref1_Inf = 0     # count the the number of times the SSS returns infinty value
             Pref2_Inf = 0
-            Pref_1 = open('Task4Pref/Fold2/Critical.txt', 'r')
-            Pref_2 = open('Task4Pref/Fold2/HighImportance.txt', 'r')
-            Pref_3 = open('Task4Pref/Fold2/MediumImportance.txt', 'r')
-            Pref_4 = open('Task4Pref/Fold2/LowImportance.txt', 'r')
-            Pref_5 = open('Task4Pref/Fold2/NoImportance.txt', 'r')
+            Pref_1 = open('Task4Pref/Fold1/Critical.txt', 'r')
+            Pref_2 = open('Task4Pref/Fold1/HighImportance.txt', 'r')
+            Pref_3 = open('Task4Pref/Fold1/MediumImportance.txt', 'r')
+            Pref_4 = open('Task4Pref/Fold1/LowImportance.txt', 'r')
+            Pref_5 = open('Task4Pref/Fold1/NoImportance.txt', 'r')
 
         elif db_selected == '5':
             print "enter the except"
             
             Pref1_Inf = 0     
             Pref2_Inf = 0 
-            Pref_1 = open('Task5Pref/Fold2/Absolutely.txt', 'r')
-            Pref_2 = open('Task5Pref/Fold2/Important.txt', 'r')
-            Pref_3 = open('Task5Pref/Fold2/WouldBeNice.txt', 'r')
-            Pref_4 = open('Task5Pref/Fold2/Unnecessary.txt', 'r')
+            Pref_1 = open('Task5Pref/Fold1/Absolutely.txt', 'r')
+            Pref_2 = open('Task5Pref/Fold1/Important.txt', 'r')
+            Pref_3 = open('Task5Pref/Fold1/WouldBeNice.txt', 'r')
+            Pref_4 = open('Task5Pref/Fold1/Unnecessary.txt', 'r')
             
             
         if db_selected == '4' or db_selected == '5':
