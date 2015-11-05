@@ -126,7 +126,7 @@
         <div class="col-md-12">
             <div class="panel panel-primary">
                <div class="panel-heading">
-                  <h3 class="panel-title">Most Similar Goals with shadow goals</h3>
+                  <h3 class="panel-title">Most Similar Goals</h3>
                </div>
                <div class="panel-body">
                     %if MatchingGoalP is not None:
@@ -146,7 +146,7 @@
              </div> 
         </div>
     </div>
-                    
+    <!--                
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-primary">
@@ -171,7 +171,7 @@
              </div> 
         </div>
     </div>
-
+    -->
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Results</h3>
