@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # To change this license header, choose License Headers in Project Properties.
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
@@ -168,7 +171,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
             # if the goal component is a shadow goal
             if FirstNeg[0] == GoalsNegation[i][1] and Flag1p == False:
                 FirstConvert = GoalsNegation[i][0]
-                PostP = "Negative (" + FirstConvert + ")"
+                PostP = " (¬" + FirstConvert + ")"
             #    MatchingGoal = "Negative (" + FirstConvert + ")["+MaxScoreNeg+"]"
                 print "post p2: " + PostP
                 print "matching goal2: " + MatchingGoal
@@ -191,7 +194,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
             if FirstNeg[0] == GoalsNegation[i][1] and Flag1 == False:
                 print "first if"
                 FirstConvert = GoalsNegation[i][0]
-                PostP = "Negative (" + FirstNeg[0] + ") = " + FirstConvert
+                PostP = "(¬" + FirstNeg[0] + ") = " + FirstConvert
             #    MatchingGoal = "Negative (" + FirstNeg[0] + ") = " + FirstConvert + " ["+MaxScoreNeg+"]"
             #    print "Matching goal 2: " + MatchingGoal
                 if FirstConvert == g:
@@ -205,7 +208,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
         if Flag1 == False:
             print "second if"
             FirstConvert = GoalsNegation[i][1]
-            PostP = "Negative (" + FirstNeg[0] + ")"
+            PostP = "(¬" + FirstNeg[0] + ")"
         #    MatchingGoal = "Negative (" + FirstNeg[0] + ")["+MaxScoreNeg+"]"
         #    print "matching goal: " + MatchingGoal
             Flag1 = True
