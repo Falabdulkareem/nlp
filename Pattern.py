@@ -19,8 +19,8 @@ def test_patterns(text, Pref_loc, patterns=[]):
     
     # Look for each pattern in the text and print the results
     for pattern in patterns:
-        print
-        print 'Matching "%s"' % pattern
+        #print
+        #print 'Matching "%s"' % pattern
         for match in re.finditer(pattern, text):
             if match:
                 """

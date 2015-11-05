@@ -117,15 +117,28 @@ def GetValue(Preference , db_selected):
         for row in MaxRepeated:
            PrefValue.append(row[0])
         print PrefValue
+        
+        # for excel sheet
+        MaxExcel = result[0][0]
+        print MaxExcel
+
+        MaxExcel1 = None
+        MaxExcel2 = None
+
+        if len(result) - 1 == 1:
+            if MaxCount == result[1][1]:
+                MaxExcel1 = result[1][0]
+        if len(result) - 1 == 2:
+            if MaxCount == result[2][1]:
+                MaxExcel2 = result[2][0]
+        # end for excel 
 
         print "enter GetPrefValue Page !!"
 
         # disconnect from server
         db.close()
         
-        MaxExcel = None
-
-        return PrefValue, PrefLoc, MaxExcel
+        return PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2
     
     except:
         # The preference is not in db
@@ -179,39 +192,49 @@ def GetValue(Preference , db_selected):
             print "this is pref value"
             print PrefValue
             MaxExcel = "Pref from SS"
-
-            return PrefValue, PrefLoc, MaxExcel
+            MaxExcel1 = None
+            MaxExcel2 = None
+            return PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2
         
         elif db_selected == '4':
             print "enter the except"
 
             Pref1_Inf = 0     # count the the number of times the SSS returns infinty value
             Pref2_Inf = 0
-            Pref_1 = open('Task4Pref/Critical.txt', 'r')
-            Pref_2 = open('Task4Pref/HighImportance.txt', 'r')
-            Pref_3 = open('Task4Pref/MediumImportance.txt', 'r')
-            Pref_4 = open('Task4Pref/LowImportance.txt', 'r')
-            Pref_5 = open('Task4Pref/NoImportance.txt', 'r')
+            Pref_1 = open('Task4Pref/Fold2/Critical.txt', 'r')
+            Pref_2 = open('Task4Pref/Fold2/HighImportance.txt', 'r')
+            Pref_3 = open('Task4Pref/Fold2/MediumImportance.txt', 'r')
+            Pref_4 = open('Task4Pref/Fold2/LowImportance.txt', 'r')
+            Pref_5 = open('Task4Pref/Fold2/NoImportance.txt', 'r')
 
         elif db_selected == '5':
             print "enter the except"
             
             Pref1_Inf = 0     
             Pref2_Inf = 0 
-            Pref_1 = open('Task5Pref/Absolutely.txt', 'r')
-            Pref_2 = open('Task5Pref/Important.txt', 'r')
-            Pref_3 = open('Task5Pref/WouldBeNice.txt', 'r')
-            Pref_4 = open('Task5Pref/Unnecessary.txt', 'r')
+            Pref_1 = open('Task5Pref/Fold2/Absolutely.txt', 'r')
+            Pref_2 = open('Task5Pref/Fold2/Important.txt', 'r')
+            Pref_3 = open('Task5Pref/Fold2/WouldBeNice.txt', 'r')
+            Pref_4 = open('Task5Pref/Fold2/Unnecessary.txt', 'r')
             
             
         if db_selected == '4' or db_selected == '5':
             if db_selected == '4':
-                a = 41
-                b = 38
+                
+                # Values for fold 1
+                a = 40
+                b = 37
                 c = 32
                 d = 23
-                e = 25
-                
+                e = 26
+                """
+                # Values for fold 2
+                a = 38
+                b = 42
+                c = 38
+                d = 43
+                e = 39
+                """
                 # Calculate the preferences within (No Importance) becasue Task 5 has only 4  preferences
                 No_Val = 0 
                 for line5 in Pref_5:
@@ -224,11 +247,19 @@ def GetValue(Preference , db_selected):
                 print "avg No_Val is: " + str(No_Val)
             
             else:
-                a = 36
-                b = 35
-                c = 33
-                d = 34
+                # Values for fold 1
                 
+                a = 37
+                b = 36
+                c = 31
+                d = 34
+                """
+                # Values for fold 2
+                a = 46
+                b = 35
+                c = 34
+                d = 37
+                """
             
             # Start calculating the value for each preference set
             Critical_Val = 0 
@@ -324,7 +355,9 @@ def GetValue(Preference , db_selected):
         print "this is pref value"
         print PrefValue
         MaxExcel = "Pref from SS"
-        return PrefValue, PrefLoc, MaxExcel
+        MaxExcel1 = None
+        MaxExcel2 = None
+        return PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2
     
   
 

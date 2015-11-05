@@ -119,11 +119,11 @@ def answerq():
     # To do analysis for each Domain and output the result on Excel (Task3,4,5)
     """
     count = 0
-    file = open('Task5Pref/UnnecessaryEntry.txt', 'r')
-    workbook = xlsxwriter.Workbook('TaskThree/Task3Results.xlsx')
-    worksheet = workbook.add_worksheet()
-    
-   
+    file = open('Task5Pref/Fold2/WouldBeNiceEntry.txt', 'r')
+    #workbook = xlsxwriter.Workbook('TaskFive/Fold2/TransportationResults.xlsx')
+    #worksheet = workbook.add_worksheet()
+    """
+    """
     for line in file:
         print line
         q = line
@@ -340,13 +340,14 @@ def answerq():
 
         # get the value for the preference from db
         # return back after analysis
-        
         if Preference is not None:
             print "in function page main"
-            PrefValue, PrefLoc, MaxExcel = GetValue(Preference, db)
+            PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2  = GetValue(Preference, db)
         
-        # insert into db the preference according to each table (100,75,50,25,0)
         """
+        # insert into db the preference according to each table (100,75,50,25,0)
+        # PrefLoc to prevent output error !!
+        PrefLoc = 1
         if Preference is not None:
             # Open database connection
             db = MySQLdb.connect(host="us-cdbr-iron-east-02.cleardb.net", user="b62b27ccdd4efc", passwd="da3e7042", db="heroku_8372ebe815fe21e")
@@ -356,23 +357,23 @@ def answerq():
             cursor = db.cursor()
             try:  
                 # Check if the Preference is already in DB and get the Count
-                cursor.execute("Select * from unnecessary where Pref = %s", [Preference])
+                cursor.execute("Select * from wouldbenice3 where Pref = %s", [Preference])
                 result = cursor.fetchone()
                 count = result[2]
                 count = count+1
                 print "this is the count"
                 print count
-                cursor.execute ("UPDATE unnecessary SET Count=%s WHERE Pref=%s", (count,[Preference]))
+                cursor.execute ("UPDATE wouldbenice3 SET Count=%s WHERE Pref=%s", (count,[Preference]))
             # if Preference is not in DB, INSERT it.
             except:
                 # Execute the SQL command
-                cursor.execute("INSERT INTO unnecessary(Pref, Count) VALUES (%s,%s)", (Preference,1))
+                cursor.execute("INSERT INTO wouldbenice3(Pref, Count) VALUES (%s,%s)", (Preference,1))
                 # Commit your changes in the database
                 db.commit()
             # disconnect from server
             db.close()
             # write the Preference in File
-            with open("Task5Pref/unnecessary2.txt", "a") as Pref_file:
+            with open("Task5Pref/Fold2/wouldbenice3.txt", "a") as Pref_file:
                 Pref_file.write(Preference + "\n")
             Pref_file.close()
         """
@@ -388,6 +389,7 @@ def answerq():
             # The goal part specified in the interface will be the whole sentence
             Goal = q
             PrefValue = None
+            PrefLoc = None
 
 
     elif ContainsRegex == '2':
@@ -409,13 +411,35 @@ def answerq():
     FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = ChooseDomain(q, DomainType, 0,0,0,0,0,0)
 
 
-    #return it back !!!!!
-    #PrefV = re.sub('%', '', PrefValue) 
-    #PrefV = int(PrefV) / float(100)
-    #print PrefV
-    print PrefValue
-    #PostP = PostP + "[" + str(PrefV) + "]"
+    #Add the perference value to Post Processor 
+    if db == '1':
+        print "enter db == 1"
+        print PrefValue
+        if PrefLoc == 1:
+            PrefV = PrefValue[0]
+            print "this is if PrefLoc = 1"
+            print PrefV
+        else:
+            PrefV = PrefValue
+            print "this is if PrefLoc = 2"
+            print PrefV
 
+        PrefV = re.sub('%', '', PrefV) 
+        PrefV = int(PrefV) / float(100)
+        print PrefV
+        PostP = PostP + "[" + str(PrefV) + "]"
+    else:
+        print "enter db not equal to 1"
+        if PrefLoc == 1:
+            print PrefValue
+            PrefV = re.sub(r'\d', '', str(PrefValue)) 
+            PrefV = re.sub('_', ' ', str(PrefV))
+            PrefV = re.sub('\'', '', str(PrefV))
+            PostP = PostP +  str(PrefV)  
+        else:
+            #print PrefValue
+            #PrefV = re.sub(r'\d', '', str(PrefValue)) 
+            PostP = PostP + "[" + str(PrefValue) + "]" 
 
     # Write the result on excel sheet 
     """

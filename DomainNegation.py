@@ -168,7 +168,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
             # if the goal component is a shadow goal
             if FirstNeg[0] == GoalsNegation[i][1] and Flag1p == False:
                 FirstConvert = GoalsNegation[i][0]
-                PostP = "Negative (" + FirstConvert + ")["+MaxScoreNeg+"]"
+                PostP = "Negative (" + FirstConvert + ")"
             #    MatchingGoal = "Negative (" + FirstConvert + ")["+MaxScoreNeg+"]"
                 print "post p2: " + PostP
                 print "matching goal2: " + MatchingGoal
@@ -177,7 +177,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
                 Flag1p = True
         # if the goal component is original goal
         if Flag1p == False:
-            PostP = "(" + FirstNeg[0] + ")" + " ["+MaxScoreNeg+"]"
+            PostP = "(" + FirstNeg[0] + ")" 
             print "post p: " + PostP
             print "matching goal: " + MatchingGoalNeg
             
@@ -191,7 +191,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
             if FirstNeg[0] == GoalsNegation[i][1] and Flag1 == False:
                 print "first if"
                 FirstConvert = GoalsNegation[i][0]
-                PostP = "Negative (" + FirstNeg[0] + ") = " + FirstConvert + " ["+MaxScoreNeg+"]"
+                PostP = "Negative (" + FirstNeg[0] + ") = " + FirstConvert
             #    MatchingGoal = "Negative (" + FirstNeg[0] + ") = " + FirstConvert + " ["+MaxScoreNeg+"]"
             #    print "Matching goal 2: " + MatchingGoal
                 if FirstConvert == g:
@@ -205,7 +205,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
         if Flag1 == False:
             print "second if"
             FirstConvert = GoalsNegation[i][1]
-            PostP = "Negative (" + FirstNeg[0] + ")["+MaxScoreNeg+"]"
+            PostP = "Negative (" + FirstNeg[0] + ")"
         #    MatchingGoal = "Negative (" + FirstNeg[0] + ")["+MaxScoreNeg+"]"
         #    print "matching goal: " + MatchingGoal
             Flag1 = True
