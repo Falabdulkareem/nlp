@@ -412,34 +412,35 @@ def answerq():
 
 
     #Add the perference value to Post Processor 
-    if db == '1':
-        print "enter db == 1"
-        print PrefValue
-        if PrefLoc == 1:
-            PrefV = PrefValue[0]
-            print "this is if PrefLoc = 1"
-            print PrefV
-        else:
-            PrefV = PrefValue
-            print "this is if PrefLoc = 2"
-            print PrefV
-
-        PrefV = re.sub('%', '', PrefV) 
-        PrefV = int(PrefV) / float(100)
-        print PrefV
-        PostP = PostP + "[" + str(PrefV) + "]"
-    else:
-        print "enter db not equal to 1"
-        if PrefLoc == 1:
+    if PrefValue is not None:     #if there is an identified pref.
+        if db == '1':
+            print "enter db == 1"
             print PrefValue
-            PrefV = re.sub(r'\d', '', str(PrefValue)) 
-            PrefV = re.sub('_', ' ', str(PrefV))
-            PrefV = re.sub('\'', '', str(PrefV))
-            PostP = PostP +  str(PrefV)  
+            if PrefLoc == 1:
+                PrefV = PrefValue[0]
+                print "this is if PrefLoc = 1"
+                print PrefV
+            else:
+                PrefV = PrefValue
+                print "this is if PrefLoc = 2"
+                print PrefV
+
+            PrefV = re.sub('%', '', PrefV) 
+            PrefV = int(PrefV) / float(100)
+            print PrefV
+            PostP = PostP + "[" + str(PrefV) + "]"
         else:
-            #print PrefValue
-            #PrefV = re.sub(r'\d', '', str(PrefValue)) 
-            PostP = PostP + "[" + str(PrefValue) + "]" 
+            print "enter db not equal to 1"
+            if PrefLoc == 1:
+                print PrefValue
+                PrefV = re.sub(r'\d', '', str(PrefValue)) 
+                PrefV = re.sub('_', ' ', str(PrefV))
+                PrefV = re.sub('\'', '', str(PrefV))
+                PostP = PostP +  str(PrefV)  
+            else:
+                #print PrefValue
+                #PrefV = re.sub(r'\d', '', str(PrefValue)) 
+                PostP = PostP + "[" + str(PrefValue) + "]" 
 
     # Write the result on excel sheet 
     """
