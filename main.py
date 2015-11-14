@@ -193,6 +193,7 @@ def answerq():
     q = request.forms.get('input')
     #q = cell_value
 
+    #---- Text Normalization ----#
     # convert to lowercase
     q = q.lower()
 
@@ -202,7 +203,8 @@ def answerq():
     # remove comma
     q = q.replace(",", "")
     print q
-
+    #----------------------------#
+    
     # used in excel
     original = q
 
@@ -396,6 +398,8 @@ def answerq():
     elif ContainsRegex == '2':
         Goal = q
         GoalForm = None
+        PrefLoc = 3
+        PrefValue = "No preference option was chosen" 
         Preference = "No preference option was chosen" 
         PrefForm = "No preference option was chosen"
 
@@ -421,15 +425,17 @@ def answerq():
                 PrefV = PrefValue[0]
                 print "this is if PrefLoc = 1"
                 print PrefV
-            else:
+            elif PrefLoc == 2:
                 PrefV = PrefValue
                 print "this is if PrefLoc = 2"
                 print PrefV
-
-            PrefV = re.sub('%', '', PrefV) 
-            PrefV = int(PrefV) / float(100)
-            print PrefV
-            PostP = PostP + "[" + str(PrefV) + "]"
+            
+            # if the sentence don't contain preference option
+            if PrefLoc != 3:
+                PrefV = re.sub('%', '', PrefV) 
+                PrefV = int(PrefV) / float(100)
+                print PrefV
+                PostP = PostP + "[" + str(PrefV) + "]"
         else:
             print "enter db not equal to 1"
             if PrefLoc == 1:
@@ -438,7 +444,7 @@ def answerq():
                 PrefV = re.sub('_', ' ', str(PrefV))
                 PrefV = re.sub('\'', '', str(PrefV))
                 PostP = PostP +  str(PrefV)  
-            else:
+            elif PrefLoc == 2:
                 #print PrefValue
                 #PrefV = re.sub(r'\d', '', str(PrefValue)) 
                 PostP = PostP + "[" + str(PrefValue) + "]" 
