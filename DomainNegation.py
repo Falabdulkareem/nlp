@@ -22,9 +22,9 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
     FifthMatchingGoalNeg = None
     
     if d == '1':
-        a= 21
-        b= 27
-        c= 6
+        a= 21           # Goals
+        b= 27           # GoalsWithNeg
+        c= 6            # GoalsNegation
     elif d =='2':
         a= 32
         b= 57
@@ -37,7 +37,19 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
         a= 82
         b= 91
         c= 9
-   
+    elif d =='5':
+        a= 24
+        b= 43
+        c= 19
+    elif d =='6':
+        a= 22
+        b= 35
+        c= 13
+    elif d =='7':
+        a= 19
+        b= 23
+        c= 4
+        
     # Create a list to contains all the Goals and the Score for each goal
     GoalScoreList = []
     GoalScoreListNeg = []
@@ -94,6 +106,7 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
     GoalsSimilarity = []
     for i in range(0, a):
         GoalsSimilarity.append(SortedScoreList[i][0] + ": " + str(SortedScoreList[i][1]))
+        print GoalsSimilarity[i]
 
     GoalsSimilarityNeg = []
     for i in range(0, b):
@@ -215,7 +228,11 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
             print "flag 1"
             print Flag1
             
-            
+    
+    return GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+        PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
+                
             
         
     """
@@ -412,10 +429,3 @@ def NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation, FirstMatch, Secon
     else:
         NoMatch = NoMatch + 1
     """
-    
-    return GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
-        PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
-        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
-       
-    
-    

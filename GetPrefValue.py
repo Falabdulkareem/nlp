@@ -42,9 +42,29 @@ def GetValue(Preference , db_selected):
                             ) as result order by count desc", ('100%',[Preference],'75%',[Preference],'50%',[Preference],'25%',[Preference],'0%',[Preference]))
 
             
-            
-    elif db_selected == '4':
+    elif db_selected == '3':   
+        print "Task 3 db"
+        # Open database connection locally
+        #db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="mysql")
         
+        # Open database connection on Heroku
+        db = MySQLdb.connect(host="us-cdbr-iron-east-02.cleardb.net", user="b62b27ccdd4efc", passwd="da3e7042", db="heroku_8372ebe815fe21e")
+
+        # prepare a cursor object using cursor() method
+        cursor = db.cursor()
+
+        cursor.execute("select * from (select %s as TableName, count, pref from Hundred2 where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from SeventyFive2 where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from Fifty2 where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from TwentyFive2 where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from Zero2 where pref = %s \
+                            ) as result order by count desc", ('100%',[Preference],'75%',[Preference],'50%',[Preference],'25%',[Preference],'0%',[Preference]))
+
+    elif db_selected == '4':
         print "Task 4 db"
         # Preferences in Table (Task4)
         # Open database connection
@@ -70,9 +90,7 @@ def GetValue(Preference , db_selected):
     # Preferences for Task 5
     elif db_selected == '5':
         
-        # Preferences in Table (Task4)
         # Open database connection
-        
         print "Task5 db"
         
         #db = MySQLdb.connect(host="localhost", user="Fatima", passwd="", db="Task5")
@@ -92,7 +110,32 @@ def GetValue(Preference , db_selected):
                             select %s as TableName, count, pref from Unnecessary where pref = %s \
                             ) as result order by count desc", ('Absolutely',[Preference],'Important',[Preference],'WouldBeNice',[Preference],'Unnecessary',[Preference]))
 
+    
+    # Preferences for Tasks 2 & 3
+    elif db_selected == '6':
+        
+        # Open database connection
+        print "Tasks 2 & 3 db"
+        
+        db = MySQLdb.connect(host="us-cdbr-iron-east-02.cleardb.net", user="b62b27ccdd4efc", passwd="da3e7042", db="heroku_8372ebe815fe21e")
 
+
+        # prepare a cursor object using cursor() method
+        cursor = db.cursor()
+
+        # Preferences in Table (Task5)
+        cursor.execute("select * from (select %s as TableName, count, pref from Hundred_Percent_all where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from SeventyFive_Percent_all where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from Fifty_Percent_all where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from TwentyFive_Percent_all where pref = %s \
+                            union all \
+                            select %s as TableName, count, pref from Zero_Percent_all where pref = %s \
+                            ) as result order by count desc", ('100%',[Preference],'75%',[Preference],'50%',[Preference],'25%',[Preference],'0%',[Preference]))
+
+        
         
     try:
         # if the MAX count was in more than one table
@@ -176,7 +219,7 @@ def GetValue(Preference , db_selected):
 
             # Assign the preference Values, regardless of the Form positive of negative
             if Value == 0 or math.isinf(Value) :
-                PrefValue = "UNKNOWN VALUE"
+                PrefValue = None
             elif Value == Pref100:
                 PrefValue = "100%"
             elif Value == Pref75:
@@ -195,6 +238,61 @@ def GetValue(Preference , db_selected):
             MaxExcel1 = None
             MaxExcel2 = None
             return PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2
+        
+        elif db_selected == '3':
+            # The preference is not in db
+            print "enter the except"
+            
+            with open ("Task3Pref/Fold2/100.txt", "r") as Pref_File1:
+                Hundred_Pref=Pref_File1.read().replace('\n', ' ')
+
+            with open ("Task3Pref/Fold2/75.txt", "r") as Pref_File2:
+                SeventyFive_Pref=Pref_File2.read().replace('\n', ' ')
+
+            with open ("Task3Pref/Fold2/50.txt", "r") as Pref_File3:
+                Fifty_Pref=Pref_File3.read().replace('\n', ' ')
+
+            with open ("Task3Pref/Fold2/25.txt", "r") as Pref_File4:
+                TwentyFive_Pref=Pref_File4.read().replace('\n', ' ')
+
+            with open ("Task3Pref/Fold2/0.txt", "r") as Pref_File5:
+                Zero_Pref=Pref_File5.read().replace('\n', ' ')
+
+            Pref100 = sss(Preference,Hundred_Pref)
+            Pref75 = sss(Preference,SeventyFive_Pref)
+            Pref50 = sss(Preference,Fifty_Pref)
+            Pref25 = sss(Preference,TwentyFive_Pref)
+            Pref0 = sss(Preference,Zero_Pref)
+
+            print Pref100
+            print Pref75
+            print Pref50
+            print Pref25
+            print Pref0
+
+            Value = max(Pref100, Pref75, Pref50, Pref25,Pref0)
+
+            # Assign the preference Values, regardless of the Form positive of negative
+            if Value == 0 or math.isinf(Value) :
+                PrefValue = None
+            elif Value == Pref100:
+                PrefValue = "100%"
+            elif Value == Pref75:
+                PrefValue = "75%"
+            elif Value == Pref50:
+                PrefValue = "50%"
+            elif Value == Pref25:
+                PrefValue = "25%"
+            elif Value == Pref0:
+                PrefValue = "0%"
+
+            PrefLoc = 2
+            print "this is pref value"
+            print PrefValue
+            MaxExcel = "Pref from SS"
+            MaxExcel1 = None
+            MaxExcel2 = None
+            return PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2    
         
         elif db_selected == '4':
             print "enter the except"
@@ -217,6 +315,60 @@ def GetValue(Preference , db_selected):
             Pref_3 = open('Task5Pref/Fold1/WouldBeNice.txt', 'r')
             Pref_4 = open('Task5Pref/Fold1/Unnecessary.txt', 'r')
             
+        # The preference is not in db
+        if db_selected == '6':
+            print "enter the except"
+            
+            with open ("AllTasksPref/AllHundred.txt", "r") as Pref_File1:
+                Hundred_Pref=Pref_File1.read().replace('\n', ' ')
+
+            with open ("AllTasksPref/AllSeventyFive.txt", "r") as Pref_File2:
+                SeventyFive_Pref=Pref_File2.read().replace('\n', ' ')
+
+            with open ("AllTasksPref/AllFifty.txt", "r") as Pref_File3:
+                Fifty_Pref=Pref_File3.read().replace('\n', ' ')
+
+            with open ("AllTasksPref/AllTwentyFive.txt", "r") as Pref_File4:
+                TwentyFive_Pref=Pref_File4.read().replace('\n', ' ')
+
+            with open ("AllTasksPref/AllZero.txt", "r") as Pref_File5:
+                Zero_Pref=Pref_File5.read().replace('\n', ' ')
+
+            Pref100 = sss(Preference,Hundred_Pref)
+            Pref75 = sss(Preference,SeventyFive_Pref)
+            Pref50 = sss(Preference,Fifty_Pref)
+            Pref25 = sss(Preference,TwentyFive_Pref)
+            Pref0 = sss(Preference,Zero_Pref)
+
+            print Pref100
+            print Pref75
+            print Pref50
+            print Pref25
+            print Pref0
+
+            Value = max(Pref100, Pref75, Pref50, Pref25,Pref0)
+
+            # Assign the preference Values, regardless of the Form positive of negative
+            if Value == 0 or math.isinf(Value) :
+                PrefValue = None
+            elif Value == Pref100:
+                PrefValue = "100%"
+            elif Value == Pref75:
+                PrefValue = "75%"
+            elif Value == Pref50:
+                PrefValue = "50%"
+            elif Value == Pref25:
+                PrefValue = "25%"
+            elif Value == Pref0:
+                PrefValue = "0%"
+
+            PrefLoc = 2
+            print "this is pref value"
+            print PrefValue
+            MaxExcel = "Pref from SS"
+            MaxExcel1 = None
+            MaxExcel2 = None
+            return PrefValue, PrefLoc, MaxExcel, MaxExcel1, MaxExcel2
             
         if db_selected == '4' or db_selected == '5':
             if db_selected == '4':
@@ -324,7 +476,7 @@ def GetValue(Preference , db_selected):
 
                 # Assign the preference Values
                 if Value == 0:
-                    PrefValue = "UNKNOWN VALUE"
+                    PrefValue = None
                 elif Value == Critical_Val:
                     PrefValue = "Critical"
                 elif Value == High_Val:
@@ -340,7 +492,7 @@ def GetValue(Preference , db_selected):
 
                 # Assign the preference Values
                 if Value == 0:
-                    PrefValue = "UNKNOWN VALUE"
+                    PrefValue = None
                 elif Value == Critical_Val:
                     PrefValue = "Absolutely Essential"
                 elif Value == High_Val:

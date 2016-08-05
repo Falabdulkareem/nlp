@@ -812,7 +812,7 @@ def ChooseDomain(q, d, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMa
         "sell tickets",
         "decide sale strategy",
         "avoid fraud",
-        "allow fraue", ###
+        "allow fraud", ###
         "verify tickets",
         "provide tickets",
         "estimate sale places", 
@@ -964,8 +964,7 @@ def ChooseDomain(q, d, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMa
         
         # For finding the semantic similarity for the goals within the goal model
         # Add (GoalsSimilarityAnalysis) and NegationDomain(GoalsInFile, count) below +  Add (GoalsSimilarityAnalysis)  in return
-        
-        
+         
         GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, PostP,\
         MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
         FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation,FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
@@ -974,3 +973,331 @@ def ChooseDomain(q, d, FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMa
         return GoalsSimilarity , MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
              PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
              FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
+             
+    
+    # Apartment Search
+    elif d == '5':
+        Goals = ["good apartment quality",
+        "have adequate space",
+        "access to good view",
+        "new construction",
+        "bright",
+        "well ventilated",
+        "apartment looks cool",
+        "save money Low rent",
+        "low utilities",
+        "low maintenance expenses",
+        "enjoy good quality facilities",
+        "apartment has good furniture",
+        "apartment has good appliances",
+        "good location",
+        "close to work or university",
+        "safe neighbourhood",
+        "close to grocery and shops",
+        "green environment",
+        "close to a parks",
+        "close to gym",
+        "close to nightlife",
+        "close to day care",
+        "has good school",
+        "quiet neighbourhood",    
+        ]
+        
+        GoalsWithNeg = ["good apartment quality",
+        "bad apartment quality", ###
+        "have adequate space",
+        "access to good view",
+        "access to bad view", ###
+        "new construction",
+        "old construction", ###
+        "bright",
+        "dark", ###
+        "well ventilated",
+        "poorly ventilated", ###
+        "apartment looks cool",
+        "save money low rent",
+        "low utilities",
+        "high utilities", ###
+        "low maintenance expenses",
+        "high maintenance expenses", ###
+        "enjoy good quality facilities",
+        "apartment has good furniture",
+        "apartment has bad furniture", ###
+        "apartment has good appliances",
+        "apartment has bad appliances", ###
+        "good location",
+        "bad location", ###
+        "close to work or university",
+        "far to work or university", ###
+        "safe neighbourhood",
+        "dangerous neighbourhood", ###
+        "close to grocery and shops",
+        "far to grocery and shops", ###
+        "green environment",
+        "close to a parks",
+        "far to a parks", ###
+        "close to gym",
+        "far to gym", ###
+        "close to nightlife",
+        "far to nightlife", ###
+        "close to day care",
+        "far to day care", ###
+        "has good school",
+        "has bad school", ###
+        "quiet neighbourhood",
+        "noisy neighbourhood", ###
+        ]
+        
+        GoalsNegation = [
+        ("good apartment quality", "bad apartment quality"),
+        ("access to good view", "access to bad view"),
+        ("new construction", "old construction"),
+        ("bright", "dark"),
+        ("well ventilated", "poorly ventilated"),
+        ("low utilities", "high utilities"),
+        ("low maintenance expenses", "high maintenance expenses"),
+        ("apartment has good furniture", "apartment has bad furniture"),
+        ("apartment has good appliances", "apartment has bad appliances"),
+        ("good location", "bad location"),
+        ("close to work or university", "far to work or university"),
+        ("safe neighbourhood", "dangerous neighbourhood"),
+        ("close to grocery and shops", "far to grocery and shops"),
+        ("close to a parks", "far to a parks"),
+        ("close to gym", "far to gym"),
+        ("close to nightlife", "far to nightlife"),
+        ("close to day care", "far to day care"),
+        ("has good school", "has bad school"),
+        ("quiet neighbourhood", "noisy neighbourhood"),
+        ]
+        
+        # For finding the semantic similarity for the goals within the goal model
+        # Add (GoalsSimilarityAnalysis) and NegationDomain(GoalsInFile, count) below +  Add (GoalsSimilarityAnalysis)  in return
+         
+        GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, PostP,\
+        MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation,FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+         
+        
+        return GoalsSimilarity , MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+             PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+             FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
+    
+    # Course Selection
+    elif d == '6':
+        Goals = ["interesting course topic",
+        "topic relevant to real life",
+        "useful for job",
+        "fits well with your background",
+        "topic is easy",
+        "good class schedule",
+        "no conflicts with other classes",
+        "fits well personal schedule",
+        "good textbook",
+        "cheap textbook",
+        "book is useful after the class",
+        "book is easy to read",
+        "good reaching method",
+        "course is practical hands-on",
+        "course is theoretical",
+        "involves group work",
+        "encourages interaction",
+        "good instructor",
+        "fun lecturer",
+        "instructor approachable",
+        "instructor easy Marker",
+        "instructor knowledgeable",
+        ]
+        
+        GoalsWithNeg = ["interesting course topic",
+        "topic relevant to real life",
+        "topic irrelevant to real life", ###
+        "useful for job",
+        "useless for job", ###
+        "fits well with your background",
+        "topic is easy",
+        "topic is hard", ###
+        "good class schedule",
+        "bad class schedule", ###
+        "no conflicts with other classes",
+        "fits well personal schedule",
+        "good textbook",
+        "bad textbook", ###
+        "cheap textbook",
+        "expensive textbook", ###
+        "book is useful after the class",
+        "book is useless after the class", ###
+        "book is easy to read",
+        "book is hard to read", ###
+        "good teaching method",
+        "bad teaching method", ###
+        "course is practical hands-on",
+        "course is theoretical",
+        "involves group work",
+        "encourages interaction",
+        "discourages interaction", ###
+        "good instructor",
+        "bad instructor", ###
+        "fun lecturer",
+        "boring lecturer", ###
+        "instructor approachable",
+        "instructor easy marker",
+        "instructor hard marker", ###
+        "instructor knowledgeable",
+        ]
+        
+        GoalsNegation = [
+        ("topic relevant to real life", "topic irrelevant to real life"),
+        ("useful for job", "useless for job"),
+        ("topic is easy", "topic is hard"),
+        ("good class schedule", "bad class schedule"),
+        ("good textbook", "bad textbook"),
+        ("cheap textbook", "expensive textbook"),
+        ("book is useful after the class", "book is useless after the class"),
+        ("book is easy to read", "book is hard to read"),
+        ("good teaching method", "bad teaching method"),
+        ("encourages interaction", "discourages interaction"),
+        ("good instructor", "bad instructor"),
+        ("fun lecturer", "boring lecturer"),
+        ("instructor easy marker", "instructor hard marker"),
+        ]
+        
+        # For finding the semantic similarity for the goals within the goal model
+        # Add (GoalsSimilarityAnalysis) and NegationDomain(GoalsInFile, count) below +  Add (GoalsSimilarityAnalysis)  in return
+         
+        GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, PostP,\
+        MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation,FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+         
+        
+        return GoalsSimilarity , MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+             PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+             FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
+    
+    
+    # Transportation
+    elif d == '7':
+        Goals = ["go fast",
+        "minimize transfers",
+        "available when needed",
+        "commute environmentally responsible",
+        "reduce transportation Cost",
+        "can carry things",
+        "can use cell phone",
+        "hygiene",
+        "clean environment",
+        "be protected from contagious diseases",
+        "be comfortable",
+        "can sit",
+        "smooth and quiet",
+        "can read a book",
+        "can work",
+        "security and safety accident safety",
+        "crime safety",
+        "improve health and enhance active lifestyle",
+        "show off",
+        ]
+        
+        GoalsWithNeg = ["go fast",
+        "go slow", ###
+        "minimize transfers",
+        "maximize transfers", ###
+        "available when needed",
+        "commute environmentally responsible",
+        "reduce transportation cost",
+        "increase transportation cost", ###
+        "can carry things",
+        "can use cell phone",
+        "hygiene",
+        "clean environment",
+        "dirty environment", ###
+        "be protected from contagious diseases",
+        "be comfortable",
+        "can sit",
+        "smooth and quiet",
+        "can read a book",
+        "can work",
+        "security and safety accident safety",
+        "crime safety",
+        "improve health and enhance active lifestyle",
+        "show off",
+        ]
+        
+        GoalsNegation = [
+        ("go fast", "go slow"),
+        ("minimize transfers", "maximize transfers"),
+        ("reduce transportation cost", "increase transportation cost"),
+        ("clean environment", "dirty environment"),
+        ]
+        
+        # For finding the semantic similarity for the goals within the goal model
+        # Add (GoalsSimilarityAnalysis) and NegationDomain(GoalsInFile, count) below +  Add (GoalsSimilarityAnalysis)  in return
+         
+        GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, PostP,\
+        MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation,FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+         
+        
+        return GoalsSimilarity , MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+             PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+             FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
+        
+        
+
+    # Cooking domain is the example scenario
+    """
+    elif d == '10':
+        Goals = ["cook quickly",
+        "food easy to cook",
+        "easy to find ingredients",
+        "simple steps",
+        "not much ability required",
+        "food tastes good",
+        "food is healthy",
+        "has low fat",
+        "has low sugar",
+        ]
+        
+        GoalsWithNeg = ["cook quickly",
+        "cook slowly", ###
+        "food easy to cook",
+        "food difficult to cook", ###
+        "easy to find ingredients",
+        "difficult to find ingredients", ###
+        "simple steps",
+        "complicated steps", ###
+        "not much ability required",
+        "food tastes good",
+        "food tastes bad", ###
+        "food is healthy",
+        "food is unhealthy", ###
+        "has low fat",
+        "has high fat", ###
+        "has low sugar",
+        "has high sugar", ###
+        ]
+        
+        GoalsNegation = [
+        ("cook quickly", "cook slowly"),
+        ("food easy to cook", "food difficult to cook"),
+        ("easy to find ingredients", "difficult to find ingredients"),
+        ("simple steps", "complicated steps"),
+        ("food tastes good", "food tastes bad"),
+        ("food is healthy", "food is unhealthy"),
+        ("has low fat", "has high fat"),
+        ("has low sugar", "has high sugar"),
+        ]
+        
+        # For finding the semantic similarity for the goals within the goal model
+        # Add (GoalsSimilarityAnalysis) and NegationDomain(GoalsInFile, count) below +  Add (GoalsSimilarityAnalysis)  in return
+         
+        GoalsSimilarity, MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, PostP,\
+        MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+        FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch = NegationInDomain(q, d, Goals, GoalsWithNeg, GoalsNegation,FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch)
+         
+        
+        return GoalsSimilarity , MatchingGoal, SecondMatchingGoal, ThirdMatchingGoal, FourthMatchingGoal, FifthMatchingGoal, \
+             PostP, MatchingGoalNeg, SecondMatchingGoalNeg, ThirdMatchingGoalNeg, FourthMatchingGoalNeg, FifthMatchingGoalNeg, \
+             FirstMatch, SecondMatch, ThirdMatch, FourthMatch, FifthMatch, NoMatch
+    """         
+        
+             
